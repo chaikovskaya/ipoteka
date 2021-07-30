@@ -10,15 +10,27 @@
         padding-top: 14px;
         padding-bottom: 19px;
     }
+    &-top-item {
+        margin-right: 10px;
+        margin-left: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     &-logo {
         display: flex;
         align-items: center;
-        margin-right: 54px;
+        margin-left: 0;
+        margin-right: 65px;
         text-decoration: none;
         color: $color;
     }
     &-logo-element {
         display: block;
+        max-width: 42px;
         margin-right: 10px;
     }
     &-logo-name {
@@ -364,6 +376,8 @@ and (max-width: $tablet){
         }
         &-item_phone {
             display: block;
+            order: 1;
+            margin-right: 0;
         }
     }
     .main-menu {
@@ -379,6 +393,10 @@ and (max-width: $tablet){
 and (max-width: $mobile){
     .header {
         background: url("../images/header/main-menu-bgr.png") repeat-x calc(50% - 138px) bottom;
+        &-top-item {
+            margin-right: 0;
+            margin-left: 0;
+        }
         &-logo-name {
             font-size: 17px;
         }
