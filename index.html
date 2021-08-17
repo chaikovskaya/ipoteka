@@ -9,10 +9,9 @@
 
     <title>Главная. Военная ипотека</title>
 
-    <link rel="stylesheet" href="./libs/fontawesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./libs/line-awesome/css/line-awesome.min.css" />
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./libs/Selectric/public/selectric.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
 
@@ -23,20 +22,20 @@
         <header class="header">
             <div class="header-container">
                 <div class="header-top">
-                    <a class="header-burger header-top-item" href="#">
+                    <a class="header-burger header-top-item header-item" href="#">
                         <i class="header-burger-icon"></i>
                     </a>
-                    <a class="header-logo header-top-item" href="/">
+                    <a class="header-logo header-top-item header-item" href="/">
                         <picture>
                             <source media="(max-width: 720px)" srcset="./images/company-logo-mob.png" />
                             <img class="header-logo-element" src="./images/company-logo.png" alt="" />
                         </picture>
                         <span class="header-logo-name">поВоенке</span>
                     </a>
-                    <a class="header-location header-top-item" href="#">
+                    <a class="header-location header-top-item header-item" href="#">
                         <span class="header-location-icon"></span><span class="header-location-name">Москва</span>
                     </a>
-                    <ul class="messengers header-top-item">
+                    <ul class="messengers header-top-item header-item">
                         <li class="messengers-item messengers-item_phone">
                             <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_phone"></i></a>
                         </li>
@@ -46,54 +45,37 @@
                         <li class="messengers-item messengers-item_whatsapp">
                             <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_whatsapp"></i></a>
                         </li>
-                        <li class="messengers-item messengers-item_fb">
-                            <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_fb"></i></a>
+                        <li class="messengers-item messengers-item_vk">
+                            <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_vk"></i></a>
+                        </li>
+                        <li class="messengers-item messengers-item_instagram">
+                            <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_instagram"></i></a>
                         </li>
                     </ul>
                     <div class="header-contacts header-top-item">
-                        <div class="header-phone JS-Dropdown" data-dropdown="{'classActive': 'header-phone_active'}">
-                            <a class="header-phone-link JS-Dropdown-Switcher" href="javascript:;">
-                                <i class="header-phone-icon" aria-hidden="true"></i><span class="header-phone-label">8 800 500-56-87</span>
-                                <i class="header-phone-arrow" aria-hidden="true"></i>
-                            </a>
+                        <div class="header-phone header-item JS-Dropdown" data-dropdown="{'classActive': 'header-phone_active'}">
+                            <div class="JS-Dropdown-Switcher">
+                                <a class="header-phone-link" href="javascript:;">
+                                    <i class="header-phone-icon" aria-hidden="true"></i><span class="header-phone-label">8 800 500-56-87</span>
+                                    <i class="header-phone-arrow" aria-hidden="true"></i>
+                                </a>
+                                <div class="header-contacts-hours">Пн - Пт 9:00-20:00</div>
+                            </div>
                             <div class="header-phone-dropdown JS-Dropdown-Menu">
                                 <ul class="header-phone-list">
                                     <li class="header-phone-list-item">
-                                        <span class="header-phone-region">Пенза</span>
-                                        <a class="header-phone-number" href="tel:+78003504228">
-                                            <i class="header-phone-list-icon las la-phone"></i>8 (800) 350-42-28
-                                        </a>
-                                        <span class="header-phone-hours">
-                                            <i class="header-phone-list-icon las la-clock"></i>с 9:00 до 18:00
-                                        </span>
+                                        <a class="header-phone-number" href="tel:+78005000066">8 800 500-00-66</a>
+                                        <span class="header-phone-region">Санкт-Петербург</span>
                                     </li>
                                     <li class="header-phone-list-item">
-                                        <span class="header-phone-region">Для регионов Росии</span>
-                                        <a class="header-phone-number" href="tel:+78003504228">
-                                            <i class="header-phone-list-icon las la-phone"></i>8 (800) 350-42-28
-                                        </a>
-                                        <span class="header-phone-hours">
-                                            <i class="header-phone-list-icon las la-clock"></i>с 9:00 до 18:00
-                                        </span>
-                                    </li>
-                                    <li class="header-phone-list-item">
-                                        <span class="header-phone-region">Москва</span>
-                                        <a class="header-phone-number" href="tel:+78003504228">
-                                            <i class="header-phone-list-icon las la-phone"></i>8 (800) 350-42-28
-                                        </a>
-                                        <span class="header-phone-hours">
-                                            <i class="header-phone-list-icon las la-clock"></i>с 9:00 до 18:00
-                                        </span>
+                                        <a class="header-phone-number" href="tel:+78005005687">8 800 500-56-87</a>
+                                        <span class="header-phone-region">Краснодар</span>
                                     </li>
                                 </ul>
-                                <div class="header-phone-panel">
-                                    <a class="button button_simple" href="javascript:;">Заказать звонок<i class="button-icon las la-long-arrow-alt-right"></i></a>
-                                </div>
                             </div>
                         </div>
-                        <div class="header-contacts-hours">Пн - Пт 9:00-20:00</div>
                     </div>
-                    <ul class="user-links header-top-item">
+                    <ul class="user-links header-top-item header-item">
                         <li class="user-links-item user-links-item_notice">
                             <a class="user-links-element" href="#">
                                 <span class="user-links-icon user-links-icon_notice"></span>
@@ -111,7 +93,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="header-login header-top-item">
+                    <div class="header-login header-top-item header-item">
                         <a class="header-login-link" href="#">
                             <span class="header-login-icon"></span><span class="header-login-label">Войти</span>
                         </a>
@@ -124,34 +106,89 @@
                             <a class="main-menu-link" href="#">НЕДВИЖИМОСТЬ
                                 <i class="main-menu-icon"></i>
                             </a>
+                            <div class="menu-simple">
+                                <div class="menu-simple-container">
+                                    <ul class="menu-simple-list">
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Купить в новостройке</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Купить готовое жильё</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Застройщики</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="main-menu-item js-adaptivemenu-item">
                             <a class="main-menu-link" href="#">БАНКИ
                                 <i class="main-menu-icon"></i>
                             </a>
+                            <div class="menu-simple">
+                                <div class="menu-simple-container">
+                                    <ul class="menu-simple-list">
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Все банковские программы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="main-menu-item js-adaptivemenu-item">
                             <a class="main-menu-link" href="#">РЕФИНАНСИРОВАНИЕ
                                 <i class="main-menu-icon"></i>
                             </a>
+                            <div class="menu-simple">
+                                <div class="menu-simple-container">
+                                    <ul class="menu-simple-list">
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Все программы рефинансирования</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="main-menu-item js-adaptivemenu-item">
                             <a class="main-menu-link" href="#">КАЛЬКУЛЯТОР
                                 <i class="main-menu-icon"></i>
                             </a>
+                            <div class="menu-simple">
+                                <div class="menu-simple-container">
+                                    <ul class="menu-simple-list">
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Сумма накоплений</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Рассчитать ипотеку</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Узнать выгоду от рефинансирования</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="main-menu-item js-adaptivemenu-item">
-                            <a class="main-menu-link" href="#">ВОЕННОСЛУЖАЩИМ</a>
+                            <a class="main-menu-link" href="#">ВОЕННОСЛУЖАЩИМ
+                                <i class="main-menu-icon"></i>
+                            </a>
+                            <div class="menu-simple">
+                                <div class="menu-simple-container">
+                                    <ul class="menu-simple-list">
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">База знаний</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Застраховать жильё</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Оценка недвижимости</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Помощь юриста</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Акции</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="main-menu-item js-adaptivemenu-item">
                             <a class="main-menu-link" href="#">О КОМПАНИИ
                                 <i class="main-menu-icon"></i>
                             </a>
+                            <div class="menu-simple">
+                                <div class="menu-simple-container">
+                                    <ul class="menu-simple-list">
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">О нас</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Наша команда</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Новости</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Отзывы</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Гарантии</a></li>
+                                        <li class="menu-simple-item"><a class="menu-simple-link" href="#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="main-menu-item js-adaptivemenu-item">
-                            <a class="main-menu-link" href="#">Еще название
-                                <i class="main-menu-icon"></i>
-                            </a>
+                            <a class="main-menu-link" href="#">Еще название</a>
                         </li>
                         <li class="main-menu-item main-menu-item_more js-adaptivemenu-more">
                             <a class="main-menu-link main-menu-link_more" href="javascript:;">...</a>
@@ -167,6 +204,375 @@
         </header>
 
         <main class="main-content">
+            <section class="main">
+                <div class="main-container">
+                    <div class="main-block">
+                        <div class="main-img">
+                            <div class="main-info">
+                                <b><span class="main-info-label">Лидеры</span> на ранке</b> военной ипотеки
+                            </div>
+                            <img class="main-img-element" src="./images/main/main-img.png" alt="" />
+                        </div>
+                        <div class="main-form">
+                            <h1 class="main-title">Военная ипотека</h1>
+                            <div class="main-info main-info_mobile">
+                                <b><span class="main-info-label">Лидеры</span> на ранке</b> военной ипотеки
+                            </div>
+
+                            <div class="JS-Tab" data-tab="{
+                                 'classSwitcherActive': 'main-tabs-item_active'
+                            }">
+                                <ul class="main-tabs">
+                                    <li class="main-tabs-item main-tabs-item_active JS-Tab-Switcher">
+                                        <a class="main-tabs-link" href="#">Новостройки<i class="main-tabs-icon"></i></a>
+                                        <div class="main-tabs-content">
+                                            <form>
+                                                <div class="main-form-group">
+                                                    <div class="main-form-field">
+                                                        <label class="main-label">Город</label>
+                                                        <div class="main-select main-select-city js-select-more" data-select-more="main-select_active">
+                                                            <select name="city" class="select js-select">
+                                                                <optgroup>
+                                                                    <option value="city-1">Москва и МО</option>
+                                                                    <option value="city-2" selected="selected">Санкт-Петербург и Ленинградская область</option>
+                                                                    <option value="city-3">Черноморское побережье</option>
+                                                                    <option value="city-4">Краснодар</option>
+                                                                    <option value="city-5">Крым</option>
+                                                                </optgroup>
+                                                                <optgroup>
+                                                                    <option disabled>Регионы по алфавиту</option>
+                                                                    <option value="region-1">Алтайский край</option>
+                                                                    <option value="region-2">Амурская область</option>
+                                                                    <option value="region-3">Архангельская область</option>
+                                                                    <option value="region-4">Астраханская область</option>
+                                                                    <option value="region-5">Алтайский край</option>
+                                                                    <option value="region-6">Амурская область</option>
+                                                                    <option value="region-7">Архангельская область</option>
+                                                                    <option value="region-8">Астраханская область</option>
+                                                                    <option value="region-9">Алтайский край</option>
+                                                                    <option value="region-10">Амурская область</option>
+                                                                    <option value="region-11">Архангельская область</option>
+                                                                    <option value="region-12">Астраханская область</option>
+                                                                    <option value="region-13">Алтайский край</option>
+                                                                    <option value="region-14">Амурская область</option>
+                                                                    <option value="region-15">Архангельская область</option>
+                                                                    <option value="region-16">Астраханская область</option>
+                                                                    <option disabled class="select-more js-select-more-link">Еще города</option>
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-form-field">
+                                                        <label class="main-label">Комнаты</label>
+                                                        <div class="main-select main-select-room">
+                                                            <select name="room" class="select js-select">
+                                                                <option value="room-1" class="main-option-digit">1</option>
+                                                                <option value="room-2" class="main-option-digit">2</option>
+                                                                <option value="room-3" selected="selected" class="main-option-digit">3</option>
+                                                                <option value="room-4" class="main-option-digit">4</option>
+                                                                <option value="room-5" class="main-option-digit">5</option>
+                                                                <option value="room-6" class="main-option-digit">6+</option>
+                                                                <option value="room-7">Студия</option>
+                                                                <option value="room-8">Свободная планировка</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <button class="main-form-button button" type="submit">Показать</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    <li class="main-tabs-item JS-Tab-Switcher">
+                                        <a class="main-tabs-link" href="#">Рефинансирование<i class="main-tabs-icon"></i></a>
+                                        <div class="main-tabs-content">
+                                            <form>
+                                                <div class="main-form-group">
+                                                    <div class="main-form-field">
+                                                        <label class="main-label">Тип жилья</label>
+                                                        <div class="main-select">
+                                                            <select name="city" class="select js-select">
+                                                                <option disabled>Выберите тип жилья</option>
+                                                                <option value="type-1">Квартира в новостройке</option>
+                                                                <option value="type-2">Квартира на вторичном рынке</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-form-field">
+                                                        <label class="main-label">Программа</label>
+                                                        <div class="main-select">
+                                                            <select name="city" class="select js-select">
+                                                                <option disabled>Выберите подходящую программу</option>
+                                                                <option value="program-1">Стандартная</option>
+                                                                <option value="program-2">Господдержка для детей с детьми</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <button class="main-form-button button" type="submit">Показать</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="main-list">
+                            <li class="main-list-item"><b>Решим любой вопрос</b> по&nbsp;военной ипотеке</li>
+                            <li class="main-list-item"><b>Подберем квартиру</b> по&nbsp;военной ипотеке</li>
+                            <li class="main-list-item"><b>Одобрим получение кредита</b> по военной ипотеке</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new">
+                <div class="new-container js-slider-new">
+                    <h2 class="new-title h1">Топ новостроек по Военной ипотеке</h2>
+                    <a class="new-more more" href="#">
+                        <span class="more-label">Показать все</span>
+                    </a>
+                    <div class="new-gallery">
+                        <div class="new-list js-slider-list">
+                            <div class="new-list-item js-slider-item">
+                                <div class="new-block">
+                                    <a class="new-list-link" href="#">
+                                        <img class="new-img" src="./images/new/new-1.jpg" alt="" />
+                                    </a>
+                                    <span class="new-location">Москва</span>
+                                    <a class="new-wishlist" href="javascript:;">
+                                        <i class="new-wishlist-icon icon icon_wishlist"></i>
+                                    </a>
+                                </div>
+                                <div class="new-description">
+                                    <a class="new-name" href="#">ЖК “Серебряный бор”</a>
+                                    <div class="new-price">от 9,5 млн ₽</div>
+                                    <div class="new-advantage">
+                                        <span class="new-advantage-item">
+                                            <i class="new-advantage-icon icon icon_metro"></i>м. Водный стадион
+                                        </span>
+                                        <span class="new-advantage-item">
+                                            <i class="new-advantage-icon icon icon_repair"></i>С ремонтом
+                                        </span>
+                                    </div>
+                                    <span class="new-sale">Скидка поВоенке 1,5%</span>
+                                </div>
+                            </div>
+                            <div class="new-list-item js-slider-item">
+                                <div class="new-block">
+                                    <a class="new-list-link" href="#">
+                                        <img class="new-img" src="./images/new/new-2.jpg" alt="" />
+                                    </a>
+                                    <span class="new-location">Москва</span>
+                                    <a class="new-wishlist" href="javascript:;">
+                                        <i class="new-wishlist-icon icon icon_wishlist"></i>
+                                    </a>
+                                </div>
+                                <div class="new-description">
+                                    <a class="new-name" href="#">ЖК “Серебряный бор”</a>
+                                    <div class="new-price">от 9,5 млн ₽</div>
+                                    <div class="new-advantage">
+                                        <span class="new-advantage-item">
+                                            <i class="new-advantage-icon icon icon_metro"></i>м. Водный стадион
+                                        </span>
+                                        <span class="new-advantage-item">
+                                            <i class="new-advantage-icon icon icon_repair"></i>С ремонтом
+                                        </span>
+                                    </div>
+                                    <span class="new-sale">Скидка поВоенке 1,5%</span>
+                                </div>
+                            </div>
+                            <div class="new-list-item js-slider-item">
+                                <div class="new-block">
+                                    <a class="new-list-link" href="#">
+                                        <img class="new-img" src="./images/new/new-3.jpg" alt="" />
+                                    </a>
+                                    <span class="new-location">Москва</span>
+                                    <a class="new-wishlist" href="javascript:;">
+                                        <i class="new-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                    </a>
+                                </div>
+                                <div class="new-description">
+                                    <a class="new-name" href="#">ЖК “Серебряный бор”</a>
+                                    <div class="new-price">от 9,5 млн ₽</div>
+                                    <div class="new-advantage">
+                                        <span class="new-advantage-item">
+                                            <i class="new-advantage-icon icon icon_metro"></i>м. Водный стадион
+                                        </span>
+                                        <span class="new-advantage-item">
+                                            <i class="new-advantage-icon icon icon_repair"></i>С ремонтом
+                                        </span>
+                                    </div>
+                                    <span class="new-sale">Скидка поВоенке 1,5%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-nav slider-nav js-slider-buttons">
+                            <button class="new-button slider-button js-slider-prev">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                            <button class="new-button slider-button slider-button_next js-slider-next">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="house">
+                <div class="house-container js-slider-house">
+                    <div class="house-block">
+                        <div class="house-list js-slider-list">
+                            <div class="house-list-item js-slider-item">
+                                <a class="house-link" href="#">
+                                    <img class="house-img" src="./images/house/house-img-1.png" alt="" />
+                                </a>
+                                <div class="house-content">
+                                    <div class="house-list-panel">
+                                        <a class="house-title h1" href="#">Вторичное жильё</a>
+                                        <a class="house-more more more_dark" href="#">
+                                            <span class="more-label">Показать все</span>
+                                        </a>
+                                    </div>
+                                    <div class="house-info">Время менять старые квартиры по Военной ипотеке</div>
+                                    <div class="house-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                </div>
+                             </div>
+                            <div class="house-list-item js-slider-item">
+                                <a class="house-link" href="#">
+                                    <img class="house-img" src="./images/new/new-3.jpg" alt="" />
+                                </a>
+                                <div class="house-content">
+                                    <div class="house-list-panel">
+                                        <a class="house-title h1" href="#">Вторичное жильё</a>
+                                        <a class="house-more more more_dark" href="#">
+                                            <span class="more-label">Показать все</span>
+                                        </a>
+                                    </div>
+                                    <div class="house-info">Время менять старые квартиры по Военной ипотеке</div>
+                                    <div class="house-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-nav slider-nav js-slider-buttons">
+                            <button class="slider-button js-slider-prev">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                            <button class="slider-button slider-button_next js-slider-next">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                        </div>
+                        <div class="house-more-panel">
+                            <a class="more more_dark" href="#">
+                                <span class="more-label">Показать все</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="approval">
+                <h2 class="approval-title h1">Одобрение военной ипотеки</h2>
+                <div class="approval-item">
+                    <div class="approval-row">
+                        <div class="approval-col approval-col_logo">
+                            Жильё на вторичном рынке
+                            Квартира в новостройке
+                        </div>
+                        <div class="approval-col approval-col_new">
+                            Господдержка на квартиру в новостройке
+                        </div>
+                        <div class="approval-col approval-col_standard">
+                            Стандартная
+                        </div>
+                        <div class="approval-col approval-col_family">
+                            Господдержка для семей с детьми
+                        </div>
+                        <div class="approval-col approval-col_union">
+                            Объединение ипотек супругов
+                        </div>
+                        <div class="approval-col approval-col_more">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="approval-item">
+                    <div class="approval-row">
+                        <div class="approval-col approval-col_logo">
+                            <img src="./images/approval/approval-img-1.png" alt="" />
+                        </div>
+                        <div class="approval-col approval-col_new">
+                            <span class="approval-percent">4,6%</span>
+                            <span class="approval-sum">4 320 000</span>
+                        </div>
+                        <div class="approval-col approval-col_standard">
+                            <span class="approval-percent">4,6%</span>
+                            <span class="approval-sum">4 320 000</span>
+                        </div>
+                        <div class="approval-col approval-col_family">
+                            <span class="approval-percent">4,6%</span>
+                            <span class="approval-sum">4 320 000</span>
+                        </div>
+                        <div class="approval-col approval-col_union">
+                            <span class="approval-percent">4,6%</span>
+                            <span class="approval-sum">4 320 000</span>
+                        </div>
+                        <div class="approval-col approval-col_more">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="action">
+                <div class="action-container js-slider-action">
+                    <div class="action-block">
+                        <div class="action-list js-slider-list">
+                            <div class="action-list-item js-slider-item">
+                                <a class="action-link" href="#">
+                                    <img class="action-img" src="./images/action/action-img-1.png" alt="" />
+                                </a>
+                                <div class="action-content">
+                                    <div class="action-list-panel">
+                                        <a class="action-title h1" href="#">Акции</a>
+                                        <a class="action-more more more_dark" href="#">
+                                            <span class="more-label">Показать все</span>
+                                        </a>
+                                    </div>
+                                    <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
+                                    <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                </div>
+                            </div>
+                            <div class="action-list-item js-slider-item">
+                                <a class="action-link" href="#">
+                                    <img class="action-img" src="./images/action/action-img-1.png" alt="" />
+                                </a>
+                                <div class="action-content">
+                                    <div class="action-list-panel">
+                                        <a class="action-title h1" href="#">Акции</a>
+                                        <a class="action-more more more_dark" href="#">
+                                            <span class="more-label">Показать все</span>
+                                        </a>
+                                    </div>
+                                    <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
+                                    <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-nav slider-nav js-slider-buttons">
+                            <button class="slider-button js-slider-prev">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                            <button class="slider-button slider-button_next js-slider-next">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="action-more-panel">
+                        <a class="more more_dark" href="#">
+                            <span class="more-label">Показать все</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -178,7 +584,7 @@
                         <form>
                             <div class="subscription-field">
                                 <input class="subscription-input input" type="text" placeholder="Введите e-mail" />
-                                <button class="subscription-button button js-popup-subscribe" type="submit" data-src="./ajax/subscribe.html">Подписаться</button>
+                                <button class="subscription-button button" type="submit">Подписаться</button>
                             </div>
                         </form>
                     </div>
@@ -209,8 +615,11 @@
                             <li class="messengers-item messengers-item_whatsapp">
                                 <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_whatsapp"></i></a>
                             </li>
-                            <li class="messengers-item messengers-item_fb">
-                                <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_fb"></i></a>
+                            <li class="messengers-item messengers-item_vk">
+                                <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_vk"></i></a>
+                            </li>
+                            <li class="messengers-item messengers-item_instagram">
+                                <a class="messengers-link" href="#" rel="nofollow"><i class="messengers-icon messengers-icon_instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -256,7 +665,9 @@
     <script src="./libs/OwlCarousel/owl.carousel.min.js"></script>
     <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="./libs/validate/jquery.validate.min.js"></script>
+    <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
+    <script src="./js/JSC.Tab.js"></script>
 
     <script src="./js/main.js"></script>
 

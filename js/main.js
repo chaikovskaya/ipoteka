@@ -51,49 +51,9 @@ function initDropdown() {
 
 function initScroll() {
     $('.js-custom-scroll').each(function(){
-        var customScroll = this;
-        new SimpleBar(customScroll, {
+        new SimpleBar(this, {
             autoHide: false
         });
-    });
-}
-
-function initSliderAwards() {
-    $(".js-slider-awards").each(function(){
-        var $element = $(this),
-            $list = $element.find('.js-slider-list'),
-            $buttons = $element.find('.js-slider-buttons'),
-            $prev = $element.find('.js-slider-prev'),
-            $next = $element.find('.js-slider-next'),
-            $item = $list.find('.js-slider-item');
-
-        if ($item.length > 1) {
-            $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
-                autoHeight: false,
-                smartSpeed: 500,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    720: {
-                        items: 2,
-                        mouseDrag: true,
-                    },
-                    992: {
-                        items: 3,
-                        autoWidth: true,
-                    },
-                },
-            }));
-            $prev.click(function(){
-                $list.trigger("prev.owl.carousel");
-            });
-            $next.click(function(){
-                $list.trigger("next.owl.carousel");
-            });
-        } else {
-            $buttons.remove();
-        }
     });
 }
 
@@ -121,12 +81,325 @@ function initAdaptiveMenu() {
     });
 }
 
+function initSelect() {
+    $('.js-select').selectric({
+        disableOnMobile: false,
+        nativeOnMobile: false,
+        arrowButtonMarkup: '<b class="selectric-button"><i class="selectric-icon"></i></b>',
+    });
+}
+
+function initTab() {
+    if (typeof(Tab) === 'undefined' || !jQuery.isFunction(Tab)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-Tab').not('.JS-Tab-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('tab'));
+        new Tab(this, jQuery.extend({}, common, local));
+    });
+}
+
+function initSliderNew() {
+    $(".js-slider-new").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20,
+                },
+                720: {
+                    items: 2,
+                    mouseDrag: true,
+                    margin: 20,
+                },
+                992: {
+                    items: 3,
+                    margin: 30,
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+
+function initSliderAbout() {
+    $(".js-slider-about").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            dots: isStart,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20,
+                },
+                720: {
+                    items: 2,
+                    mouseDrag: true,
+                    margin: 20,
+                },
+                992: {
+                    items: 3,
+                    margin: 30,
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+
+function initSliderViewed() {
+	$(".js-slider-viewed").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            dots: isStart,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20,
+                },
+                720: {
+                    items: 2,
+                    mouseDrag: true,
+                    margin: 20,
+                },
+                992: {
+                    items: 4,
+                    margin: 30,
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+
+function initSliderHouse() {
+    $(".js-slider-house").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            items: 1,
+            dots: isStart,
+            responsive: {
+                0: {
+                },
+                720: {
+                },
+                992: {
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+
+function initSliderAction() {
+    $(".js-slider-action").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            items: 1,
+            dots: isStart,
+            responsive: {
+                0: {
+                },
+                720: {
+                },
+                992: {
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+
+function initSliderVisited() {
+    $(".js-slider-visited").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20,
+                },
+                720: {
+                    items: 3,
+                    margin: 30,
+                },
+                992: {
+                    items: 4,
+                    margin: 30,
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+
+function initSelectMore() {
+    $(".js-select-more").each(function(){
+        var $element = $(this),
+            $link = $element.find('.js-select-more-link'),
+            classActive = $element.data('select-more');
+
+        $link.click(function(){
+            $element.addClass(classActive);
+        });
+    });
+}
+
+function initExpand() {
+    jQuery('.js-expand').each(function() {
+        var $element = $(this),
+            $block = $element.find('.js-expand-block'),
+            $link = $element.find('.js-expand-link'),
+            local = GLOBAL.parseData(jQuery(this).data('expand')),
+            classActive = local.classActive || 'active',
+            classShow = local.classShow || 'show',
+            heightParent = parseInt($block.css('min-height'),10) || 26,
+            heightChild = $block.height();
+
+        if (heightChild > heightParent) {
+            $element.addClass(classActive);
+
+            $link.on("click", function() {
+                $element.addClass(classShow);
+            });
+        }
+    });
+}
 
 function initResizeWindow() {
-    var width = $(window).width();
-    if (width <= GLOBAL.mobile) {
+    if (window.matchMedia('(max-width: ' + GLOBAL.mobile + 'px)').matches) {
         GLOBAL.widthWindow = 'isMobile';
-    } else if (width <= GLOBAL.tablet) {
+    } else if (window.matchMedia('(max-width: ' + GLOBAL.tablet + 'px)').matches) {
         GLOBAL.widthWindow = 'isTablet';
         initAdaptiveMenu();
     } else {
@@ -142,7 +415,17 @@ $(document).ready(function () {
     });
 
     initDropdown();
+    initSelect();
+    initTab();
+    initSelectMore();
     initScroll();
 
-    initSliderAwards();
+    initSliderNew();
+    initSliderHouse();
+    initSliderAction();
+    initSliderAbout();
+    initSliderViewed();
+    initSliderVisited();
+
+    initExpand();
 });
