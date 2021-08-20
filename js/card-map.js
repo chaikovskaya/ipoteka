@@ -2,7 +2,7 @@
 function initMap() {
     var centerCoord = $('.js-map').data('objectcoord') || [59.93914514163674,30.33349282507063];
 
-    var myMap = new ymaps.Map('buildings-map', {
+    var myMap = new ymaps.Map('card-map', {
         center: centerCoord,
         zoom: 10,
         controls: ['zoomControl', 'fullscreenControl'],
@@ -31,10 +31,6 @@ function initMap() {
                     "coordinates": objectCoord
                 },
                 "properties":{
-                    "balloonContentBody": '<div class="map-popup">' +
-                        '<div class="map-popup-body"><i class="map-popup-icon las la-map-marker"></i>' + objectText + '</div>' +
-                        '<a class="map-popup-button button button_dark" href="' + objectHref + '">выбрать</a>' +
-                        '</div>',
                 }
             };
 

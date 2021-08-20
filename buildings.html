@@ -23,9 +23,197 @@
         <header class="header">
             <div class="header-container">
                 <div class="header-top">
-                    <a class="header-burger header-top-item header-item" href="#">
-                        <i class="header-burger-icon"></i>
-                    </a>
+                    <div class="mob-menu header-top-item header-item JS-MobileMenu" data-mobilemenu="{
+                        'classActive': 'open',
+                        'classShow': 'mob-menu-show',
+                        'classElementActive': 'mob-menu_active'
+                    }">
+                        <a class="mob-menu-switcher JS-MobileMenu-Burger" href="javascript:;">
+                            <i class="header-burger-icon"></i>
+                        </a>
+                        <div class="mob-block JS-MobileMenu-Dropdown">
+                            <div class="mob-close-panel">
+                                <a class="mob-company-logo header-logo" href="/">
+                                    <img class="header-logo-element" src="./images/company-logo-mob.png" alt="" />
+                                    <span class="header-logo-name">поВоенке</span>
+                                </a>
+                                <a href="javascript:;" class="mob-close JS-MobileMenu-Close"><i class="mob-close-icon las la-times"></i></a>
+                            </div>
+                            <div class="mob-nav">
+                                <ul class="mob-list">
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">
+                                            НЕДВИЖИМОСТЬ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">НЕДВИЖИМОСТЬ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Купить в новостройке</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Купить готовое жильё</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Застройщики</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">БАНКИ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">БАНКИ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Все банковские программы</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">РЕФИНАНСИРОВАНИЕ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">РЕФИНАНСИРОВАНИЕ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Все программы рефинансирования</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">КАЛЬКУЛЯТОР<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">КАЛЬКУЛЯТОР</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Сумма накоплений</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Рассчитать ипотеку</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Узнать выгоду от рефинансирования</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">ВОЕННОСЛУЖАЩИМ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">ВОЕННОСЛУЖАЩИМ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">База знаний</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Застраховать жильё</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Оценка недвижимости</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Помощь юриста</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Акции</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">О КОМПАНИИ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">О КОМПАНИИ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">О нас</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Наша команда</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Новости</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Отзывы</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Гарантии</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="mob-list-item mob-list-item_user">
+                                    <a class="mob-list-link" href="#">
+                                        <span class="mob-user-icon icon icon_wishlist icon_wishlist_dark"></span>
+                                        <span class="mob-list-label">Избранное</span>
+                                        <span class="mob-list-informer">12</span>
+                                    </a>
+                                </div>
+                                <div class="mob-list-item mob-list-item_user">
+                                    <a class="mob-list-link" href="#">
+                                        <span class="mob-user-icon icon icon_location icon_location_dark"></span>
+                                        <span class="mob-list-label">Москва</span>
+                                    </a>
+                                </div>
+                                <div class="mob-list-item mob-list-item_user mob-list-item_phone">
+                                    <a class="mob-list-link" href="tel:+78005005687">
+                                        <span class="mob-user-icon icon icon_phone_dark"></span>
+                                        <span class="mob-list-label">8 800 500-56-87</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mob-info">
+                                <ul class="mob-socials">
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_telegram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_whatsapp"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_vk"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                    </div>
                     <a class="header-logo header-top-item header-item" href="/">
                         <picture>
                             <source media="(max-width: 720px)" srcset="./images/company-logo-mob.png" />
@@ -244,66 +432,68 @@
                     }" data-showmore-extra="{
                         'amount': 4
                     }">
-                        <div class="buildings-filter-list">
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="region" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Регион</option>
-                                    <option value="region-1">Регион 1</option>
-                                    <option value="region-2">Регион 2</option>
-                                    <option value="region-3">Регион 3</option>
-                                    <option value="region-4">Регион 4</option>
-                                </select>
+                        <form>
+                            <div class="buildings-filter-list">
+                                <div class="buildings-filter-item JS-ShowMore-Item">
+                                    <select name="region" class="buildings-filter-select select select_simple js-select">
+                                        <option selected disabled>Регион</option>
+                                        <option value="region-1">Регион 1</option>
+                                        <option value="region-2">Регион 2</option>
+                                        <option value="region-3">Регион 3</option>
+                                        <option value="region-4">Регион 4</option>
+                                    </select>
+                                </div>
+                                <div class="buildings-filter-item  main-select-room JS-ShowMore-Item">
+                                    <select name="room" class="buildings-filter-select select select_simple js-select">
+                                        <option selected disabled>Комнат</option>
+                                        <option value="room-1" class="main-option-digit">1</option>
+                                        <option value="room-2" class="main-option-digit">2</option>
+                                        <option value="room-3" class="main-option-digit">3</option>
+                                        <option value="room-4" class="main-option-digit">4</option>
+                                        <option value="room-5" class="main-option-digit">5</option>
+                                        <option value="room-6" class="main-option-digit">6+</option>
+                                        <option value="room-7">Студия</option>
+                                        <option value="room-8">Свободная планировка</option>
+                                    </select>
+                                </div>
+                                <div class="buildings-filter-item JS-ShowMore-Item">
+                                    <select name="price" class="buildings-filter-select select select_simple js-select">
+                                        <option selected disabled>Цена</option>
+                                        <option value="price-1">1 млн. - 2 млн.</option>
+                                        <option value="price-2">2 млн. - 4 млн.</option>
+                                    </select>
+                                </div>
+                                <div class="buildings-filter-item JS-ShowMore-Item">
+                                    <select name="region" class="buildings-filter-select select select_simple js-select">
+                                        <option selected disabled>Удаленность</option>
+                                        <option value="region-1">1 км</option>
+                                        <option value="region-2">5 км</option>
+                                    </select>
+                                </div>
+                                <div class="buildings-filter-item JS-ShowMore-Item">
+                                    <select name="finishing" class="buildings-filter-select select select_simple js-select">
+                                        <option selected disabled>Наличие отделки</option>
+                                        <option value="finishing-1">С отделкой</option>
+                                        <option value="finishing-2">Без отделки</option>
+                                    </select>
+                                </div>
+                                <div class="buildings-filter-item JS-ShowMore-Item">
+                                    <select name="bank" class="buildings-filter-select select select_simple js-select">
+                                        <option selected disabled>Банки</option>
+                                        <option value="bank-1">Банк 1</option>
+                                        <option value="bank-2">Банк 2</option>
+                                    </select>
+                                </div>
+                                <div class="buildings-filter-item JS-ShowMore-Item">
+                                    <select name="bank" class="buildings-filter-select select select_simple js-select">
+                                        <option selected disabled>Параметр</option>
+                                        <option value="bank-1">Параметр 1</option>
+                                        <option value="bank-2">Параметр 2</option>
+                                    </select>
+                                </div>
+                                <a class="buildings-filter-link JS-ShowMore-Switcher" href="javascript:;">Фильтры<span class="buildings-filter-link-icon"></span></a>
                             </div>
-                            <div class="buildings-filter-item  main-select-room JS-ShowMore-Item">
-                                <select name="room" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Комнат</option>
-                                    <option value="room-1" class="main-option-digit">1</option>
-                                    <option value="room-2" class="main-option-digit">2</option>
-                                    <option value="room-3" class="main-option-digit">3</option>
-                                    <option value="room-4" class="main-option-digit">4</option>
-                                    <option value="room-5" class="main-option-digit">5</option>
-                                    <option value="room-6" class="main-option-digit">6+</option>
-                                    <option value="room-7">Студия</option>
-                                    <option value="room-8">Свободная планировка</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="price" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Цена</option>
-                                    <option value="price-1">1 млн. - 2 млн.</option>
-                                    <option value="price-2">2 млн. - 4 млн.</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="region" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Удаленность</option>
-                                    <option value="region-1">1 км</option>
-                                    <option value="region-2">5 км</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="finishing" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Наличие отделки</option>
-                                    <option value="finishing-1">С отделкой</option>
-                                    <option value="finishing-2">Без отделки</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="bank" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Банки</option>
-                                    <option value="bank-1">Банк 1</option>
-                                    <option value="bank-2">Банк 2</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="bank" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Параметр</option>
-                                    <option value="bank-1">Параметр 1</option>
-                                    <option value="bank-2">Параметр 2</option>
-                                </select>
-                            </div>
-                            <a class="buildings-filter-link JS-ShowMore-Switcher" href="javascript:;">Фильтры<span class="buildings-filter-link-icon"></span></a>
-                        </div>
+                        </form>
                     </div>
                     <a class="buildings-filter-button button" href="javascript:;">Показать</a>
                 </div>
@@ -325,7 +515,7 @@
 
                                 <div class="buildings-actions">
                                     <h1 class="buildings-actions-title buildings-actions-item">328 новостроек</h1>
-                                    <div class="buildings-actions-item">
+                                    <div class="buildings-actions-select buildings-actions-item">
                                         <div class="buildings-select-sort">
                                             <select name="sort" class="select select_simple js-select-sort">
                                                 <option class="buildings-select-option buildings-select-option_top" value="sort-1">По возрастанию</option>
@@ -602,8 +792,11 @@
                             </span>
                         </div>
                         <div class="buildings-load-more load-more">
-                            <a class="more JS-AjaxMore-Link" href="javascript:;">
-                                <span class="more-label">Показать ещё</span>
+                            <a class="buildings-more more JS-AjaxMore-Link" href="javascript:;">
+                                <span class="more-label">
+                                    <span class="load-more-label">Показать ещё</span>
+                                    <span class="load-more-icon"></span>
+                                </span>
                             </a>
                             <div class="buildings-pager JS-AjaxMore-Pager">
                                 <a class="JS-AjaxMore-Next" href="#?PAGEN_2=2"></a>
@@ -930,6 +1123,7 @@
     <script src="./js/JSC.Tab.js"></script>
     <script src="./js/JSC.ShowMore.js"></script>
     <script src="./js/JSC.AjaxMore.js"></script>
+    <script src="./js/JSC.MobileMenu.js"></script>
 
     <script src="./js/main.js"></script>
 

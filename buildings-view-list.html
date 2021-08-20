@@ -23,9 +23,197 @@
         <header class="header">
             <div class="header-container">
                 <div class="header-top">
-                    <a class="header-burger header-top-item header-item" href="#">
-                        <i class="header-burger-icon"></i>
-                    </a>
+                    <div class="mob-menu header-top-item header-item JS-MobileMenu" data-mobilemenu="{
+                        'classActive': 'open',
+                        'classShow': 'mob-menu-show',
+                        'classElementActive': 'mob-menu_active'
+                    }">
+                        <a class="mob-menu-switcher JS-MobileMenu-Burger" href="javascript:;">
+                            <i class="header-burger-icon"></i>
+                        </a>
+                        <div class="mob-block JS-MobileMenu-Dropdown">
+                            <div class="mob-close-panel">
+                                <a class="mob-company-logo header-logo" href="/">
+                                    <img class="header-logo-element" src="./images/company-logo-mob.png" alt="" />
+                                    <span class="header-logo-name">поВоенке</span>
+                                </a>
+                                <a href="javascript:;" class="mob-close JS-MobileMenu-Close"><i class="mob-close-icon las la-times"></i></a>
+                            </div>
+                            <div class="mob-nav">
+                                <ul class="mob-list">
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">
+                                            НЕДВИЖИМОСТЬ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">НЕДВИЖИМОСТЬ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Купить в новостройке</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Купить готовое жильё</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Застройщики</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">БАНКИ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">БАНКИ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Все банковские программы</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">РЕФИНАНСИРОВАНИЕ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">РЕФИНАНСИРОВАНИЕ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Все программы рефинансирования</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">КАЛЬКУЛЯТОР<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">КАЛЬКУЛЯТОР</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Сумма накоплений</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Рассчитать ипотеку</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Узнать выгоду от рефинансирования</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">ВОЕННОСЛУЖАЩИМ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">ВОЕННОСЛУЖАЩИМ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">База знаний</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Застраховать жильё</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Оценка недвижимости</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Помощь юриста</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Акции</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">О КОМПАНИИ<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <span><i class="mob-back-icon las la-arrow-left"></i>Назад</span>
+                                            </a>
+                                            <span class="mob-list-current">О КОМПАНИИ</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">О нас</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Наша команда</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Новости</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Отзывы</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Гарантии</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="mob-list-item mob-list-item_user">
+                                    <a class="mob-list-link" href="#">
+                                        <span class="mob-user-icon icon icon_wishlist icon_wishlist_dark"></span>
+                                        <span class="mob-list-label">Избранное</span>
+                                        <span class="mob-list-informer">12</span>
+                                    </a>
+                                </div>
+                                <div class="mob-list-item mob-list-item_user">
+                                    <a class="mob-list-link" href="#">
+                                        <span class="mob-user-icon icon icon_location icon_location_dark"></span>
+                                        <span class="mob-list-label">Москва</span>
+                                    </a>
+                                </div>
+                                <div class="mob-list-item mob-list-item_user mob-list-item_phone">
+                                    <a class="mob-list-link" href="tel:+78005005687">
+                                        <span class="mob-user-icon icon icon_phone_dark"></span>
+                                        <span class="mob-list-label">8 800 500-56-87</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mob-info">
+                                <ul class="mob-socials">
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_telegram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_whatsapp"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_vk"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="messengers-icon messengers-icon_instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                    </div>
                     <a class="header-logo header-top-item header-item" href="/">
                         <picture>
                             <source media="(max-width: 720px)" srcset="./images/company-logo-mob.png" />
@@ -244,7 +432,8 @@
                     }" data-showmore-extra="{
                         'amount': 4
                     }">
-                        <div class="buildings-filter-list">
+                        <form>
+                            <div class="buildings-filter-list">
                             <div class="buildings-filter-item JS-ShowMore-Item">
                                 <select name="region" class="buildings-filter-select select select_simple js-select">
                                     <option selected disabled>Регион</option>
@@ -304,6 +493,7 @@
                             </div>
                             <a class="buildings-filter-link JS-ShowMore-Switcher" href="javascript:;">Фильтры<span class="buildings-filter-link-icon"></span></a>
                         </div>
+                        </form>
                     </div>
                     <a class="buildings-filter-button button" href="javascript:;">Показать</a>
                 </div>
@@ -341,7 +531,8 @@
                                 </div>
 
                                 <div class="buildings-list-wrapper js-slider-buildings">
-                                    <div class="buildings-list-container js-custom-scroll">
+                                    <!-- Добавить класс buildings-list-container_row -->
+                                    <div class="buildings-list-container buildings-list-container_row js-custom-scroll">
                                         <div class="buildings-list buildings-list_row js-slider-list JS-AjaxMore-Content">
                                             <div class="buildings-list-item js-map-item js-slider-item" data-objectid="1" data-objectcoord="[59.8672,30.2595]">
                                                 <div class="buildings-list-element buildings-list-element_row">
@@ -466,6 +657,34 @@
                                                     </span>
                                                 </a>
                                             </div>
+                                            <div class="buildings-list-item js-map-item js-slider-item" data-objectid="1" data-objectcoord="[59.8672,30.2595]">
+                                                <div class="buildings-list-element buildings-list-element_row">
+                                                    <div class="buildings-list-block">
+                                                        <a class="buildings-list-link" href="#">
+                                                            <img class="buildings-list-img" src="./images/buildings/buildings-list-img-1.jpg" alt="" />
+                                                        </a>
+                                                        <span class="buildings-list-location">Москва</span>
+                                                        <a class="buildings-list-wishlist" href="javascript:;">
+                                                            <i class="buildings-list-wishlist-icon icon icon_wishlist"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="buildings-list-description">
+                                                        <div class="buildings-list-panel">
+                                                            <a class="buildings-list-name js-map-item-value" href="#">ЖК “Люберцы”</a>
+                                                            <div class="buildings-list-price">от 9,5 млн ₽</div>
+                                                        </div>
+                                                        <div class="buildings-list-advantage">
+                                                        <span class="buildings-list-advantage-item">
+                                                            <i class="buildings-list-advantage-icon icon icon_metro"></i>м. Водный стадион
+                                                        </span>
+                                                            <span class="buildings-list-advantage-item">
+                                                            <i class="buildings-list-advantage-icon icon icon_repair"></i>С ремонтом
+                                                        </span>
+                                                        </div>
+                                                        <span class="buildings-list-sale">Скидка поВоенке 1,5%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -485,8 +704,11 @@
                             </span>
                         </div>
                         <div class="buildings-load-more load-more">
-                            <a class="more JS-AjaxMore-Link" href="javascript:;">
-                                <span class="more-label">Показать ещё</span>
+                            <a class="buildings-more more JS-AjaxMore-Link" href="javascript:;">
+                                <span class="more-label">
+                                    <span class="load-more-label">Показать ещё</span>
+                                    <span class="load-more-icon"></span>
+                                </span>
                             </a>
                             <div class="buildings-pager JS-AjaxMore-Pager">
                                 <a class="JS-AjaxMore-Next" href="#?PAGEN_2=2"></a>
@@ -813,6 +1035,7 @@
     <script src="./js/JSC.Tab.js"></script>
     <script src="./js/JSC.ShowMore.js"></script>
     <script src="./js/JSC.AjaxMore.js"></script>
+    <script src="./js/JSC.MobileMenu.js"></script>
 
     <script src="./js/main.js"></script>
 
