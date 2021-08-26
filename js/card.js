@@ -144,7 +144,8 @@ function initSliderCardPlan() {
             touchDrag: isStart,
             autoHeight: false,
             smartSpeed: 500,
-            margin: 10,
+            margin: 20,
+            dots: true,
             responsive: {
                 0: {
                     items: 1,

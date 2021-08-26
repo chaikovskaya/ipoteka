@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Главная. Военная ипотека</title>
+    <title>Новости. Детальная. Военная ипотека</title>
 
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/Selectric/public/selectric.css" />
+    <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
  </head>
 
@@ -282,7 +284,7 @@
                         </li>
                     </ul>
                     <div class="header-login header-top-item header-item">
-                        <a class="header-login-link js-popup-profile" href="javascript:;" data-src="./ajax/profile.html">
+                        <a class="header-login-link" href="#">
                             <span class="header-login-icon"></span><span class="header-login-label">Войти</span>
                         </a>
                         <span class="header-login-cabinet">Мой кабинет</span>
@@ -392,375 +394,220 @@
         </header>
 
         <main class="main-content">
-            <section class="main">
-                <div class="main-container">
-                    <div class="main-block">
-                        <div class="main-img">
-                            <div class="main-info">
-                                <b><span class="main-info-label">Лидеры</span> на ранке</b> военной ипотеки
-                            </div>
-                            <img class="main-img-element" src="./images/main/main-img.png" alt="" />
-                        </div>
-                        <div class="main-form">
-                            <h1 class="main-title">Военная ипотека</h1>
-                            <div class="main-info main-info_mobile">
-                                <b><span class="main-info-label">Лидеры</span> на ранке</b> военной ипотеки
-                            </div>
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-block container js-expand" data-expand="{
+                    'classActive': 'breadcrumbs_active',
+                    'classShow': 'breadcrumbs_show'
+                    }">
+                    <ul class="breadcrumbs-list js-expand-block">
+                        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная<i class="breadcrumbs-icon"></i></a></li>
+                        <li class="breadcrumbs-item">Новости</li>
+                        <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
+                    </ul>
+                </div>
+            </div>
 
-                            <div class="JS-Tab" data-tab="{
-                                 'classSwitcherActive': 'main-tabs-item_active'
-                            }">
-                                <ul class="main-tabs">
-                                    <li class="main-tabs-item main-tabs-item_active JS-Tab-Switcher">
-                                        <a class="main-tabs-link" href="#">Новостройки<i class="main-tabs-icon"></i></a>
-                                        <div class="main-tabs-content">
-                                            <form>
-                                                <div class="main-form-group">
-                                                    <div class="main-form-field">
-                                                        <label class="main-label">Город</label>
-                                                        <div class="main-select main-select-city js-select-more" data-select-more="main-select_active">
-                                                            <select name="city" class="select js-select">
-                                                                <optgroup>
-                                                                    <option value="city-1">Москва и МО</option>
-                                                                    <option value="city-2" selected="selected">Санкт-Петербург и Ленинградская область</option>
-                                                                    <option value="city-3">Черноморское побережье</option>
-                                                                    <option value="city-4">Краснодар</option>
-                                                                    <option value="city-5">Крым</option>
-                                                                </optgroup>
-                                                                <optgroup>
-                                                                    <option disabled>Регионы по алфавиту</option>
-                                                                    <option value="region-1">Алтайский край</option>
-                                                                    <option value="region-2">Амурская область</option>
-                                                                    <option value="region-3">Архангельская область</option>
-                                                                    <option value="region-4">Астраханская область</option>
-                                                                    <option value="region-5">Алтайский край</option>
-                                                                    <option value="region-6">Амурская область</option>
-                                                                    <option value="region-7">Архангельская область</option>
-                                                                    <option value="region-8">Астраханская область</option>
-                                                                    <option value="region-9">Алтайский край</option>
-                                                                    <option value="region-10">Амурская область</option>
-                                                                    <option value="region-11">Архангельская область</option>
-                                                                    <option value="region-12">Астраханская область</option>
-                                                                    <option value="region-13">Алтайский край</option>
-                                                                    <option value="region-14">Амурская область</option>
-                                                                    <option value="region-15">Архангельская область</option>
-                                                                    <option value="region-16">Астраханская область</option>
-                                                                    <option disabled class="select-more js-select-more-link">Еще города</option>
-                                                                </optgroup>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="main-form-field">
-                                                        <label class="main-label">Комнаты</label>
-                                                        <div class="main-select main-select-room">
-                                                            <select name="room" class="select js-select">
-                                                                <option value="room-1" class="main-option-digit">1</option>
-                                                                <option value="room-2" class="main-option-digit">2</option>
-                                                                <option value="room-3" selected="selected" class="main-option-digit">3</option>
-                                                                <option value="room-4" class="main-option-digit">4</option>
-                                                                <option value="room-5" class="main-option-digit">5</option>
-                                                                <option value="room-6" class="main-option-digit">6+</option>
-                                                                <option value="room-7">Студия</option>
-                                                                <option value="room-8">Свободная планировка</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <button class="main-form-button button" type="submit">Показать</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </li>
-                                    <li class="main-tabs-item JS-Tab-Switcher">
-                                        <a class="main-tabs-link" href="#">Рефинансирование<i class="main-tabs-icon"></i></a>
-                                        <div class="main-tabs-content">
-                                            <form>
-                                                <div class="main-form-group">
-                                                    <div class="main-form-field">
-                                                        <label class="main-label">Тип жилья</label>
-                                                        <div class="main-select">
-                                                            <select name="city" class="select js-select">
-                                                                <option disabled>Выберите тип жилья</option>
-                                                                <option value="type-1">Квартира в новостройке</option>
-                                                                <option value="type-2">Квартира на вторичном рынке</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="main-form-field">
-                                                        <label class="main-label">Программа</label>
-                                                        <div class="main-select">
-                                                            <select name="city" class="select js-select">
-                                                                <option disabled>Выберите подходящую программу</option>
-                                                                <option value="program-1">Стандартная</option>
-                                                                <option value="program-2">Господдержка для детей с детьми</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <button class="main-form-button button" type="submit">Показать</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <ul class="main-list">
-                            <li class="main-list-item"><b>Решим любой вопрос</b> по&nbsp;военной ипотеке</li>
-                            <li class="main-list-item"><b>Подберем квартиру</b> по&nbsp;военной ипотеке</li>
-                            <li class="main-list-item"><b>Одобрим получение кредита</b> по военной ипотеке</li>
+            <div class="container">
+                <a class="back-link" href="#">
+                    <span class="back-link-icon"></span>Вернуться к списку
+                </a>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="articles-detail-title h2">Минобороны защитит военную ипотеку от приставов</h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="articles-detail-panel">
+                            <li class="articles-detail-panel-item">
+                                <span class="articles-detail-date">
+                                    <span class="articles-detail-date-icon icon icon_calendar"></span>21.06.2021
+                                </span>
+                            </li>
+                            <li class="articles-detail-panel-item">
+                                <span class="articles-detail-views articles-detail-panel-item">
+                                    <span class="articles-detail-views-icon icon icon_views"></span>568
+                                </span>
+                            </li>
+                            <li class="articles-detail-panel-item">
+                                <a class="articles-detail-share articles-detail-panel-item" href="#">
+                                    <span class="articles-detail-share-icon icon icon_share"></span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </section>
-
-            <section class="new">
-                <div class="new-container js-slider-new">
-                    <h2 class="new-title h1">Топ новостроек по Военной ипотеке</h2>
-                    <a class="new-more more" href="#">
-                        <span class="more-label">Показать все</span>
-                    </a>
-                    <div class="new-gallery">
-                        <div class="new-list js-slider-list">
-                            <div class="new-list-item js-slider-item">
-                                <div class="new-block">
-                                    <a class="new-list-link" href="#">
-                                        <img class="new-img" src="./images/new/new-1.jpg" alt="" />
-                                    </a>
-                                    <span class="new-location">Москва</span>
-                                    <a class="new-wishlist" href="javascript:;">
-                                        <i class="new-wishlist-icon icon icon_wishlist"></i>
-                                    </a>
-                                </div>
-                                <div class="new-description">
-                                    <a class="new-name" href="#">ЖК “Серебряный бор”</a>
-                                    <div class="new-price">от 9,5 млн ₽</div>
-                                    <div class="new-advantage">
-                                        <span class="new-advantage-item">
-                                            <i class="new-advantage-icon icon icon_metro"></i>м. Водный стадион
-                                        </span>
-                                        <span class="new-advantage-item">
-                                            <i class="new-advantage-icon icon icon_repair"></i>С ремонтом
-                                        </span>
-                                    </div>
-                                    <span class="new-sale">Скидка поВоенке 1,5%</span>
-                                </div>
-                            </div>
-                            <div class="new-list-item js-slider-item">
-                                <div class="new-block">
-                                    <a class="new-list-link" href="#">
-                                        <img class="new-img" src="./images/new/new-2.jpg" alt="" />
-                                    </a>
-                                    <span class="new-location">Москва</span>
-                                    <a class="new-wishlist" href="javascript:;">
-                                        <i class="new-wishlist-icon icon icon_wishlist"></i>
-                                    </a>
-                                </div>
-                                <div class="new-description">
-                                    <a class="new-name" href="#">ЖК “Серебряный бор”</a>
-                                    <div class="new-price">от 9,5 млн ₽</div>
-                                    <div class="new-advantage">
-                                        <span class="new-advantage-item">
-                                            <i class="new-advantage-icon icon icon_metro"></i>м. Водный стадион
-                                        </span>
-                                        <span class="new-advantage-item">
-                                            <i class="new-advantage-icon icon icon_repair"></i>С ремонтом
-                                        </span>
-                                    </div>
-                                    <span class="new-sale">Скидка поВоенке 1,5%</span>
-                                </div>
-                            </div>
-                            <div class="new-list-item js-slider-item">
-                                <div class="new-block">
-                                    <a class="new-list-link" href="#">
-                                        <img class="new-img" src="./images/new/new-3.jpg" alt="" />
-                                    </a>
-                                    <span class="new-location">Москва</span>
-                                    <a class="new-wishlist" href="javascript:;">
-                                        <i class="new-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
-                                    </a>
-                                </div>
-                                <div class="new-description">
-                                    <a class="new-name" href="#">ЖК “Серебряный бор”</a>
-                                    <div class="new-price">от 9,5 млн ₽</div>
-                                    <div class="new-advantage">
-                                        <span class="new-advantage-item">
-                                            <i class="new-advantage-icon icon icon_metro"></i>м. Водный стадион
-                                        </span>
-                                        <span class="new-advantage-item">
-                                            <i class="new-advantage-icon icon icon_repair"></i>С ремонтом
-                                        </span>
-                                    </div>
-                                    <span class="new-sale">Скидка поВоенке 1,5%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-nav slider-nav js-slider-buttons">
-                            <button class="new-button slider-button js-slider-prev">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                            <button class="new-button slider-button slider-button_next js-slider-next">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                        </div>
+                <div class="articles-detail content">
+                    <!-- Эта картинка через админку выводится -->
+                    <div class="articles-detail-pic">
+                        <img class="articles-detail-img" src="./images/articles/articles-img-2.jpg" alt="" />
+                        <span class="articles-detail-time">
+                            <span class="articles-detail-time-icon icon icon_time"></span>20 мин.
+                        </span>
                     </div>
+                    <p>После вступления военного в накопительно-ипотечную систему государство ежегодно перечисляет на его счёт определённую сумму, которая регулярно индексируется. Например, в 2020 году
+                    размер таких взносов составил 288 410 рублей. Также накопления военнослужащего пополняются за счёт доходов от инвестирования
+                    средств на его ипотечном счету — по аналогии с денежным вкладом в банке.А по прошествии трёх лет можно использовать накопленные
+                    деньги как первоначальный взнос по ипотеке. Проект предусматривает дополнение закона «Об исполнительном производстве» нормой, что на средства военной ипотеки взыскание обращено быть не может. Также документ предусматривает возможность приостановки исполнительного производства в отношении должника — военнослужащего, которого ранее уволили без права на использование накоплений для жилищного обеспечения, в случае, если он повторно поступил на службу и восстановился в реестре участников накопительно-ипотечной системы военнослужащих.</p>
+                    <p>Стать участником накопительно-ипотечной системы могут офицеры, которые окончили профильное образовательное учреждение или поступили на военную службу после 1 января 2005 года, — они будут обязательными участниками НИС, получив первое офицерское звание
+                        или заключив первый контракт; офицеры, заключившие первый контракт до 2005 года, но окончившие военный вуз после, могут подать рапорт
+                        о включении в реестр участников системы; прапорщики и мичманы, которые после 1 января 2005 года прослужили в Вооружённых силах по контракту более трёх лет.</p>
+                    <p>Кроме того, на военную ипотеку имеют право сержанты, старшины, солдаты и матросы. Тем, кто поступил на военную службу до 1 января
+                        2020 года и заключил второй контракт, необходимо подать рапорт. Кроме того, на военную ипотеку имеют право сержанты, старшины, </p>
+                    <blockquote>“Рефинансирование кредит не повлияет негативно на вашу кредитную историю. 2
+                    Кроме того, рефинансирование вашего долго возможно только в том случае, если у вас положительная кредитная история и не
+                    было просрочек по платежам.”</blockquote>
+                    <p>После вступления военного в накопительно-ипотечную систему государство ежегодно перечисляет на его счёт определённую сумму, которая регулярно индексируется. Например, в 2020 году
+                        размер таких взносов составил 288 410 рублей. Также накопления военнослужащего пополняются за счёт доходов от инвестирования
+                        средств на его ипотечном счету — по аналогии с денежным вкладом в банке.А по прошествии трёх лет можно использовать накопленные
+                        деньги как первоначальный взнос по ипотеке. Проект предусматривает дополнение закона «Об исполнительном производстве» нормой, что на средства военной ипотеки взыскание обращено быть не может. Также документ предусматривает возможность приостановки исполнительного производства в отношении должника — военнослужащего, которого ранее уволили без права на использование накоплений для жилищного обеспечения, в случае, если он повторно поступил на службу и восстановился в реестре участников накопительно-ипотечной системы военнослужащих.</p>
+                    <p>Министерство обороны России предлагает запретить в рамках исполнительного производства арестовывать счета, предназначенные выплаты военной ипотеки. Соответствующий законопроект опубликован  федеральном портале проектов нормативных правовых актов.</p>
+                    <p>Сейчас арест счетов, предназначенных для выплаты гражданам денежных средств на приобретение или строительство жилья, не запрещен. По данным Минобороны, уже арестованы счета 3 215 военнослужащих — участников накопительно-ипотечной системы жилищного обеспечения.После вступления военного в накопительно-ипотечную систему государство ежегодно перечисляет
+                    на его счёт определённую сумму, которая регулярно индексируется. Например, в 2020 году
+                    размер таких взносов составил 288 410 рублей. Также накопления военнослужащего пополняются за счёт доходов от инвестирования
+                    средств на его ипотечном счету — по аналогии с денежным вкладом в банке.А по прошествии трёх лет можно использовать накопленные
+                    деньги как первоначальный взнос по ипотеке. Проект предусматривает дополнение закона «Об исполнительном производстве» нормой, что на средства военной ипотеки взыскание обращено быть не может. Также документ предусматривает возможность приостановки исполнительного производства в отношении должника — военнослужащего, которого ранее уволили без права на использование накоплений для жилищного обеспечения, в случае, если он повторно поступил на службу и восстановился в реестре участников накопительно-ипотечной системы военнослужащих.</p>
+                    <img src="./images/articles/articles-img-1.jpg" alt="" /><br /><br />
+                    <p>После вступления военного в накопительно-ипотечную систему государство ежегодно перечисляет на его счёт определённую сумму, которая регулярно индексируется. Например, в 2020 году
+                    размер таких взносов составил 288 410 рублей. Также накопления военнослужащего пополняются за счёт доходов от инвестирования
+                    средств на его ипотечном счету — по аналогии с денежным вкладом в банке.А по прошествии трёх лет можно использовать накопленные
+                    деньги как первоначальный взнос по ипотеке. Проект предусматривает дополнение закона «Об исполнительном производстве» нормой, что на средства военной ипотеки взыскание обращено быть не может. Также документ предусматривает возможность приостановки исполнительного производства в отношении должника — военнослужащего, которого ранее уволили без права на использование накоплений для жилищного обеспечения, в случае, если он повторно поступил на службу и восстановился в реестре участников накопительно-ипотечной системы военнослужащих.</p>
+                    <p>Стать участником накопительно-ипотечной системы могут офицеры, которые окончили профильное образовательное учреждение или поступили на военную службу после 1 января 2005 года, — они будут обязательными участниками НИС, получив первое офицерское звание
+                    или заключив первый контракт; офицеры, заключившие первый контракт до 2005 года, но окончившие военный вуз после, могут подать рапорт о включении в реестр участников системы; прапорщики и мичманы, которые после 1 января 2005 года прослужили в Вооружённых силах по контракту более трёх лет</p>
                 </div>
-            </section>
 
-            <section class="house">
-                <div class="house-container js-slider-house">
-                    <div class="house-block">
-                        <div class="house-list js-slider-list">
-                            <div class="house-list-item js-slider-item">
-                                <a class="house-link" href="#">
-                                    <img class="house-img" src="./images/house/house-img-1.png" alt="" />
-                                </a>
-                                <div class="house-content">
-                                    <div class="house-list-panel">
-                                        <a class="house-title h1" href="#">Вторичное жильё</a>
-                                        <a class="house-more more more_dark" href="#">
-                                            <span class="more-label">Показать все</span>
-                                        </a>
-                                    </div>
-                                    <div class="house-info">Время менять старые квартиры по Военной ипотеке</div>
-                                    <div class="house-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
-                                </div>
-                             </div>
-                            <div class="house-list-item js-slider-item">
-                                <a class="house-link" href="#">
-                                    <img class="house-img" src="./images/new/new-3.jpg" alt="" />
-                                </a>
-                                <div class="house-content">
-                                    <div class="house-list-panel">
-                                        <a class="house-title h1" href="#">Вторичное жильё</a>
-                                        <a class="house-more more more_dark" href="#">
-                                            <span class="more-label">Показать все</span>
-                                        </a>
-                                    </div>
-                                    <div class="house-info">Время менять старые квартиры по Военной ипотеке</div>
-                                    <div class="house-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="house-nav slider-nav js-slider-buttons">
-                            <button class="slider-button js-slider-prev">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                            <button class="slider-button slider-button_next js-slider-next">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                        </div>
-                        <div class="house-more-panel">
-                            <a class="more more_dark" href="#">
-                                <span class="more-label">Показать все</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="approval">
-                <h2 class="approval-title h1">Одобрение военной ипотеки</h2>
-                <div class="approval-item">
-                    <div class="approval-row">
-                        <div class="approval-col approval-col_logo">
-                            Жильё на вторичном рынке
-                            Квартира в новостройке
-                        </div>
-                        <div class="approval-col approval-col_new">
-                            Господдержка на квартиру в новостройке
-                        </div>
-                        <div class="approval-col approval-col_standard">
-                            Стандартная
-                        </div>
-                        <div class="approval-col approval-col_family">
-                            Господдержка для семей с детьми
-                        </div>
-                        <div class="approval-col approval-col_union">
-                            Объединение ипотек супругов
-                        </div>
-                        <div class="approval-col approval-col_more">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="approval-item">
-                    <div class="approval-row">
-                        <div class="approval-col approval-col_logo">
-                            <img src="./images/approval/approval-img-1.png" alt="" />
-                        </div>
-                        <div class="approval-col approval-col_new">
-                            <span class="approval-percent">4,6%</span>
-                            <span class="approval-sum">4 320 000</span>
-                        </div>
-                        <div class="approval-col approval-col_standard">
-                            <span class="approval-percent">4,6%</span>
-                            <span class="approval-sum">4 320 000</span>
-                        </div>
-                        <div class="approval-col approval-col_family">
-                            <span class="approval-percent">4,6%</span>
-                            <span class="approval-sum">4 320 000</span>
-                        </div>
-                        <div class="approval-col approval-col_union">
-                            <span class="approval-percent">4,6%</span>
-                            <span class="approval-sum">4 320 000</span>
-                        </div>
-                        <div class="approval-col approval-col_more">
-                            <a href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="action">
-                <div class="action-container js-slider-action">
-                    <div class="action-block">
-                        <div class="action-list js-slider-list">
-                            <div class="action-list-item js-slider-item">
-                                <a class="action-link" href="#">
-                                    <img class="action-img" src="./images/action/action-img-1.png" alt="" />
-                                </a>
-                                <div class="action-content">
-                                    <div class="action-list-panel">
-                                        <a class="action-title h1" href="#">Акции</a>
-                                        <a class="action-more more more_dark" href="#">
-                                            <span class="more-label">Показать все</span>
-                                        </a>
-                                    </div>
-                                    <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
-                                    <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
-                                </div>
-                            </div>
-                            <div class="action-list-item js-slider-item">
-                                <a class="action-link" href="#">
-                                    <img class="action-img" src="./images/action/action-img-1.png" alt="" />
-                                </a>
-                                <div class="action-content">
-                                    <div class="action-list-panel">
-                                        <a class="action-title h1" href="#">Акции</a>
-                                        <a class="action-more more more_dark" href="#">
-                                            <span class="more-label">Показать все</span>
-                                        </a>
-                                    </div>
-                                    <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
-                                    <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="action-nav slider-nav js-slider-buttons">
-                            <button class="slider-button js-slider-prev">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                            <button class="slider-button slider-button_next js-slider-next">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="action-more-panel">
-                        <a class="more more_dark" href="#">
+                <section class="news-feed">
+                    <div class="news-feed-panel">
+                        <h2 class="news-feed-title h1">Ещё новости</h2>
+                        <a class="more" href="#">
                             <span class="more-label">Показать все</span>
                         </a>
                     </div>
-                </div>
-            </section>
+                    <div class="news-feed-gallery js-slider-news-feed">
+                        <div class="news-feed-list js-slider-list">
+                            <div class="news-feed-item js-slider-item">
+                                <div class="news-feed-block">
+                                    <a class="news-feed-link" href="#">
+                                        <img class="news-feed-img" src="./images/news/news-img-1.jpg" alt="">
+                                    </a>
+                                    <span class="news-feed-date">
+                                        <span class="news-feed-date-icon icon icon_calendar"></span>21.06.2021
+                                    </span>
+                                </div>
+                                <div class="news-feed-description">
+                                    <a class="news-feed-name" href="#">Минобороны защитит военную ипотеку</a>
+                                    <div class="news-feed-info content">2356 арестованных счетов военнослужащих! И это не предел!</div>
+                                    <a class="show-more show-more_show" href="#">
+                                        <span class="show-more-label">Читать далее</span><span class="show-more-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-feed-item js-slider-item">
+                                <div class="news-feed-block">
+                                    <a class="news-feed-link" href="#">
+                                        <img class="news-feed-img" src="./images/news/news-img-1.jpg" alt="">
+                                    </a>
+                                    <span class="news-feed-date">
+                                        <span class="news-feed-date-icon icon icon_calendar"></span>21.06.2021
+                                    </span>
+                                </div>
+                                <div class="news-feed-description">
+                                    <a class="news-feed-name" href="#">Минобороны защитит военную ипотеку</a>
+                                    <div class="news-feed-info content">2356 арестованных счетов военнослужащих! И это не предел!</div>
+                                    <a class="show-more show-more_show" href="#">
+                                        <span class="show-more-label">Читать далее</span><span class="show-more-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-nav js-slider-buttons">
+                            <button class="news-feed-button slider-button js-slider-prev">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                            <button class="news-feed-button slider-button slider-button_next js-slider-next">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="visited">
+                    <div class="visited-container js-slider-visited">
+                        <h2 class="visited-title h1">Вы недавно смотрели</h2>
+                        <div class="visited-gallery">
+                            <div class="visited-list js-slider-list">
+                                <div class="visited-list-item js-slider-item">
+                                    <div class="visited-block">
+                                        <a class="visited-list-link" href="#">
+                                            <img class="visited-img" src="./images/visited/visited-img-1.jpg" alt="" />
+                                        </a>
+                                        <a class="visited-wishlist" href="javascript:;">
+                                            <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                        </a>
+                                    </div>
+                                    <div class="visited-description">
+                                        <a class="visited-name" href="#">ЖК “Пушкин”</a>
+                                        <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                        <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                    </div>
+                                </div>
+                                <div class="visited-list-item visited-list-item_bank js-slider-item">
+                                    <div class="visited-block">
+                                        <a class="visited-list-link" href="#">
+                                            <img class="visited-img visited-img_bank" src="./images/visited/visited-img-2.jpg" alt="" />
+                                        </a>
+                                        <a class="visited-wishlist" href="javascript:;">
+                                            <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="visited-description">
+                                        <a class="visited-name" href="#">Банк: Сбербанк</a>
+                                        <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                        <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                    </div>
+                                </div>
+                                <div class="visited-list-item js-slider-item">
+                                    <div class="visited-block">
+                                        <a class="visited-list-link" href="#">
+                                            <img class="visited-img" src="./images/visited/visited-img-3.jpg" alt="" />
+                                        </a>
+                                        <a class="visited-wishlist" href="javascript:;">
+                                            <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="visited-description">
+                                        <a class="visited-name" href="#">Рефинансирование</a>
+                                        <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                        <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                    </div>
+                                </div>
+                                <div class="visited-list-item js-slider-item">
+                                    <div class="visited-block">
+                                        <a class="visited-list-link" href="#">
+                                            <img class="visited-img" src="./images/visited/visited-img-4.jpg" alt="" />
+                                        </a>
+                                        <a class="visited-wishlist" href="javascript:;">
+                                            <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                        </a>
+                                    </div>
+                                    <div class="visited-description">
+                                        <a class="visited-name" href="#">ЖК “Иваново”</a>
+                                        <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                        <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visited-nav slider-nav js-slider-buttons">
+                                <button class="visited-button slider-button js-slider-prev">
+                                    <span class="slider-button-icon"></span>
+                                </button>
+                                <button class="visited-button slider-button slider-button_next js-slider-next">
+                                    <span class="slider-button-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
 
         </main>
 
@@ -837,7 +684,6 @@
         </div>
 
         <div class="svg-box">
-
         </div>
 
     </div>
@@ -854,13 +700,18 @@
     <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="./libs/validate/jquery.validate.min.js"></script>
     <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
-    <script src="./libs/mask/jquery.mask.min.js"></script>
+    <script src="./libs/simplebar/simplebar.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.Tab.js"></script>
+    <script src="./js/JSC.ShowMore.js"></script>
+    <script src="./js/JSC.AjaxMore.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
-    <script src="./js/JSC.FieldText.js"></script>
 
     <script src="./js/main.js"></script>
+
+    <!-- Подключить скрипты только для раздела -->
+    <script src="./js/news.js"></script>
+    <!-- /Подключить скрипты только для раздела -->
 
 </body>
 </html>

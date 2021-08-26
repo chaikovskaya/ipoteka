@@ -422,6 +422,163 @@ function initShowMore(showmoreExtra) {
     });
 }
 
+function initAjaxMoreSimple() {
+    if (typeof(AjaxMore) === 'undefined' || !jQuery.isFunction(AjaxMore)) {
+        return false;
+    }
+
+    var common = {
+        success: function () {
+        }
+    };
+
+    $('.JS-AjaxMore-Simple').not('.JS-AjaxMore-ready').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('ajaxmore'));
+        new AjaxMore(this, jQuery.extend({}, common, local));
+    });
+}
+
+function initValidate($element) {
+    if (typeof($element) == 'undefined') {
+        $element = $('.js-form-validate');
+    }
+
+    $element.each(function() {
+        var $element = jQuery(this),
+            validator;
+
+        validator = $element.validate({
+            errorClass: 'form-error',
+            validClass: 'form-success',
+        });
+
+        $.validator.messages.required = GLOBAL.FORMERROR.REQUIRED;
+        $.validator.messages.email = GLOBAL.FORMERROR.EMAIL;
+    });
+}
+
+function initMask() {
+    $('.js-phone').mask('+7 (999) 999-99-99');
+}
+
+function initFieldText() {
+    if (typeof(FieldText) === 'undefined' || !jQuery.isFunction(FieldText)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-FieldText').not('.JS-FieldText-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('fieldtext'));
+        new FieldText(this, jQuery.extend({}, common, local));
+    });
+}
+
+function initPopupForm() {
+    if (typeof(MobileMenu) === 'undefined' || !jQuery.isFunction(MobileMenu)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-PopupForm').not('.JS-MobileMenu-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('popupform'));
+        new MobileMenu(this, jQuery.extend({}, common, local));
+    });
+}
+
+function initPopupProfile() {
+    $('.js-popup-profile').each(function() {
+        $(this).on('click',function(e) {
+            e.preventDefault();
+            var url = $(this).data('src');
+
+            $('.js-preloader').removeClass('g-hidden');
+
+            $.ajax({
+                url: url,
+                type: "get",
+                dataType: "html",
+                success: function (data) {
+                    $('.js-form-popup').html(data);
+                    initFieldText();
+                    initValidate();
+                    initMask();
+                    initPopupRegistration();
+                    initPopupForgot();
+                    var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
+                    new MobileMenu('.JS-PopupForm', local)._open();
+
+                    $('.js-preloader').addClass('g-hidden');
+                },
+                error: function(data) {
+                }
+            });
+        });
+    });
+}
+
+function initPopupForgot() {
+    $('.js-forgot-password').each(function() {
+        $(this).on('click',function(e) {
+            e.preventDefault();
+            var url = $(this).data('src');
+
+            $('.js-preloader').removeClass('g-hidden');
+
+            $.ajax({
+                url: url,
+                type: "get",
+                dataType: "html",
+                success: function (data) {
+                    $('.js-form-popup').html(data);
+                    initFieldText();
+                    initValidate();
+                    initMask();
+                    initPopupProfile();
+                    var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
+                    new MobileMenu('.JS-PopupForm', local)._open();
+
+                    $('.js-preloader').addClass('g-hidden');
+                },
+                error: function(data) {
+                }
+            });
+        });
+    });
+}
+
+function initPopupRegistration() {
+    $('.js-popup-reg').each(function() {
+        $(this).on('click',function(e) {
+            e.preventDefault();
+            var url = $(this).data('src');
+
+            $('.js-preloader').removeClass('g-hidden');
+
+            $.ajax({
+                url: url,
+                type: "get",
+                dataType: "html",
+                success: function (data) {
+                    $('.js-form-popup').html(data);
+                    initFieldText();
+                    initValidate();
+                    initMask();
+                    initPopupProfile();
+                    initPopupForm();
+                    var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
+                    new MobileMenu('.JS-PopupForm', local)._open();
+
+                    $('.js-preloader').addClass('g-hidden');
+                },
+                error: function(data) {
+                }
+            });
+        });
+    });
+}
+
 function initResizeWindow() {
     if (window.matchMedia('(max-width: ' + GLOBAL.mobile + 'px)').matches) {
         GLOBAL.widthWindow = 'isMobile';
@@ -456,4 +613,10 @@ $(document).ready(function () {
     initExpand();
     initMobileMenu();
     initShowMore();
+    initAjaxMoreSimple();
+    initValidate();
+    initMask();
+    initFieldText();
+    initPopupForm();
+    initPopupProfile();
 });

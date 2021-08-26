@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Новостройки. Военная ипотека</title>
+    <title>База знаний. Военная ипотека</title>
 
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
  </head>
 
@@ -400,464 +401,447 @@
                     }">
                     <ul class="breadcrumbs-list js-expand-block">
                         <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная<i class="breadcrumbs-icon"></i></a></li>
-                        <li class="breadcrumbs-item">Новостройки</li>
+                        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Военнослужащим<i class="breadcrumbs-icon"></i></a></li>
+                        <li class="breadcrumbs-item">База знаний</li>
                         <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
                     </ul>
                 </div>
-
-                <section class="buildings-main-banner">
-                    <div class="buildings-main-banner-container container">
-                        <div class="buildings-main-banner-detail">
-                            <span class="buildings-main-banner-title h1">Новостройки поВоенке</span>
-                            <div class="buildings-main-banner-info content">Воспользуйтесь удобным поиском ниже или закажите бесплатный подбор квартиры от специалиста.</div>
-                        </div>
-                        <div class="buildings-main-banner-img">
-                            <picture>
-                                <source media="(max-width: 720px)" srcset="./images/buildings/buildings-img-1-mobile.png" />
-                                <img class="buildings-main-banner-pic" src="./images/buildings/buildings-img-1.png" alt="" />
-                            </picture>
-                        </div>
-                    </div>
-                </section>
             </div>
 
             <div class="container">
-                <div id="buildings-filter" class="buildings-filter">
-                    <div class="buildings-filter-panel JS-ShowMore-Filter" data-showmore="{
-                        'classActive': 'buildings-filter-panel_active',
-                        'classSwitcherActive': 'show-switcher_active',
-                        'amount': 6,
-                        'classHide': 'buildings-filter-item_hide',
-                        'elementItem': '.buildings-filter-item'
-                    }" data-showmore-extra="{
-                        'amount': 4
-                    }">
-                        <form>
-                            <div class="buildings-filter-list">
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="region" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Регион</option>
-                                    <option value="region-1">Регион 1</option>
-                                    <option value="region-2">Регион 2</option>
-                                    <option value="region-3">Регион 3</option>
-                                    <option value="region-4">Регион 4</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item  main-select-room JS-ShowMore-Item">
-                                <select name="room" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Комнат</option>
-                                    <option value="room-1" class="main-option-digit">1</option>
-                                    <option value="room-2" class="main-option-digit">2</option>
-                                    <option value="room-3" class="main-option-digit">3</option>
-                                    <option value="room-4" class="main-option-digit">4</option>
-                                    <option value="room-5" class="main-option-digit">5</option>
-                                    <option value="room-6" class="main-option-digit">6+</option>
-                                    <option value="room-7">Студия</option>
-                                    <option value="room-8">Свободная планировка</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="price" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Цена</option>
-                                    <option value="price-1">1 млн. - 2 млн.</option>
-                                    <option value="price-2">2 млн. - 4 млн.</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="region" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Удаленность</option>
-                                    <option value="region-1">1 км</option>
-                                    <option value="region-2">5 км</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="finishing" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Наличие отделки</option>
-                                    <option value="finishing-1">С отделкой</option>
-                                    <option value="finishing-2">Без отделки</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="bank" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Банки</option>
-                                    <option value="bank-1">Банк 1</option>
-                                    <option value="bank-2">Банк 2</option>
-                                </select>
-                            </div>
-                            <div class="buildings-filter-item JS-ShowMore-Item">
-                                <select name="bank" class="buildings-filter-select select select_simple js-select">
-                                    <option selected disabled>Параметр</option>
-                                    <option value="bank-1">Параметр 1</option>
-                                    <option value="bank-2">Параметр 2</option>
-                                </select>
-                            </div>
-                            <a class="buildings-filter-link JS-ShowMore-Switcher" href="javascript:;">Фильтры<span class="buildings-filter-link-icon"></span></a>
-                        </div>
-                        </form>
-                    </div>
-                    <a class="buildings-filter-button button" href="javascript:;">Показать</a>
-                </div>
 
-                <span class="buildings-result-label">Выбранное:</span>
-
-                <div class="buildings-content JS-AjaxMore" data-ajaxmore="{'classLoad':'load-more_active'}">
-                    <div class="js-map" data-objectcoord="[59.9193,30.4645]">
-                        <div class="buildings-list-col">
-                            <div class="buildings-block">
-                                <div class="buildings-result">
-                                    <a class="buildings-result-link" href="#" rel="nofollow">Москва<i class="buildings-result-icon"></i></a>
-                                    <a class="buildings-result-link" href="#" rel="nofollow">1 комната<i class="buildings-result-icon"></i></a>
-                                    <a class="buildings-result-link" href="#" rel="nofollow">от 3,9 млн ₽<i class="buildings-result-icon"></i></a>
-                                    <a class="buildings-result-link" href="#" rel="nofollow">Удалённость 3 км<i class="buildings-result-icon"></i></a>
-                                    <a class="buildings-result-link" href="#" rel="nofollow">Банк Стандарт<i class="buildings-result-icon"></i></a>
-                                    <a class="buildings-result-reset" href="javascript:;">Сбросить</a>
-                                </div>
-
-                                <div class="buildings-actions">
-                                    <h1 class="buildings-actions-title buildings-actions-item">328 новостроек</h1>
-                                    <div class="buildings-actions-item">
-                                        <div class="buildings-select-sort">
-                                            <select name="sort" class="select select_simple js-select-sort">
-                                                <option class="buildings-select-option buildings-select-option_top" value="sort-1">По возрастанию</option>
-                                                <option class="buildings-select-option buildings-select-option_bottom" value="sort-2">По убыванию</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="buildings-actions-view buildings-actions-item">
-                                        <a class="view more" href="javascript:;">
-                                            <span class="more-label">Плитка<i class="view-icon"></i></span>
+                <a class="back-link" href="#">
+                    <span class="back-link-icon"></span>Вернуться к списку
+                </a>
+                <h1>База знаний</h1>
+                <div class="articles-list-wrapper JS-AjaxMore-Articles" data-ajaxmore="{'classLoad':'load-more_active'}">
+                    <div class="articles-list JS-AjaxMore-Content">
+                        <!-- элементы 1-4 обернуть в блок articles-list-box -->
+                        <div class="articles-list-box">
+                            <div class="articles-list-item">
+                                <div class="articles-list-container">
+                                    <h2 class="articles-list-title h2">Алгоритм покупки жилья</h2>
+                                    <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                        'amount': 4,
+                                        'classHide': 'articles-sublist-item_hide',
+                                        'elementItem': '.articles-sublist-item'
+                                    }">
+                                        <ul class="articles-sublist">
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                        </ul>
+                                        <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                            <span class="show-more show-more_show">
+                                                <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                            </span>
+                                            <span class="show-more show-more_hide">
+                                                <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
-
-                                <div class="buildings-list-wrapper js-slider-buildings">
-                                    <!-- Добавить класс buildings-list-container_row -->
-                                    <div class="buildings-list-container buildings-list-container_row js-custom-scroll">
-                                        <div class="buildings-list buildings-list_row js-slider-list JS-AjaxMore-Content">
-                                            <div class="buildings-list-item js-map-item js-slider-item" data-objectid="1" data-objectcoord="[59.8672,30.2595]">
-                                                <div class="buildings-list-element buildings-list-element_row">
-                                                    <div class="buildings-list-block">
-                                                        <a class="buildings-list-link" href="#">
-                                                            <img class="buildings-list-img" src="./images/buildings/buildings-list-img-1.jpg" alt="" />
-                                                        </a>
-                                                        <span class="buildings-list-location">Москва</span>
-                                                        <a class="buildings-list-wishlist" href="javascript:;">
-                                                            <i class="buildings-list-wishlist-icon icon icon_wishlist"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="buildings-list-description">
-                                                        <div class="buildings-list-panel">
-                                                            <a class="buildings-list-name js-map-item-value" href="#">ЖК “Люберцы”</a>
-                                                            <div class="buildings-list-price">от 9,5 млн ₽</div>
-                                                        </div>
-                                                        <div class="buildings-list-advantage">
-                                                        <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_metro"></i>м. Водный стадион
-                                                        </span>
-                                                            <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_repair"></i>С ремонтом
-                                                        </span>
-                                                        </div>
-                                                        <span class="buildings-list-sale">Скидка поВоенке 1,5%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="buildings-list-item js-slider-item">
-                                                <a class="buildings-banner buildings-banner_row" href="#">
-                                                    <span class="buildings-banner-description">
-                                                        <span class="buildings-banner-name">Ипотека от 5,29 %</span>
-                                                        <span class="buildings-banner-info">
-                                                            <span class="buildings-banner-icon">
-                                                                <span class="buildings-banner-icon-element buildings-banner-icon-element_present"></span>
-                                                            </span>При покупке квартиры у парнера-скидка
-                                                        </span>
-                                                        <span class="more more_dark">
-                                                            <span class="more-label">Показать все</span>
-                                                        </span>
-                                                    </span>
-                                                    <span class="buildings-banner-img">
-                                                        <img class="buildings-banner-img-element" src="./images/buildings/buildings-banner-img-1.png" alt="" />
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="buildings-list-item js-map-item js-slider-item" data-objectid="2" data-objectcoord="[59.8601,30.2487]">
-                                                <!-- Добавить класс buildings-list-element_row -->
-                                                <div class="buildings-list-element buildings-list-element_row">
-                                                    <div class="buildings-list-block">
-                                                        <a class="buildings-list-link" href="#">
-                                                            <img class="buildings-list-img" src="./images/buildings/buildings-list-img-2.jpg" alt="" />
-                                                        </a>
-                                                        <span class="buildings-list-location">Москва</span>
-                                                        <a class="buildings-list-wishlist" href="javascript:;">
-                                                            <i class="buildings-list-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="buildings-list-description">
-                                                        <div class="buildings-list-panel">
-                                                            <a class="buildings-list-name js-map-item-value" href="#">ЖК “Люберцы”</a>
-                                                            <div class="buildings-list-price">от 9,5 млн ₽</div>
-                                                        </div>
-                                                        <div class="buildings-list-advantage">
-                                                        <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_metro"></i>м. Водный стадион
-                                                        </span>
-                                                            <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_repair"></i>С ремонтом
-                                                        </span>
-                                                        </div>
-                                                        <span class="buildings-list-sale">Скидка поВоенке 1,5%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="buildings-list-item js-map-item js-slider-item" data-objectid="3" data-objectcoord="[55.723061, 37.364714]">
-                                                <!-- Добавить класс buildings-list-element_row -->
-                                                <div class="buildings-list-element buildings-list-element_row">
-                                                    <div class="buildings-list-block">
-                                                        <a class="buildings-list-link" href="#">
-                                                            <img class="buildings-list-img" src="./images/buildings/buildings-list-img-4.jpg" alt="" />
-                                                        </a>
-                                                        <span class="buildings-list-location">Москва</span>
-                                                        <a class="buildings-list-wishlist" href="javascript:;">
-                                                            <i class="buildings-list-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="buildings-list-description">
-                                                        <div class="buildings-list-panel">
-                                                            <a class="buildings-list-name js-map-item-value" href="#">ЖК “Люберцы”</a>
-                                                            <div class="buildings-list-price">от 9,5 млн ₽</div>
-                                                        </div>
-                                                        <div class="buildings-list-advantage">
-                                                        <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_metro"></i>м. Водный стадион
-                                                        </span>
-                                                            <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_repair"></i>С ремонтом
-                                                        </span>
-                                                        </div>
-                                                        <span class="buildings-list-sale">Скидка поВоенке 1,5%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="buildings-list-item js-slider-item">
-                                                <!-- Добавить класс buildings-banner_row -->
-                                                <a class="buildings-banner buildings-banner_row" href="#">
-                                                    <span class="buildings-banner-description">
-                                                        <span class="buildings-banner-name">Новостройки в&nbsp;Москве до 3 млн</span>
-                                                        <span class="buildings-banner-info">
-                                                            <span class="buildings-banner-icon">
-                                                                <span class="buildings-banner-icon-element buildings-banner-icon-element_key"></span>
-                                                            </span>1200 предложений
-                                                        </span>
-                                                        <span class="more more_dark">
-                                                            <span class="more-label">Показать все</span>
-                                                        </span>
-                                                    </span>
-                                                    <span class="buildings-banner-img">
-                                                        <img class="buildings-banner-img-element" src="./images/buildings/buildings-banner-img-2.png" alt="" />
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="buildings-list-item js-map-item js-slider-item" data-objectid="1" data-objectcoord="[59.8672,30.2595]">
-                                                <div class="buildings-list-element buildings-list-element_row">
-                                                    <div class="buildings-list-block">
-                                                        <a class="buildings-list-link" href="#">
-                                                            <img class="buildings-list-img" src="./images/buildings/buildings-list-img-1.jpg" alt="" />
-                                                        </a>
-                                                        <span class="buildings-list-location">Москва</span>
-                                                        <a class="buildings-list-wishlist" href="javascript:;">
-                                                            <i class="buildings-list-wishlist-icon icon icon_wishlist"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="buildings-list-description">
-                                                        <div class="buildings-list-panel">
-                                                            <a class="buildings-list-name js-map-item-value" href="#">ЖК “Люберцы”</a>
-                                                            <div class="buildings-list-price">от 9,5 млн ₽</div>
-                                                        </div>
-                                                        <div class="buildings-list-advantage">
-                                                        <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_metro"></i>м. Водный стадион
-                                                        </span>
-                                                            <span class="buildings-list-advantage-item">
-                                                            <i class="buildings-list-advantage-icon icon icon_repair"></i>С ремонтом
-                                                        </span>
-                                                        </div>
-                                                        <span class="buildings-list-sale">Скидка поВоенке 1,5%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="articles-list-item">
+                                <div class="articles-list-container">
+                                    <h2 class="articles-list-title h2">Оформление НИС</h2>
+                                    <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                        'amount': 4,
+                                        'classHide': 'articles-sublist-item_hide',
+                                        'elementItem': '.articles-sublist-item'
+                                    }">
+                                        <ul class="articles-sublist">
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                        </ul>
+                                        <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                            <span class="show-more show-more_show">
+                                                <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                            </span>
+                                            <span class="show-more show-more_hide">
+                                                <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="articles-list-item">
+                                <div class="articles-list-container">
+                                    <h2 class="articles-list-title h2">Алгоритм покупки жилья</h2>
+                                    <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                        'amount': 4,
+                                        'classHide': 'articles-sublist-item_hide',
+                                        'elementItem': '.articles-sublist-item'
+                                    }">
+                                        <ul class="articles-sublist">
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                        </ul>
+                                        <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                            <span class="show-more show-more_show">
+                                                <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                            </span>
+                                            <span class="show-more show-more_hide">
+                                                <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="articles-list-item">
+                                <div class="articles-list-container">
+                                    <h2 class="articles-list-title h2">Оформление НИС</h2>
+                                    <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                    'amount': 4,
+                                    'classHide': 'articles-sublist-item_hide',
+                                    'elementItem': '.articles-sublist-item'
+                                }">
+                                        <ul class="articles-sublist">
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                            <li class="articles-sublist-item">
+                                                <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                            </li>
+                                        </ul>
+                                        <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                        <span class="show-more show-more_show">
+                                            <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                        </span>
+                                            <span class="show-more show-more_hide">
+                                            <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                        </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="buildings-map JS-Dropdown" id="buildings-map" data-dropdown="{
-                            'classActive': 'buildings-map_active',
-                            'backgroundDisabled': true
-                            }">
-                            <span class="buildings-map-switcher">
-                                <a class="buildings-map-switcher-link JS-Dropdown-Switcher" href="javascript:;">
-                                    <span class="buildings-map-switcher-icon buildings-map-switcher-icon_left"></span>
-                                    <span class="buildings-map-switcher-icon buildings-map-switcher-icon_right"></span>
-                                </a>
-                                <span class="buildings-map-switcher-tooltip buildings-map-switcher-tooltip_show">Показать карту</span>
-                                <span class="buildings-map-switcher-tooltip buildings-map-switcher-tooltip_hide">Скрыть карту</span>
+                        <!-- Параметр amount: 10 -->
+                        <div class="articles-list-item">
+                            <div class="articles-list-container">
+                                <h2 class="articles-list-title h2">Оформление НИС</h2>
+                                <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                        'amount': 14,
+                                        'classHide': 'articles-sublist-item_hide',
+                                        'elementItem': '.articles-sublist-item'
+                                    }">
+                                    <ul class="articles-sublist">
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                    </ul>
+                                    <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                            <span class="show-more show-more_show">
+                                                <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                            </span>
+                                        <span class="show-more show-more_hide">
+                                                <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-list-item">
+                            <div class="articles-list-container">
+                                <h2 class="articles-list-title h2">Алгоритм покупки жилья</h2>
+                                <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                    'amount': 4,
+                                    'classHide': 'articles-sublist-item_hide',
+                                    'elementItem': '.articles-sublist-item'
+                                }">
+                                    <ul class="articles-sublist">
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                    </ul>
+                                    <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                        <span class="show-more show-more_show">
+                                            <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                        </span>
+                                        <span class="show-more show-more_hide">
+                                            <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-list-item">
+                            <div class="articles-list-container">
+                                <h2 class="articles-list-title h2">Алгоритм покупки жилья</h2>
+                                <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                    'amount': 4,
+                                    'classHide': 'articles-sublist-item_hide',
+                                    'elementItem': '.articles-sublist-item'
+                                }">
+                                    <ul class="articles-sublist">
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                    </ul>
+                                    <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                        <span class="show-more show-more_show">
+                                            <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                        </span>
+                                        <span class="show-more show-more_hide">
+                                            <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-list-item">
+                            <div class="articles-list-container">
+                                <h2 class="articles-list-title h2">Оформление НИС</h2>
+                                <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                    'amount': 4,
+                                    'classHide': 'articles-sublist-item_hide',
+                                    'elementItem': '.articles-sublist-item'
+                                }">
+                                    <ul class="articles-sublist">
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                    </ul>
+                                    <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                        <span class="show-more show-more_show">
+                                            <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                        </span>
+                                        <span class="show-more show-more_hide">
+                                            <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Добавить длинному элементу класс articles-list-item_row и параметр amount: 10 -->
+                        <div class="articles-list-item articles-list-item_row">
+                            <div class="articles-list-container">
+                                <h2 class="articles-list-title h2">Образцы рапортов и заявлений для военнослужащих</h2>
+                                <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                    'amount': 10,
+                                    'classHide': 'articles-sublist-item_hide',
+                                    'elementItem': '.articles-sublist-item'
+                                }">
+                                    <ul class="articles-sublist">
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Эскроу-счета и военная ипотека! Как это работает?</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Досрочное погашения ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Как погасить военную ипотеку к пенсии?</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Рефинансирование</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Досрочное погашения ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Досрочное погашения ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Досрочное погашения ипотеки</a>
+                                        </li>
+                                    </ul>
+                                    <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                        <span class="show-more show-more_show">
+                                            <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                        </span>
+                                        <span class="show-more show-more_hide">
+                                            <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-list-item">
+                            <div class="articles-list-container">
+                                <h2 class="articles-list-title h2">Алгоритм покупки жилья</h2>
+                                <div class="articles-list-content JS-ShowMore" data-showmore="{
+                                    'amount': 4,
+                                    'classHide': 'articles-sublist-item_hide',
+                                    'elementItem': '.articles-sublist-item'
+                                }">
+                                    <ul class="articles-sublist">
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка с ипользованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Новостройка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка с использованием ипотеки</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                        <li class="articles-sublist-item">
+                                            <a class="articles-sublist-link h2" href="#">Вторичка только за накопления</a>
+                                        </li>
+                                    </ul>
+                                    <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                                        <span class="show-more show-more_show">
+                                            <span class="search-result-more show-more-label">Ещё</span><span class="show-more-icon"></span>
+                                        </span>
+                                        <span class="show-more show-more_hide">
+                                            <span class="search-result-more show-more-label">Свернуть</span><span class="show-more-icon"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-more">
+                        <a class="more JS-AjaxMore-Link" href="javascript:;">
+                            <span class="more-label">
+                                <span class="load-more-label">Показать ещё</span>
+                                <span class="load-more-icon"></span>
                             </span>
-                        </div>
-                        <div class="buildings-load-more load-more">
-                            <a class="buildings-more more JS-AjaxMore-Link" href="javascript:;">
-                                <span class="more-label">
-                                    <span class="load-more-label">Показать ещё</span>
-                                    <span class="load-more-icon"></span>
-                                </span>
-                            </a>
-                            <div class="buildings-pager JS-AjaxMore-Pager">
-                                <a class="JS-AjaxMore-Next" href="#?PAGEN_2=2"></a>
-                            </div>
-                            <a class="buildings-top-link" href="#buildings-filter"></a>
+                        </a>
+                        <div class="articles-list-pager JS-AjaxMore-Pager">
+                            <a class="JS-AjaxMore-Next" href="#?PAGEN_2=2"></a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <section class="consultation">
-                <div class="consultation-container container">
-                    <div class="consultation-img">
-                        <img src="./images/buildings/consultation-img-1.png" alt="" />
-                    </div>
-                    <div class="consultation-description">
-                        <h2 class="consultation-title h1">Консультируем бесплатно</h2>
-                        <div class="consultation-text h2">Время менять старые квартиры по Военной ипотеке</div>
-                        <div class="consultation-info content">Оставьте заявку на консультацию и мы сами перезвоним вам в&nbsp;ближайшее время</div>
-                        <a class="consultation-button button" href="#">Позвонить</a>
-                    </div>
-                </div>
-            </section>
-
-            <div class="container">
-
-                <section class="information">
-                    <h2 class="information-title h1">SEO-текст</h2>
-                    <div class="information-content content">
-                        <p>
-                            Integer tellus sed libero diam nulla massa facilisis vel felis, leo eu quis rhoncus, senectus et tellus, molestie imperdiet
-                            volutpat arcu arcu adipiscing morbi ullamcorper eu, neque, purus et sed tincidunt et habitasse augue sed aliquam quisque leo
-                            quisque interdum nisi sed amet nibh varius elit, volutpat pharetra odio morbil.Integer tellus sed libero diam nulla massa
-                            facilisis vel felis, leo eu quis rhoncus, senectus et tellus, molestie imperdiet volutpat arcu arcu adipiscing morbi ullamcorper
-                            eu, neque, purus et sed tincidunt et habitasse augue sed aliquam quisque leo quisque interdum nisi sed amet nibh varius elit,
-                            volutpat pharetra odio morbil olutpat pharetra odio morbil.haretra odio morbil.
-                        </p>
-                        <p>
-                            Bibendum lacus ultrices mus arcu eu velit magna lectus auctor facilisi nibh enim viverra volutpat consequat urna donec id
-                            lectus pulvinar nibh nibh blandit mauris tortor amet ut ac, augue sit quam ac nullam a nec, aliquam bibendum congue eget ornare
-                            scelerisque tristique erat dignissim fermentum vitae ac vulputate sit integer justo semper habitant tellus neque arcu aliquet
-                            iaculis nisl sagittis, consectetur amet in ac egestas risus nunc nam at sit molestie amet, imperdiet massa semper quam augue mauris
-                            nibh viverra urna tellus eget habitasse dui purus auctor a id sagittis tellus lacus viverra interdum semper nibh tristique lectus velit
-                        </p>
-                    </div>
-                </section>
-
-                <section class="useful-links js-slider-useful-links">
-                    <h2 class="useful-links-title h1">Полезные ссылки</h2>
-                    <div class="useful-links-content js-slider-list">
-                        <!-- Добавить первому элементу класс useful-links-item_1 и другим 2-му и 3-му -->
-                        <div class="useful-links-item useful-links-item_1 js-slider-item">
-                            <div class="useful-links-block">
-                                <span class="useful-links-name">Саларьево парк</span>
-                                <ul class="useful-links-list">
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Cтудии от 2,9 млн ₽</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">1-комн. от 4,5 млн ₽</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">2-комн. от 4,5 млн ₽</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">3-комн. от 6,0 млн ₽</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="useful-links-item useful-links-item_2 js-slider-item">
-                            <div class="useful-links-block">
-                                <span class="useful-links-name">Топ-20 новостроек</span>
-                                <ul class="useful-links-list">
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Посмотрите лучшие варианты новостроек 2021 года</a>
-                                    </li>
-                                </ul>
-                                <a class="useful-links-button button" href="#">Рассчитать</a>
-                            </div>
-                        </div>
-                        <div class="useful-links-item useful-links-item_3 js-slider-item">
-                            <div class="useful-links-block">
-                                <span class="useful-links-name">Загородная недвижимость</span>
-                                <ul class="useful-links-list">
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Дома</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Таунхаусы</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Части дома</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="useful-links-item js-slider-item">
-                            <div class="useful-links-block">
-                                <span class="useful-links-name">Банки</span>
-                                <ul class="useful-links-list">
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">ВТБ</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Сбербанк</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Россельхозбанк</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Промсвязьбанк</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="useful-links-item useful-links-item_modified js-slider-item" data-merge="2">
-                            <div class="useful-links-block">
-                                <span class="useful-links-name">Популярные запросы</span>
-                                <ul class="useful-links-list">
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Рефинансирование</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Калькулятор накоплений</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Недвижимость в Москве</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Вторичное жилье</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">2-комнатные квартиры</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">1-комнатные квартиры</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Ипотека</a>
-                                    </li>
-                                    <li class="useful-links-list-item">
-                                        <a class="useful-links-list-label" href="#">Сдача до 2022 года</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 <section class="visited">
                     <div class="visited-container js-slider-visited">
@@ -936,6 +920,7 @@
                         </div>
                     </div>
                 </section>
+
             </div>
 
         </main>
@@ -1013,7 +998,6 @@
         </div>
 
         <div class="svg-box">
-
         </div>
 
     </div>
@@ -1039,11 +1023,9 @@
 
     <script src="./js/main.js"></script>
 
-    <!-- Подключить скрипты только для этого раздела -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="./js/map.js"></script>
-    <script src="./js/buildings.js"></script>
-    <!-- /Подключить скрипты только для этого раздела -->
+    <!-- Подключить скрипты только для раздела -->
+    <script src="./js/articles.js"></script>
+    <!-- /Подключить скрипты только для раздела -->
 
 </body>
 </html>
