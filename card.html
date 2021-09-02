@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
  </head>
 
@@ -409,7 +410,6 @@
             </div>
 
             <div class="container">
-
                 <div class="JS-Tab" data-tab="{
                    'classSwitcherActive': 'card-tabs-link_active',
                    'classItemActive': 'card-description_active'
@@ -632,153 +632,291 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <section class="approval">
-                    <h2 class="approval-title h1">Одобрение военной ипотеки</h2>
-                    <div class="approval__list">
-                        <div class="approval-item approval-item__panel">
-                            <div class="approval-row">
-                                <div class="approval-col approval-col_logo">
-                                    <div class="approval-filter js-switch-checkbox">
-                                        <label class="approval-filter__label checkbox-switch">
-                                            <input type="checkbox" class="js-switch-input" value="Y" />
-                                            <span class="checkbox-switch-circle"></span>
-                                        </label>
-                                        <div class="approval-filter__text js-switch-list">
-                                            <ul>
-                                                <li class="is-active">Жильё на вторичном рынке</li>
-                                                <li>Квартира в новостройке</li>
-                                            </ul>
+            <section class="approval">
+                <h2 class="approval-title h1">Одобрение военной ипотеки</h2>
+
+                <div class="article JS-AjaxMore">
+                    <div class="ajax_load_box">
+
+
+                        <div class="approval__container">
+                            <div class="js-ajax-more-content">
+                                <div class="approval-item approval-item__panel">
+                                    <div class="approval-row">
+                                        <div class="approval-col approval-col_logo">
+                                            <div class="approval-filter js-switch-checkbox">
+                                                <label class="approval-filter__label checkbox-switch">
+                                                    <input type="checkbox" class="js-switch-input" value="Y" />
+                                                    <span class="checkbox-switch-circle"></span>
+                                                </label>
+                                                <div class="approval-filter__text js-switch-list">
+                                                    <ul>
+                                                        <li class="is-active" data-id="2899">Жильё на вторичном рынке</li>
+                                                        <li data-id="2898">Квартира в новостройке</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="approval-link">
+                                                <a href="#" class="btn-border">Показать все</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="approval-col">
+                                            Господдержка для семей с детьми						</div>
+                                        <div class="approval-col">
+                                            Господдержка на квартиру в новостройке						</div>
+                                        <div class="approval-col">
+                                            Стандартная						</div>
+                                        <div class="approval-col">
+                                            Объединение ипотек супругов						</div>
+
+                                        <div class="approval-col text-right">
+                                            <span class="approval-info">i</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="approval-col">
-                                    Господдержка на квартиру в новостройке
-                                </div>
-                                <div class="approval-col">
-                                    Стандартная
-                                </div>
-                                <div class="approval-col">
-                                    Господдержка для семей с детьми
-                                </div>
-                                <div class="approval-col">
-                                    Объединение ипотек супругов
-                                </div>
-                                <div class="approval-col text-right">
-                                    <span class="approval-info">i</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="approval-item">
-                            <div class="approval-row">
-                                <div class="approval-col approval-col_logo">
-                                    <img src="./images/card/bank-img-1.png" alt="" />
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col approval-col_more">
-                                    <a href="#">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="approval-item">
-                            <div class="approval-row">
-                                <div class="approval-col approval-col_logo">
-                                    <img src="./images/card/bank-img-2.png" alt="" />
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col approval-col_more">
-                                    <a href="#">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="approval-item">
-                            <div class="approval-row">
-                                <div class="approval-col approval-col_logo">
-                                    <img src="./images/card/bank-img-3.png" alt="" />
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col approval-col_more">
-                                    <a href="#">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="approval-item">
-                            <div class="approval-row">
-                                <div class="approval-col approval-col_logo">
-                                    <img src="./images/card/bank-img-4.png" alt="" />
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col">
-                                    <div class="approval-percent">4,6%</div>
-                                    <div class="approval-sum">4 320 000</div>
-                                </div>
-                                <div class="approval-col approval-col_more">
-                                    <a href="#">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="approval-more">
-                        <a href="#" class="btn-border">Показать еще</a>
-                    </div>
-                </section>
 
+                                <div class="approval__list">
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-1.png" alt="" />
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-2.png" alt="">
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-3.png" alt="">
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-4.png" alt="">
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="approval-link approval-link__bottom">
+                                    <a href="#" class="btn-border">Показать все</a>
+                                </div>
+
+
+                                <div class="approval-more">
+                                    <a href="javascript:;" class="btn-border js_ajax_more_link">Показать еще</a>
+                                </div>
+
+                                <div class="pager-container-ajax js-ajaxmore-pager">
+                                    <ul class="pager JS-AjaxMore-Pager">
+                                        <li class="pager-item pager-item_left  disabled">
+                                        </li>
+
+
+                                        <li class="pager-item pager-item_active"><span class="pager-link">1</span></li>
+
+                                        <li class="pager-item"><a class="pager-link" href="/?PAGEN_1=2">2</a></li>
+
+                                        <li class="pager-item"><a class="pager-link" href="/?PAGEN_1=3">3</a></li>
+
+                                        <li class="pager-item"><span class='pager-link'>...</span></li>
+                                        <li class="pager-item">
+                                            <a class="pager-link" href="/?PAGEN_1=4">4</a>
+                                        </li>
+
+                                        <li class="pager-item pager-item_right ">
+                                            <a class="pager-link" href="/?PAGEN_1=2">
+                                                <i class="pager-icon fas fa-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="pager-quantity">Слайдер 1 - 4 из 13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
                 <section class="card-banks js-slider-card-banks">
                     <h2 class="card-banks-title h1">Все банки на объекте</h2>
                     <div class="card-banks-block">
@@ -1216,7 +1354,6 @@
                         </div>
                     </div>
                 </section>
-
             </div>
 
         </main>
@@ -1311,6 +1448,7 @@
     <script src="./libs/validate/jquery.validate.min.js"></script>
     <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
     <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script src="./libs/mask/jquery.mask.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.Tab.js"></script>
     <script src="./js/JSC.ShowMore.js"></script>

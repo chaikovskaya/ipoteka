@@ -291,8 +291,7 @@ blockquote {
 .content {
   font-weight: 300; }
   .content b {
-    font-weight: 700;
-    color: #2a364d; }
+    font-weight: 700; }
   .content a {
     color: #333; }
     .content a:hover {
@@ -301,7 +300,6 @@ blockquote {
       color: #333; }
   .content ul {
     margin-left: 13px;
-    margin-top: 17px;
     margin-bottom: 20px; }
   .content ul li {
     margin-bottom: 16px; }
@@ -514,6 +512,9 @@ blockquote {
   padding-top: 52px;
   padding-bottom: 22px;
   background-color: #ECEFF5; }
+.breadcrumbs-list {
+  display: inline-block;
+}
 .breadcrumbs-item {
   display: inline;
   vertical-align: top;
@@ -533,6 +534,7 @@ blockquote {
   background-color: #ECEFF5; }
 .breadcrumbs-link {
   text-decoration: none;
+  font-size: 14px;
   color: #4F4F4F; }
 .breadcrumbs-link:hover {
   text-decoration: underline;
@@ -582,9 +584,17 @@ blockquote {
 .show-switcher:hover { }
 .showmore-start .show-switcher {
   display: inline-block; }
+.show-more {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  white-space: nowrap;
+}
 .show-more-label {
   display: inline-block;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 16px;
+}
 .show-more-label:hover { }
 .show-more-icon {
   margin-left: 7px;
@@ -639,10 +649,10 @@ blockquote {
 .pager-item:last-child {
   margin-right: 0; }
 .pager-item_first {
-  margin-right: 77px;
+  margin-right: 35px;
 }
 .pager-item_last {
-  margin-left: 69px;
+  margin-left: 26px;
 }
 .pager-link {
   display: inline-block;
@@ -979,7 +989,7 @@ blockquote {
   background-color: #fff;
   border: solid #eaeaea;
   border-width: 0 1px 1px 0;
-  transition: top 0.3s linear;
+  transition: top 0.5s linear;
   overflow: hidden;
   border-radius: 0 0 16px 16px;
 }
@@ -1148,32 +1158,31 @@ body.mob-form-show .wrapper {
   height: 40px;
   padding: 14px 0;
   background-color: #fff;
-  color: #333333;
+  color: #828282;
   font-size: 16px;
   border: solid #D4D5D6;
   border-width: 0 0 1px;
   font-family: 'Lato';
 }
-  .input:focus {
+  .input-text:focus {
     color: #828282; }
-  .input::-webkit-input-placeholder {
+  .input-text::-webkit-input-placeholder {
     font-size: 16px;
     color: #828282; }
-  .input:-moz-placeholder {
+  .input-text:-moz-placeholder {
     font-size: 16px;
     color: #828282; }
-  .input::-moz-placeholder {
+  .input-text::-moz-placeholder {
     font-size: 16px;
     color: #828282; }
-  .input:-ms-input-placeholder {
+  .input-text:-ms-input-placeholder {
     font-size: 16px;
     color: #828282; }
-  .input::placeholder {
+  .input-text::placeholder {
     font-size: 16px;
     color: #828282; }
-  .input:-webkit-autofill, .input:-webkit-autofill:hover, .input:-webkit-autofill:focus {
-    -webkit-text-fill-color: #828282;
-    transition: background-color 1s ease-in-out 0s; }
+  .input-text:-webkit-autofill, .input-text:-webkit-autofill:hover, .input-text:-webkit-autofill:focus {
+    -webkit-text-fill-color: #828282; }
 
   .input_textarea {
     display: block;
@@ -1208,7 +1217,9 @@ label.form-error {
   white-space: nowrap; }
 
 .checkbox {
-  position: relative; }
+  position: relative;
+  margin-right: 8px;
+}
   .checkbox-field {
     display: flex; }
   .checkbox-input {
@@ -1219,27 +1230,19 @@ label.form-error {
     opacity: 0; }
   .checkbox-check {
     display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 2px;
-    line-height: 16px;
-    font-size: 10px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
     color: transparent;
     text-align: center; }
     .checkbox-check:hover {
       cursor: pointer; }
   .checkbox-label {
-    color: #8e8e8e;
     cursor: pointer; }
   .checkbox-input:checked + .checkbox-check {
-    background-color: #335aa6;
-    border-color: #335aa6;
-    color: #fff; }
-  .checkbox-input:checked ~ .checkbox-label {
-    color: #335aa6; }
+    background: url(../images/main/checkbox.png) no-repeat center center;
+   }
 
 .button {
   transition: background-color 0.3s ease-in-out;
@@ -1267,6 +1270,8 @@ label.form-error {
   .button:disabled {
     opacity: 0.8;
     cursor: default; }
+  .button_wide {
+    width: 100%; }
 .button-icon {
   margin-left: 4px;
   vertical-align: middle;
@@ -5264,7 +5269,6 @@ body.mob-menu-show {
 }
 .articles-detail-pic {
   position: relative;
-  height: 100%;
 }
 .articles-detail-img {
   display: block;
@@ -5330,8 +5334,12 @@ body.mob-menu-show {
 .articles-detail-notes-link {
   text-decoration: none;
 }
+.articles-detail-main-pic {
+  position: relative;
+  height: 100%;
+}
 .articles-detail-main-img {
-  margin-bottom: 0;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -5376,11 +5384,11 @@ body.mob-menu-show {
     margin-bottom: 0;
   }
 }
-/* /articles-detail */
+/* articles-detail */
 
 /* articles-feed */
 .articles-feed {
-  margin-bottom: 100px;
+  margin-bottom: 38px;
 }
 .articles-feed-item {
   margin-bottom: 30px;
@@ -5400,7 +5408,7 @@ body.mob-menu-show {
   width: 100%; }
 .articles-feed-description {
   height: 100%;
-  padding: 26px 20px;
+  padding: 26px 20px 26px 25px;
 }
 .articles-feed-name {
   display: inline-block;
@@ -5410,11 +5418,18 @@ body.mob-menu-show {
   font-weight: 500;
   font-size: 22px;
   line-height: 30px; }
+.articles-feed-block {
+  position: relative;
+}
 .articles-feed-name:hover {
   color: #0D0D0D; }
 .articles-feed-panel {
   display: none;
+  min-height: 46px;
   margin-top: 20px;
+}
+.articles-feed-info {
+  min-height: 67px;
 }
 .articles-feed-button {
   min-width: 151px;
@@ -5483,6 +5498,16 @@ body.mob-menu-show {
     font-size: 17px;
     line-height: 28px;
   }
+  .articles-feed-date {
+    top: 20px;
+    left: 20px;
+  }
+  .articles-feed-info {
+    min-height: auto;
+  }
+  .articles-feed-panel {
+    min-height: auto;
+  }
 }
 /* /articles-feed */
 
@@ -5514,7 +5539,7 @@ body.mob-menu-show {
   position: relative;
   height: 100%;
   overflow: hidden;
-  padding: 30px 30px 95px;
+  padding: 30px 30px 80px;
   background: #ECEFF5;
   border-radius: 20px;
 }
@@ -5666,3 +5691,868 @@ body.mob-menu-show {
   }
 }
 /* /articles-list */
+
+/* refinancing */
+.banner-section {
+}
+.banner-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.banner-section-detail {
+  width: 62%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 30px; }
+.banner-section-img {
+  width: 38%;
+  padding-right: 10px;
+  text-align: center; }
+.banner-section-pic {
+}
+.banner-section-title {
+  display: block;
+  margin-bottom: 25px;
+}
+.banner-section-info {
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+.banner-section-logo {
+  margin-bottom: 23px;
+}
+
+.banner-section_bank {}
+.banner-section_bank .banner-section-detail {
+  width: 52%;
+}
+.banner-section_bank .banner-section-img {
+  width: 48%;
+}
+
+.refinancing-advantage {
+  margin-top: 90px;
+  margin-bottom: 47px;
+}
+.refinancing-advantage-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.refinancing-advantage-icon {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 16px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.refinancing-advantage-icon img {
+  display: block;
+}
+.refinancing-advantage-icon svg {
+  display: block;
+}
+.refinancing-advantage-description {
+  max-width: 237px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+}
+
+.refinancing-calc {
+  margin-bottom: 80px;
+}
+.refinancing-calc-title { }
+.refinancing-calc-title-label {
+  font-weight: 300;
+  font-size: 24px;
+}
+.refinancing-calc-item {}
+.refinancing-calc-block {
+  position: relative;
+  overflow: hidden;
+  max-width: 570px;
+  padding: 36px 30px 68px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.refinancing-calc-block:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: -226px;
+  margin-bottom: -310px;
+  width: 435px;
+  height: 435px;
+  background: linear-gradient(90deg, #FFDB7C 0%, #FFA751 100%);
+  transform: rotate(19.98deg);
+  border-radius: 50%;
+}
+.refinancing-calc-block:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -288px;
+  margin-bottom: -335px;
+  width: 435px;
+  height: 435px;
+  background: linear-gradient(90deg, #FFDB7C 0%, #FFA751 100%);
+  transform: rotate(40.11deg);
+  border-radius: 50%;
+}
+.refinancing-calc-content {
+  position: relative;
+  z-index: 1;
+}
+.refinancing-calc-subtitle {
+  display: block;
+  font-size: 28px;
+}
+.refinancing-calc-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+.refinancing-calc-table-col {
+  width: 33.3%;
+  margin-bottom: 20px;
+  padding-right: 15px;
+}
+.refinancing-calc-table-col:nth-child(2) {
+  width: 37%;
+}
+.refinancing-calc-table-col:nth-child(3) {
+  width: 29%;
+}
+.refinancing-calc-table-col_total {
+  width: 66%;
+}
+.refinancing-calc-table-head {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+.refinancing-calc-table-old-val {
+  display: inline-block;
+  margin-right: 9px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.refinancing-calc-table-val {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.refinancing-calc-sum {
+  margin-bottom: 24px;
+}
+.refinancing-calc-sum-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.refinancing-calc-sum-val {
+  margin-right: 35px;
+  vertical-align: middle;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 31px;
+}
+.refinancing-calc-sum-currency {
+  font-weight: 700;
+}
+.refinancing-calc-more {
+  font-size: 16px;
+  line-height: 19px;
+}
+.refinancing-calc-panel {
+  margin-left: 33.6%;
+}
+
+.refinancing-plus {
+  display: flex;
+  margin-bottom: 83px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.refinancing-plus-description {
+  width: 65%;
+  padding: 37px 0 48px 28px;
+}
+.refinancing-plus-img {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.refinancing-plus-pic {
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+}
+.refinancing-plus-content {
+  margin-bottom: 35px;
+}
+.refinancing-plus-description ul {
+  font-weight: 400;
+}
+
+.refinancing-stages {
+  margin-bottom: 50px;
+}
+.refinancing-stages-title {
+  margin-bottom: 32px;
+}
+.refinancing-stages-list {
+}
+.refinancing-stages-item {
+  margin-bottom: 30px;
+}
+.refinancing-stages-icon {
+  display: inline-block;
+  margin-bottom: 11px;
+}
+.refinancing-stages-description {
+  font-weight: 300;
+}
+.refinancing-stages-name {
+  display: block;
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .banner-section {
+    margin-bottom: 18px;
+  }
+  .refinancing-calc-item {
+    margin-bottom: 40px;
+  }
+  .refinancing-calc-item:last-child {
+    margin-bottom: 0;
+  }
+  .refinancing-calc-block {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .refinancing-calc-subtitle {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .banner-section {
+    margin-top: 40px;
+    margin-bottom: 42px;
+  }
+  .banner-section-container {
+    display: block;
+  }
+  .banner-section-detail {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+  .banner-section-img {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .banner-section-pic {
+    max-width: none;
+  }
+  .refinancing-advantage {
+    margin-top: 50px;
+  }
+  .refinancing-advantage-item:last-child {
+    margin-bottom: 0;
+  }
+  .refinancing-calc {
+    margin-bottom: 50px;
+  }
+  .refinancing-calc-table-col {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+  .refinancing-calc-table-col:nth-child(2) {
+    width: 50%;
+  }
+  .refinancing-calc-table-col:nth-child(3) {
+    width: 50%;
+  }
+  .refinancing-calc-block {
+    padding-bottom: 50px;
+  }
+  .refinancing-calc-block:after {
+    margin-right: -220px;
+  }
+  .refinancing-calc-table-col_total {
+    width: 100%;
+  }
+  .refinancing-calc-table-head {
+    margin-bottom: 7px;
+  }
+  .refinancing-calc-table-old-val {
+    margin-right: 5px;
+    font-size: 17px;
+  }
+  .refinancing-calc-table-val {
+    font-size: 18px;
+  }
+  .refinancing-calc-sum-val {
+    margin-right: 26px;
+    font-size: 26px;
+  }
+  .refinancing-calc-title-label {
+    font-size: 20px;
+  }
+  .refinancing-calc-panel {
+    margin-left: 0;
+  }
+
+  .refinancing-plus {
+    display: block;
+  }
+  .refinancing-plus-description {
+    width: 100%;
+  }
+  .refinancing-plus-img {
+    width: 100%;
+  }
+}
+/* /refinancing */
+
+/* range */
+.range-list {
+  max-width: 570px;
+}
+.range-item {
+  margin-bottom: 24px;
+}
+.range-item:last-child {
+  margin-bottom: 0;
+}
+.range-container {}
+.range-head {
+  min-height: 77px;
+  padding: 15px 30px 43px;
+  background-color: #ECEFF5;
+  border-radius: 20px 20px 0 0;
+}
+.range-name {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+}
+.range {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0; }
+.range-wrapper {
+  display: flex;
+  align-items: center; }
+.range .slider-range-track {
+  position: relative;
+  z-index: 1; }
+.range-scale {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between; }
+.range-scale-item {
+  font-size: 16px; }
+
+.slider-range {}
+.slider-range-panel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px; }
+.slider-range-input {
+  flex-grow: 1;
+  height: 35px;
+  margin-right: 8px;
+  text-align: center;
+  border-width: 1px;
+  font-size: 17px;
+  color: #8e8e8e;
+  border-color: #e6e6e6; }
+.slider-range-input:last-child {
+  margin-right: 0; }
+.slider-range-track {
+  height: 1px;
+  background-color: rgba(79, 79, 79, 0.7); }
+.slider-range-quantity {
+  background-color: #4F4F4F; }
+.slider-range-label {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #8e8e8e;
+  font-size: 17px;
+  line-height: 21px; }
+.slider-range-text {
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  padding: 0 3px;
+  min-width: 33px;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.slider-range .slider-range-track {
+  border-width: 0; }
+
+.slider-range .slider-range-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: -12px;
+  cursor: pointer;
+  border-width: 0;
+  background-color: #4F4F4F; }
+
+.ui-slider-horizontal .ui-slider-range {
+  top: -1px;
+  height: 3px;
+}
+.range-container_active {}
+.range-container_active .range-head {
+  background-color: #FAF3E3;
+}
+.range-container_active .slider-range-quantity {
+  background: #FFB52B;
+}
+.range-container_active .slider-range .slider-range-button {
+  background: linear-gradient(90deg, #FFB52B 0%, #E65C00 100%);
+  box-shadow: 0px 0px 4px rgba(134, 134, 135, 0.5);
+}
+.range-container_active .slider-range-track {
+  background: #FFB52B;
+}
+.range-container_active .slider-range-text {
+  top: -53px;
+  height: 46px;
+  line-height: 46px;
+  padding-right: 27px;
+  padding-left: 27px;
+  background-color: #fff;
+  border: 0.7px solid #FFB52B;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .range-list {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .range-container_active .slider-range-text {
+    top: -46px;
+    height: 36px;
+    line-height: 36px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+/* /range */
+
+/* faq */
+.faq {
+  margin-bottom: 80px; }
+.faq-list { }
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -1px;
+  border: 0 solid #EDEDED;
+  border-top-width: 1px;
+}
+.faq-item:last-child {
+  border-bottom-width: 1px; }
+.faq-item:hover {
+  position: relative;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  background-color: #fff;
+}
+.faq-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 17px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.faq-item:hover .faq-panel {
+  background-color: #ECEFF5;
+}
+.faq-name {
+  font-size: 20px;
+  line-height: 23px;
+}
+.faq-info {
+  display: none;
+  padding: 22px 28px;
+}
+.faq-info p:last-child {
+  margin-bottom: 0; }
+.faq-icon {
+  display: block;
+  width: 37px;
+  height: 37px;
+  line-height: 33px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  color: #2a364d;
+  background: no-repeat center center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.85858 5.85858L5.29289 6.42426L5.29289 6.42426L5.85858 5.85858ZM6.14142 5.85858L6.70711 6.42426L6.70711 6.42426L6.14142 5.85858ZM0.434315 1.56568L5.29289 6.42426L6.42426 5.29289L1.56569 0.434314L0.434315 1.56568ZM6.70711 6.42426L11.5657 1.56568L10.4343 0.434314L5.57574 5.29289L6.70711 6.42426ZM5.29289 6.42426C5.68342 6.81479 6.31658 6.81479 6.70711 6.42426L5.57574 5.29289C5.81005 5.05858 6.18995 5.05858 6.42426 5.29289L5.29289 6.42426Z' fill='%23333333'/%3e%3c/svg%3e ");
+}
+.faq-link {
+  margin-left: 10px;
+  text-decoration: none; }
+.faq-item_active {
+  border-top-color: transparent;
+}
+.faq-item_active:hover {
+  position: static;
+}
+.faq-item_active .faq-info {
+  display: block; }
+.faq-item_active .faq-icon {
+  background-color: #333333;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.85858 1.14142L6.42427 1.70711L6.42426 1.70711L5.85858 1.14142ZM6.14142 1.14142L6.70711 0.575736V0.575736L6.14142 1.14142ZM0.434315 5.43432L5.29289 0.575736L6.42426 1.70711L1.56569 6.56569L0.434315 5.43432ZM6.70711 0.575736L11.5657 5.43432L10.4343 6.56569L5.57574 1.70711L6.70711 0.575736ZM5.29289 0.575737C5.68342 0.185208 6.31659 0.185215 6.70711 0.575736L5.57574 1.70711C5.81005 1.94142 6.18995 1.94142 6.42427 1.70711L5.29289 0.575737Z' fill='white'/%3e%3c/svg%3e ");
+}
+.faq-item_active .faq-panel {
+  background-color: #ECEFF5;
+}
+.faq-item_active:last-child {
+  border-bottom-color: #EDEDED;
+}
+
+@media screen and (max-width: 720px) {
+  .faq-panel {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .faq-info {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .faq-name {
+    font-size: 16px;
+  }
+}
+/* /faq */
+
+/* advantage */
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: -83px;
+  margin-bottom: 80px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px #ECEFF5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.advantage-item {
+  width: calc(25% + 2px);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: -1px;
+  margin-left: -1px;
+}
+.advantage-item:hover {
+  box-shadow: 0px 0px 10px #ECEFF5;
+  background-color: #fff;
+}
+.advantage-item:last-child {
+  border-right-width: 0;
+}
+.advantage-name {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #443737;
+}
+.advantage-block {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-right: 1px solid #ECEFF5;
+}
+.advantage-item:last-child .advantage-block {
+  border-color: transparent;
+}
+.advantage-item:hover .advantage-block {
+  border-color: transparent;
+}
+/* /advantage */
+
+/* banks */
+.banks-partners {
+  display: flex;
+  margin-bottom: 123px;
+  padding: 35px 0 33px 27px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.banks-partners-content {
+  width: 60%;
+  padding-right: 30px;
+}
+.banks-partners-img {
+  width: 40%;
+  overflow: hidden;
+  text-align: right;
+}
+.banks-partners-img-wrapper {
+  display: inline-block;
+  position: relative;
+  right: -15px;
+  /*width: 487px;
+  max-width: 100%;
+  height: 396px;
+  max-height: 100%;*/
+}
+.banks-partners-img-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/banks/banks-partners-bgr-1.png) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+.banks-partners-img-element {
+  /*width: 487px;
+  height: 396px;
+  max-width: none;
+  max-height: none;*/
+  object-fit: contain;
+}
+.banks-partners-content ul {
+  margin-left: 43px;
+  margin-bottom: 0;
+}
+.banks-partners-content ul li {
+  position: relative;
+}
+.banks-partners-content ul li:last-child {
+  margin-bottom: 0;
+}
+.banks-partners-content ul li:before {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  margin-top: 7px;
+  margin-left: -43px;
+  margin-right: 15px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.1673 13.0904C25.5916 13.444 25.6489 14.0746 25.2953 14.4989L19.0437 22.0008C19.0314 22.0156 19.0191 22.0304 19.0068 22.0452C18.7112 22.4 18.4268 22.7413 18.1558 22.9879C17.8522 23.264 17.4463 23.5347 16.8969 23.5596C16.3475 23.5845 15.9188 23.3517 15.5914 23.1042C15.2991 22.8832 14.9851 22.569 14.6586 22.2424C14.645 22.2288 14.6314 22.2152 14.6177 22.2016L11.5741 19.158C11.1836 18.7674 11.1836 18.1343 11.5741 17.7438C11.9647 17.3532 12.5978 17.3532 12.9884 17.7438L16.0319 20.7873C16.4149 21.1703 16.6299 21.3821 16.7977 21.5089C16.7998 21.5106 16.802 21.5122 16.8041 21.5138C16.806 21.512 16.808 21.5102 16.81 21.5084C16.9656 21.3668 17.1606 21.1365 17.5073 20.7204L23.7589 13.2185C24.1125 12.7942 24.743 12.7369 25.1673 13.0904Z' fill='white'/%3e%3c/svg%3e ");
+}
+
+.banks-actual {
+  margin-bottom: 90px;
+}
+.banks-actual-container {
+  position: relative;
+}
+.banks-actual-list {
+  overflow: hidden;
+}
+.banks-actual-item {}
+.banks-actual-block {
+  display: flex;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.banks-actual-pic {
+  display: block;
+  margin-bottom: 24px;
+}
+.banks-actual-description {
+  width: 46%;
+  padding: 35px 30px 50px;
+}
+.banks-actual-img {
+  width: 54%;
+  align-self: flex-end;
+}
+.banks-actual-img-element {
+  display: block;
+  margin-left: auto;
+}
+.banks-actual-info {
+  margin-bottom: 33px;
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 16px;
+}
+.banks-actual-button {
+  padding-right: 31px;
+  padding-left: 31px;
+}
+.banks-actual .owl-stage {
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .banks-advantage {
+    margin-bottom: 50px;
+  }
+  .advantage-item {
+    width: 50%;
+  }
+  .advantage-item:nth-child(2n) .advantage-block {
+    border-color: transparent;
+  }
+  .banks-actual {
+    margin-bottom: 50px;
+  }
+  .banks-actual-list {
+    overflow: visible;
+    margin-right: 115px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .advantage-item {
+    width: 100%;
+  }
+  .banks-advantage-block {
+    border-color: transparent;
+  }
+  .banks-partners {
+    display: block;
+    margin-bottom: 50px;
+    padding-right: 27px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+  .banks-partners-content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .banks-partners-img {
+    width: 100%;
+  }
+  .banks-partners-content {
+    margin-bottom: 35px;
+  }
+  .banks-partners-img {
+    text-align: center;
+  }
+  .banks-partners-img-wrapper {
+    right: auto;
+  }
+  .banks-actual-list {
+    margin-right: 26px;
+  }
+  .banks-actual-block {
+    display: block;
+  }
+  .banks-actual-description {
+    width: 100%;
+    padding: 25px 20px 20px;
+  }
+  .banks-actual-img {
+    width: 100%;
+  }
+  .banks-partners-img-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .banks-partners-img-element {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* /banks */
+
+/* feedback */
+.feedback {
+  margin-bottom: 90px;
+}
+.feedback-container {
+  display: flex; }
+.feedback-content-block {
+  width: 57%;
+  padding-right: 82px;
+}
+.feedback-form-block {
+  width: 43%;
+}
+.feedback-content {
+  font-weight: 400;
+}
+.feedback-form {
+  padding: 33px 33px 49px;
+  border: 1px solid #EBEBEB;
+  border-radius: 20px;
+}
+.feedback-field-button {
+  margin-top: 38px;
+}
+.feedback-form-name {
+  text-transform: uppercase;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 15px;
+}
+.feedback-link {
+  margin-left: 17px;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .feedback {
+    margin-bottom: 60px;
+  }
+  .feedback-content-block {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .feedback-container {
+    display: block;
+  }
+  .feedback-content-block {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .feedback-form-block {
+    width: 100%;
+  }
+  .feedback-form {
+    padding: 25px 20px 40px;
+  }
+}
+/* /feedback */

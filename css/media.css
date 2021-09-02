@@ -1,0 +1,504 @@
+@media screen and (min-width: 992px) {
+	.approval-item:not(.approval-item__panel):hover {
+		background: #ECEFF5; }
+	.approval-item:not(.approval-item__panel):hover:before {
+		background: #ECEFF5;
+		position: absolute;
+		height: 100%;
+		width: 1000px;
+		content: '';
+		top: 0;
+		z-index: -1;
+		left: 1000px; }
+	.approval-item:not(.approval-item__panel):hover:after {
+		background: #ECEFF5;
+		position: absolute;
+		height: 100%;
+		width: 1000px;
+		content: '';
+		top: 0;
+		z-index: -1;
+		right: 1000px; }
+}
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (max-width: 992px) {
+	.approval-item__panel .approval-col:not(.approval-col_logo) {
+		display: none; }
+	.approval-col.approval-col_logo {
+    	padding-top: 0;
+    	width: 100%;
+    	display: flex;
+		justify-content: space-between;
+		align-items: center; }
+    .approval-link:not(.approval-link__bottom) {
+	    display: block; }
+	.approval-row {
+		display: block; }
+	.approval-col {
+		width: 100%;
+		border-bottom: 0.995288px solid #ECEFF5; }
+	.approval-col:nth-child(5),
+	.approval-col:nth-child(1) {
+		padding-bottom: 0;
+		border-bottom: none; }
+	.approval__list {
+    	display: flex;
+    	overflow: scroll; }
+    .approval__list .approval-item {
+    	width: 296px;
+    	padding-top: 25px;
+    	padding-bottom: 25px;
+    	background: #FFFFFF;
+		border-radius: 20px;
+		margin-right: 20px;
+		border-bottom: none; }
+	.approval__list .approval-item:hover {
+		box-shadow: 0px 4px 30px rgba(235, 235, 233, 0.8); }
+	.approval-more {
+		display: none; }
+	.approval__list {
+    	padding-bottom: 50px; }
+    .approval-col__link-mob {
+	    display: block; }
+	.approval-col__img {
+    	width: 55%;
+    	padding-right: 15px; }
+    .approval-col__link-mob {
+	    width: 45%; }
+	.approval-col__img img {
+		max-width: 100%; }
+	.approval-col {
+    	width: 100% !important; }
+    .approval-offers__item:before {
+	    content: attr(data-label);
+	    position: relative;
+	    float: left;
+	    padding-right: 15px;
+	    width: 55%;
+	    font-family: 'Lato';
+	    line-height: 24px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+	    display: block; }
+	.approval-col_more {
+		display: none; }
+	.approval-offers__item {
+    	display: flex; }
+    .approval-percent {
+	    margin-bottom: 5px;
+	    font-size: 18px; }
+	.approval-sum {
+    	font-size: 15px;
+		font-weight: 300; }
+	    
+	    
+	.house {
+		margin-bottom: 50px; }
+		
+		
+	.action-title {
+		font-size: 24px; }
+	.action-info {
+		font-size: 17px; }
+	.action-description {
+		font-size: 15px; }
+		
+	
+	.refinancing-home__name a, .refinancing-home__name span {
+		font-size: 17px; }
+	.refinancing-home__text {
+		font-size: 15px; }
+		
+	
+	.calculation-item__row {
+		flex-wrap: wrap; }
+	.calculation-item__field:nth-child(1),
+	.calculation-item__field:nth-child(2) {
+    	width: 100%;
+    	margin-right: 0; }
+    .calculation-item__label {
+	    margin-bottom: 7px; }
+	.calculation-item__select {
+    	max-width: 195px;
+		margin-bottom: 20px; }
+	.calculation-item__text {
+		padding-top: 10px; }
+	.calculation-item__total-price {
+		font-size: 22px; }
+	.calculation-item__total-text {
+		margin-bottom: 3px; }
+	.calculation-item__total-btn {
+    	margin-top: 20px; }
+    	
+    	
+    .calculation-refinancing__title {
+	    font-size: 24px;
+	    margin-bottom: 25px; }
+	.calculation-refinancing__subtitle {
+		font-size: 17px;
+		margin-bottom: 25px; }
+	.calculation-refinancing__text {
+		font-size: 15px; }
+	.calculation-refinancing__info {
+		padding: 30px 0; }
+		
+	
+	.about-top__title .section-title {
+		font-size: 24px;
+		padding-bottom: 20px; }
+	.about-list {
+    	overflow: visible;
+		margin-right: 65px; }
+	.about-top__info {
+		padding-top: 35px; }
+	.about-top__text p {
+		font-size: 15px; }
+	.about-top__img {
+		width: 40%; }
+	.about-top__info {
+		width: 60%; }
+	.about-top {
+    	padding-bottom: 20px; }
+    .about-bottom {
+	    position: relative; }
+	.about-bottom:before {
+		position: absolute;
+		top: 0;
+		left: -150px;
+		content: '';
+		z-index: 10;
+		width: 300px;
+		height: 100%;
+		background-color: #fff; }
+	.about-bottom {
+		padding-right: 0; }
+	.about-list {
+    	overflow: unset;
+		width: auto; }
+		
+	
+	.revies-panel .section-title {
+		font-size: 24px;
+		padding-bottom: 30px; }
+	.reviews-item__text {
+		height: 118px; }
+		
+	
+	.home-editor h1 {
+    	margin-bottom: 20px; }
+    .home-editor__text p {
+	    font-size: 15px;
+	    margin-right: 0; }
+	.home-editor__text {
+    	column-count: unset; }
+    .mob-show {
+	    display: block; }
+	.mob-list-slider {
+    	overflow: visible;
+		margin-right: 65px; }
+	.mob-list-slider .row {
+		display: block;
+		margin: 0; }
+	.mob-list-slider .cols {
+		max-width: 100%;
+		padding: 0 !important; }
+	.mob-list-slider .owl-stage {
+	    display: flex; }
+	
+	
+	.articles-item__large .articles-item__wrapp {
+		display: block;
+		background-image: none !important; }
+	.articles-item__name a {
+		font-size: 17px;
+		line-height: 25px; }
+	.articles-item__name {
+		margin-bottom: 17px; }
+	.articles-item__btn {
+		padding-top: 17px; }
+	.articles-item__info {
+		padding: 25px 15px;
+		background: rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 40px rgba(235, 235, 233, 0.8);
+		border-radius: 0px 0px 20px 20px; }
+	.articles-item__btn {
+		display: flex; }
+	.articles-item__info .articles-item__data {
+		display: none; }
+	.articles-bottom {
+		display: block;
+		text-align: center; }
+	.articles-item {
+		margin-bottom: 20px; }
+	.articles-item__text.mob-show {
+		display: block !important; }
+	.reviews .container {
+		padding-right: 0; }
+	.reviews-panel__control {
+		padding-right: 15px; }
+	.articles-wrapp .section-title {
+		font-size: 24px;
+		padding-bottom: 30px; }
+		
+	
+	.best-selections__item-left {
+    	flex: 0 0 50%;
+		max-width: 50%; }
+	.best-selections__item-right {
+    	flex: 0 0 50%;
+		max-width: 50%; }
+	.best-selections__img .img {
+		height: 240px; }
+	.best-selections__wrapp .section-title {
+		font-size: 24px;
+		padding-bottom: 30px; }
+
+	.coming-soon__name a {
+    	font-size: 12px; }
+    .coming-soon__text {
+	    font-size: 10px; }
+	.coming-soon__img {
+    	max-width: 67px; }
+    .coming-soon__info {
+	    padding-top: 0; }
+	.coming-soon__title {
+    	font-size: 14px;
+    	padding-bottom: 0; }
+    .coming-soon {
+    	padding: 22px 18px 22px 18px; }
+	
+}
+
+@media screen and (max-width: 768px) {
+	.approval__list {
+    	display: block;
+    	padding: 0px 15px; }
+    .approval__list .approval-item {
+	    margin: 0; }
+	.approval-col_logo .approval-link {
+		display: none; }
+	.approval__list .approval-item {
+		box-shadow: 0px 4px 30px rgba(235, 235, 233, 0.8);
+		margin-bottom: 20px;
+		width: 100%; }
+	.approval-link__bottom {
+		display: block;
+		text-align: center;
+		padding: 15px 0 35px; }
+		
+		
+	.action-more-panel {
+    	margin-top: 20px; }
+    .action-img {
+		max-width: 320px; }
+	.action-list-panel {
+		margin-bottom: 10px; }
+		
+	
+	.refinancing-home__list {
+		display: flex;
+		overflow: scroll; }
+	.refinancing-home__item {
+		width: 265px;
+		margin-right: 20px;
+		margin-bottom: 0; }
+	.refinancing-home__item:last-child {
+		margin-right: 0; }
+	.refinancing-home__row {
+		flex-wrap: wrap; }
+	.refinancing-home__info {
+		width: 100%;
+		min-width: 265px;
+		order: 1;
+		padding: 25px 20px; }
+	.refinancing-home__img {
+		width: 100%;
+		order: 2; }
+	.refinancing-home__total {
+		flex-wrap: wrap; }
+	.refinancing-home__total {
+		padding-top: 20px; }
+	.refinancing-home__action {
+		padding-bottom: 20px; }
+	.refinancing-home__img {
+		min-height: 200px;
+		background-position: left top;
+		background-size: 90%; }
+	.refinancing-home__item:nth-child(2) .refinancing-home__img {
+		background-size: 80%;
+		background-position: left top -30px; }
+		
+	
+	.section-title {
+		font-size: 24px;
+		padding-bottom: 30px; }
+	.calculation {
+		padding-bottom: 45px; }
+	.calculation-large {
+		margin-bottom: 20px; }
+		
+	
+	.calculation-refinancing__wrapp {
+    	flex-wrap: wrap; }
+    .calculation-refinancing__info {
+	    width: 100%;
+	    order: 2; }
+	.calculation-refinancing__img {
+		width: 100%;
+		order: 1; }
+	.calculation-refinancing__img {
+		text-align: left;
+		padding-top: 30px; }
+	.calculation-refinancing__img img {
+		max-width: 320px; }
+		
+	
+	.about-title-mobile {
+		display: block; }
+	.about-top__row {
+		display: block; }
+	.about-wrapp {
+		padding-top: 50px;
+		padding-bottom: 50px; }
+	.about-top__img {
+		width: 100%;
+		padding-right: 0; }
+	.about-top__title {
+		display: none; }
+	.about-top__info {
+		padding-top: 20px;
+		width: 100%; }
+	.about-bottom {
+		padding-left: 0; }
+	.about-bottom:before {
+		display: none; }
+	.about-list .owl-dots {
+		display: none; }
+	.about-top__img img {
+		max-width: 320px; }
+	
+	
+	section.reviews .reviews-wrapp {
+	    width: 100%;
+	    overflow: hidden; }
+	section.reviews .row {
+		display: block;
+		margin: 0; }
+	section.reviews .row .col-md-6 {
+		max-width: 100%;
+		padding: 0 !important; }
+	section.reviews .owl-stage {
+	    display: flex; }
+	.reviews-list {
+    	overflow: visible;
+		margin-right: 65px; }
+	.reviews-item__num {
+		display: none; }
+	.reviews-item .reviews-item__text {
+    	height: 45px;
+		overflow: hidden;
+		position: relative;
+		z-index: 10;
+		padding-right: 0; }
+	.reviews-item .reviews-item__btn {
+		display: block; }
+	section.about .owl-loaded {
+    	display: block;
+		margin: 0; }
+	.reviews-panel__control a.more {
+		display: none; }
+	.reviews-panel__control .link-line {
+		margin-right: 0; }
+	.reviews-bottom {
+		padding-top: 25px;
+		display: block;
+		text-align: center; }
+	.reviews-list .col-top,
+	.reviews-list .col-top-minus {
+		margin-top: 0; }
+	.reviews-item {
+		margin-bottom: 0; }
+		
+	    
+	.articles-wrapp .section-title .new-more.more {
+		display: none; }
+	.articles-item__img img {
+		width: 100%; }
+	.articles-item__text {
+		display: none !important; }
+	.articles-item__line .articles-item__name {
+		height: 50px; }
+	.articles-item {
+		margin-bottom: 30px; }
+	.articles .container,
+	.about .container,
+	.best-selections .container {
+		padding-right: 0; }
+		
+	
+	.best-selections__item-left {
+    	flex: 0 0 100%;
+		max-width: 100%;
+		display: block;
+		padding: 0; }
+	.best-selections__item-right {
+		flex: 0 0 100%;
+		max-width: 100%;
+		display: block; }
+	
+	.best-selections__left {
+    	flex: 0 0 100%;
+		max-width: 100%; }
+	.best-selections__item .best-selections__img .img,
+	.best-selections__item:hover .best-selections__img .img {
+		border-radius: 20px 20px 0px 0px; }
+	.best-selections__wrapp .row {
+    	display: block;	}
+    .best-selections__item .best-selections__item-tags {
+	    opacity: 1 !important;
+	    padding-top: 10px; }
+	.best-selections__info {
+		padding-bottom: 30px; }
+	.tags-cloud {
+		display: none; }
+	
+	
+	.best-selections__right {
+    	flex: 0 0 100%;
+		max-width: 100%; }
+	.coming-soon__name a {
+    	font-size: 16px; }
+    .coming-soon__title {
+    	font-size: 19px;
+    	padding-bottom: 10px; }
+    .coming-soon__text {
+    	font-size: 13px; }
+    .best-selections__right {
+	    margin-right: 15px; }
+    	
+    	
+    .mobs-list-slider {
+    	overflow: visible;
+		margin-right: 65px; }
+	.mobs-list-slider .row {
+		display: block;
+		margin: 0; }
+	.mobs-list-slider .cols {
+		max-width: 100%;
+		padding: 0 !important; }
+	.mobs-list-slider .owl-stage {
+	    display: flex; }
+	
+	
+	.search-maps__info {
+    	padding-top: 20px; }
+    .home-editor {
+		padding-top: 50px; }
+	.coming-soon__img a img {
+    	max-width: 100%; }
+}

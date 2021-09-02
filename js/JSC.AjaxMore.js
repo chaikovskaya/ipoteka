@@ -73,7 +73,7 @@
 
     var request = $.ajax({
       url: $url,
-      method: "get",
+      method: "post",
       dataType: "html"
     });
     request.done(function(data) {

@@ -506,8 +506,12 @@ function initPopupProfile() {
                     initMask();
                     initPopupRegistration();
                     initPopupForgot();
-                    var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
-                    new MobileMenu('.JS-PopupForm', local)._open();
+
+                    function initSetDelay() {
+                        var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
+                        new MobileMenu('.JS-PopupForm', local)._open();
+                    }
+                    setTimeout(initSetDelay, 10);
 
                     $('.js-preloader').addClass('g-hidden');
                 },
@@ -536,8 +540,12 @@ function initPopupForgot() {
                     initValidate();
                     initMask();
                     initPopupProfile();
-                    var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
-                    new MobileMenu('.JS-PopupForm', local)._open();
+
+                    function initSetDelay() {
+                        var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
+                        new MobileMenu('.JS-PopupForm', local)._open();
+                    }
+                    setTimeout(initSetDelay, 10);
 
                     $('.js-preloader').addClass('g-hidden');
                 },
@@ -567,8 +575,12 @@ function initPopupRegistration() {
                     initMask();
                     initPopupProfile();
                     initPopupForm();
-                    var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
-                    new MobileMenu('.JS-PopupForm', local)._open();
+
+                    function initSetDelay() {
+                        var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
+                        new MobileMenu('.JS-PopupForm', local)._open();
+                    }
+                    setTimeout(initSetDelay, 10);
 
                     $('.js-preloader').addClass('g-hidden');
                 },
@@ -576,6 +588,19 @@ function initPopupRegistration() {
                 }
             });
         });
+    });
+}
+
+function initAccordion() {
+    if (typeof(Accordion) === 'undefined' || !jQuery.isFunction(Accordion)) {
+        return false;
+    }
+
+    var common = {};
+
+    $('.JS-Accordion').not('.JS-Accordion-ready').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('accordion'));
+        new Accordion(this, jQuery.extend({}, common, local));
     });
 }
 
@@ -590,6 +615,7 @@ function initResizeWindow() {
         initAdaptiveMenu();
     }
 }
+
 
 $(document).ready(function () {
     initResizeWindow();
@@ -619,4 +645,5 @@ $(document).ready(function () {
     initFieldText();
     initPopupForm();
     initPopupProfile();
+    initAccordion();
 });
