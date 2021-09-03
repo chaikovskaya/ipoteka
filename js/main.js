@@ -616,7 +616,6 @@ function initResizeWindow() {
     }
 }
 
-
 $(document).ready(function () {
     initResizeWindow();
     $(window).resize(function(){

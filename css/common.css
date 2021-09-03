@@ -510,8 +510,10 @@ blockquote {
   margin-top: -32px;
   margin-bottom: 32px;
   padding-top: 52px;
-  padding-bottom: 22px;
   background-color: #ECEFF5; }
+.breadcrumbs-block {
+  padding-bottom: 22px;
+}
 .breadcrumbs-list {
   display: inline-block;
 }
@@ -713,6 +715,12 @@ blockquote {
 /* /pager */
 
 @media screen and (max-width: 992px) {
+  html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+  }
   h1, .h1 {
     margin-bottom: 25px;
     font-size: 24px;
@@ -732,7 +740,6 @@ blockquote {
     margin-top: -22px;
     margin-bottom: 35px;
     padding-top: 42px;
-    padding-bottom: 24px;
   }
   .simplebar-scrollbar:before {
     background-color: #FFB52B;
@@ -761,7 +768,6 @@ blockquote {
   .breadcrumbs {
     margin-top: 0;
     padding-top: 30px;
-    padding-bottom: 22px;
   }
   .breadcrumbs-list {
     position: relative; }
@@ -1432,6 +1438,7 @@ label.form-error {
 .selectric-select_simple .selectric {
   border-width: 0;
   background-color: transparent;
+  border-radius: 0;
 }
 .selectric-select_simple .label {
   height: 28px;
@@ -3032,6 +3039,8 @@ body.mob-menu-show {
 
 /* buildings */
 .buildings-main-banner {
+  margin-top: -22px;
+  padding-bottom: 22px;
 }
 .buildings-main-banner-container {
   display: flex;
@@ -3949,8 +3958,9 @@ body.mob-menu-show {
 
 @media screen and (max-width: 720px) {
   .buildings-main-banner {
-    margin-top: 40px;
+    margin-top: 18px;
     margin-bottom: 42px;
+    padding-bottom: 60px;
   }
   .buildings-main-banner-container {
     display: block;
@@ -5694,6 +5704,8 @@ body.mob-menu-show {
 
 /* refinancing */
 .banner-section {
+  margin-top: -22px;
+  padding-bottom: 25px;
 }
 .banner-section-container {
   display: flex;
@@ -5706,9 +5718,22 @@ body.mob-menu-show {
   padding-right: 30px; }
 .banner-section-img {
   width: 38%;
-  padding-right: 10px;
-  text-align: center; }
+  text-align: right;
+}
 .banner-section-pic {
+  position: relative;
+  display: inline-block;
+  padding-left: 27%;
+  background: url(../images/refinancing/refinancing-banner-decor.png) no-repeat 0 40%;
+  background-size: 49% auto;
+}
+.banner-section-pic {
+}
+.banner-section-pic-element {
+  position: relative;
+  z-index: 1;
+  min-height: 250px;
+  height: auto;
 }
 .banner-section-title {
   display: block;
@@ -5722,12 +5747,31 @@ body.mob-menu-show {
   margin-bottom: 23px;
 }
 
+.banner-section_modified {
+  margin-top: -50px;
+  padding-bottom: 0;
+}
+
+.banner-section_modified .banner-section-pic {
+  padding-left: 11%;
+  background-size: 47% auto;
+}
+
+
+.banner-section_simple {
+  padding-bottom: 70px;
+}
+
 .banner-section_bank {}
 .banner-section_bank .banner-section-detail {
   width: 52%;
 }
 .banner-section_bank .banner-section-img {
   width: 48%;
+}
+.banner-section_bank .banner-section-pic {
+  padding-left: 20%;
+  background-size: 38% auto;
 }
 
 .refinancing-advantage {
@@ -5933,6 +5977,13 @@ body.mob-menu-show {
   .banner-section {
     margin-bottom: 18px;
   }
+  .banner-section-pic:after {
+    left: -18%;
+  }
+  .banner-section_modified {
+    margin-top: -30px;
+    margin-bottom: 18px;
+  }
   .refinancing-calc-item {
     margin-bottom: 40px;
   }
@@ -5950,25 +6001,41 @@ body.mob-menu-show {
 
 @media screen and (max-width: 720px) {
   .banner-section {
-    margin-top: 40px;
+    margin-top: 18px;
     margin-bottom: 42px;
+    padding-bottom: 60px;
   }
   .banner-section-container {
     display: block;
   }
   .banner-section-detail {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-right: 0;
   }
   .banner-section-img {
     width: 100%;
-    padding-right: 0;
     text-align: center;
   }
-  .banner-section-pic {
-    max-width: none;
+  .banner-section-pic-element {
+    min-height: auto;
+    max-width: 100%;
   }
+  .banner-section-pic {
+    padding-left: 18%;
+  }
+  .banner-section_modified .banner-section-pic {
+    padding-top: 0;
+  }
+  .banner-section_bank .banner-section-detail {
+    width: 100%;
+  }
+  .banner-section_bank .banner-section-img {
+    width: 100%;
+  }
+
   .refinancing-advantage {
     margin-top: 50px;
   }
@@ -6020,12 +6087,17 @@ body.mob-menu-show {
 
   .refinancing-plus {
     display: block;
+    overflow: hidden;
   }
   .refinancing-plus-description {
     width: 100%;
   }
   .refinancing-plus-img {
     width: 100%;
+  }
+  .refinancing-plus-pic {
+    margin-top: -44px;
+    margin-bottom: -92px;
   }
 }
 /* /refinancing */
@@ -6040,7 +6112,10 @@ body.mob-menu-show {
 .range-item:last-child {
   margin-bottom: 0;
 }
-.range-container {}
+.range-container {
+  position: relative;
+  z-index: 2;
+}
 .range-head {
   min-height: 77px;
   padding: 15px 30px 43px;
@@ -6108,6 +6183,7 @@ body.mob-menu-show {
   font-size: 16px;
   line-height: 19px;
   color: #333333;
+  white-space: nowrap;
 }
 
 .slider-range .slider-range-track {
@@ -6294,6 +6370,9 @@ body.mob-menu-show {
   font-size: 16px;
   color: #443737;
 }
+.advantage-description {
+  font-size: 16px;
+}
 .advantage-block {
   padding-left: 30px;
   padding-right: 30px;
@@ -6304,6 +6383,20 @@ body.mob-menu-show {
 }
 .advantage-item:hover .advantage-block {
   border-color: transparent;
+}
+
+.advantage_simple {}
+.advantage-name {
+  font-weight: 300;
+}
+.advantage-description {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+  .advantage {
+    margin-bottom: 50px;
+  }
 }
 /* /advantage */
 
@@ -6321,33 +6414,12 @@ body.mob-menu-show {
 }
 .banks-partners-img {
   width: 40%;
-  overflow: hidden;
-  text-align: right;
 }
 .banks-partners-img-wrapper {
-  display: inline-block;
-  position: relative;
-  right: -15px;
-  /*width: 487px;
-  max-width: 100%;
-  height: 396px;
-  max-height: 100%;*/
-}
-.banks-partners-img-wrapper:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../images/banks/banks-partners-bgr-1.png) no-repeat 0 0;
-  background-size: 100% 100%;
+  margin-top: -30px;
+  margin-left: -60px;
 }
 .banks-partners-img-element {
-  /*width: 487px;
-  height: 396px;
-  max-width: none;
-  max-height: none;*/
   object-fit: contain;
 }
 .banks-partners-content ul {
@@ -6435,6 +6507,9 @@ body.mob-menu-show {
     overflow: visible;
     margin-right: 115px;
   }
+  .banks-partners {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -6446,7 +6521,6 @@ body.mob-menu-show {
   }
   .banks-partners {
     display: block;
-    margin-bottom: 50px;
     padding-right: 27px;
     padding-top: 25px;
     padding-left: 20px;
@@ -6466,7 +6540,8 @@ body.mob-menu-show {
     text-align: center;
   }
   .banks-partners-img-wrapper {
-    right: auto;
+    margin-top: 0;
+    margin-left: -20px;
   }
   .banks-actual-list {
     margin-right: 26px;
@@ -6491,6 +6566,129 @@ body.mob-menu-show {
   }
 }
 
+
+.bank-offers {
+  margin-bottom: 153px;
+}
+.bank-offers-title {
+  float: left;
+  margin-right: 10px;
+}
+.bank-offers-more {
+  float: right;
+  margin-bottom: 37px;
+}
+.bank-offers-item {
+  clear: both;
+  display: flex;
+  margin-bottom: 30px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.bank-offers-item:last-child {
+  margin-bottom: 0;
+}
+.bank-offers-img {
+  width: 31%;
+  position: relative;
+  min-height: 200px;
+}
+.bank-offers-description {
+  width: 69%;
+  padding: 35px 30px 48px;
+}
+.bank-offers-pic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: none;
+}
+.bank-offers-content {
+  margin-bottom: 27px;
+}
+.bank-offers-subtitle {
+  display: block;
+}
+.bank-offers-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bank-offers-list-item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-bottom: 27px;
+  padding-right: 30px;
+}
+.bank-offers-list-name {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+.bank-offers-list-value {
+  margin-top: auto;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .bank-offers {
+    margin-bottom: 70px;
+  }
+  .bank-offers-list-value {
+    font-size: 16px;
+  }
+  .bank-offers-more {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .bank-offers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .bank-offers-item {
+    flex-direction: column;
+  }
+  .bank-offers-img {
+    width: 100%;
+    margin-top: -70px;
+    margin-bottom: -30px;
+  }
+  .bank-offers-pic {
+    max-height: 100%;
+    right: 0;
+    left: auto;
+    transform: scaleX(-1);
+  }
+  .bank-offers-description {
+    width: 100%;
+    order: -1;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bank-offers-list-item {
+    width: 50%;
+  }
+  .bank-offers-list-name {
+    margin-bottom: 4px;
+  }
+  .bank-offers-title {
+    float: none;
+    margin-right: 0;
+  }
+  .bank-offers-more {
+    float: none;
+    order: 1;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
 /* /banks */
 
 /* feedback */
@@ -6556,3 +6754,108 @@ body.mob-menu-show {
   }
 }
 /* /feedback */
+
+/* hypothecation */
+.hypothecation-schedule {
+  margin-bottom: 50px;
+}
+.hypothecation-schedule-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hypothecation-schedule-panel-item {
+  margin-right: 45px;
+}
+.hypothecation-schedule-panel-item:last-child {
+  margin-right: 0;
+}
+.hypothecation-schedule-select {
+  margin-bottom: 10px;
+}
+.hypothecation-schedule-label {
+  display: inline-block;
+  margin-right: 26px;
+  margin-bottom: 10px;
+  color: #828282;
+  font-weight: 500;
+  font-size: 16px;
+}
+.hypothecation-schedule-link {
+  display: inline-block;
+  min-height: 36px;
+  line-height: 34px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 10px;
+  background-color: #ECEFF5;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.hypothecation-schedule-table {}
+.hypothecation-schedule-table-item {
+  display: flex;
+  justify-content: space-between;
+}
+.hypothecation-schedule-table-item_hide {
+  display: none;
+}
+.hypothecation-schedule-table-col {
+  width: 16.6%;
+  margin-bottom: 14px;
+  padding-right: 35px;
+}
+.hypothecation-schedule-table-name {
+  font-size: 16px;
+}
+.hypothecation-schedule-table-value {
+  font-weight: 300;
+  font-size: 16px;
+}
+.hypothecation-schedule-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 8px;
+  margin-left: 14px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.14142 5.85858L5.57573 5.29289L5.57574 5.29289L6.14142 5.85858ZM5.85858 5.85858L5.29289 6.42426V6.42426L5.85858 5.85858ZM11.5657 1.56568L6.70711 6.42426L5.57574 5.29289L10.4343 0.434314L11.5657 1.56568ZM5.29289 6.42426L0.434315 1.56568L1.56569 0.434314L6.42426 5.29289L5.29289 6.42426ZM6.70711 6.42426C6.31658 6.81479 5.68341 6.81479 5.29289 6.42426L6.42426 5.29289C6.18995 5.05858 5.81005 5.05858 5.57573 5.29289L6.70711 6.42426Z' fill='%23333333'/%3e%3c/svg%3e ");
+}
+.show-more_hide .hypothecation-schedule-icon {
+  transform: scaleY(-1);
+}
+
+.calc-select-icon .label {
+  height: 35px;
+  line-height: 35px;
+}
+.calc-option-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  object-fit: contain;
+}
+
+.calc-select-icon .selectric-items li {
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.calc-select-icon .selectric-items li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .hypothecation-schedule-table-wrapper {
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+  .hypothecation-schedule-table {
+    min-width: 700px;
+  }
+}
+/* /hypothecation */
