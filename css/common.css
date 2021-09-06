@@ -120,7 +120,7 @@ h2,
 h3,
 .h3 {
   margin-bottom: 25px;
-  font: 700 16px/19px 'Rubik', sans-serif;
+  font: 700 16px/22px 'Rubik', sans-serif;
   color: #333; }
 
 h4,
@@ -3155,7 +3155,6 @@ body.mob-menu-show {
 }
 .buildings-result-icon {
   display: inline-block;
-  vertical-align: middle;
   width: 9px;
   height: 9px;
   margin-left: 10px;
@@ -3905,6 +3904,12 @@ body.mob-menu-show {
   .useful-links-list-label {
     font-size: 15px;
   }
+  .visited-gallery {
+    margin-right: 26px;
+  }
+  .visited-list {
+    overflow: visible;
+  }
   .visited-title {
     margin-bottom: 25px;
   }
@@ -4058,12 +4063,6 @@ body.mob-menu-show {
   .useful-links-item_modified .useful-links-list {
     column-count: auto;
     column-gap: 0;
-  }
-  .visited-gallery {
-    margin-right: 26px;
-  }
-  .visited-list {
-    overflow: visible;
   }
   .owl-item.active .visited-list-item {
     box-shadow: 0px 0px 40px rgba(235, 235, 233, 0.8);
@@ -5177,6 +5176,12 @@ body.mob-menu-show {
   .news-feed {
     margin-bottom: 20px;
   }
+  .news-feed-gallery {
+    margin-right: 90px;
+  }
+  .news-feed-list {
+    overflow: visible;
+  }
   .news-feed-name {
     margin-bottom: 5px;
     font-size: 17px;
@@ -5772,6 +5777,11 @@ body.mob-menu-show {
 .banner-section_bank .banner-section-pic {
   padding-left: 20%;
   background-size: 38% auto;
+}
+
+.banner-section_actions .banner-section-pic {
+  padding-left: 19%;
+  background-size: 50% auto;
 }
 
 .refinancing-advantage {
@@ -6796,6 +6806,9 @@ body.mob-menu-show {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.8);
 }
+.hypothecation-schedule-link:hover {
+  background-color: #F2F2F2;
+}
 .hypothecation-schedule-table {}
 .hypothecation-schedule-table-item {
   display: flex;
@@ -6857,5 +6870,184 @@ body.mob-menu-show {
   .hypothecation-schedule-table {
     min-width: 700px;
   }
+  .hypothecation-schedule-link {
+    min-height: 31px;
+    line-height: 31px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
 }
 /* /hypothecation */
+
+/* actions */
+.actions {
+  margin-top: 98px;
+}
+.actions-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.actions-panel-item {
+  margin-right: 48px;
+}
+.actions-panel-item:last-child {
+  margin-right: 0;
+}
+.actions-label {
+  display: inline-block;
+  margin-right: 26px;
+  margin-bottom: 10px;
+  color: #828282;
+  font-weight: 500;
+  font-size: 16px;
+}
+.actions-link {
+  display: inline-block;
+  min-height: 36px;
+  line-height: 34px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 10px;
+  background-color: #ECEFF5;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.actions-link:hover {
+  background-color: #F2F2F2;
+}
+.actions-link-icon {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgOCA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNyAxLjVMMSA3LjUiIHN0cm9rZT0iIzMzMzMzMyIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMSAxLjVMNyA3LjUiIHN0cm9rZT0iIzMzMzMzMyIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+}
+.actions-select {
+  margin-bottom: 10px;
+}
+.actions-content {
+  margin-bottom: 80px;
+}
+.actions-list {
+  margin-bottom: 40px;
+}
+.actions-list-item {
+  margin-bottom: 30px;
+}
+.actions-list-item:last-child {
+   margin-bottom: 0;
+}
+.actions-list-img {
+  position: relative;
+}
+.actions-list-description {
+
+}
+.actions-list-pic-wrapper {
+  position: relative;
+}
+.actions-list-pic {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+.actions-list-section {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  min-height: 30px;
+  padding-right: 14px;
+  padding-left: 14px;
+  background-color: #FFB52B;
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 29px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.actions-list-section:hover {
+  color: #FFFFFF;
+}
+.actions-list-name {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+.actions-list-name-link {
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 42px;
+}
+.actions-list-name-link:hover {
+  color: #0D0D0D;
+}
+.actions-list-briefly {
+  margin-bottom: 24px;
+}
+.actions-list-info {
+  margin-bottom: 28px;
+}
+.actions-list-button {
+  padding-right: 31px;
+  padding-left: 31px;
+}
+
+@media screen and (max-width: 992px) {
+  .actions {
+    margin-top: 0;
+  }
+  .actions-list-name-link {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .actions-list-section {
+    top: 20px;
+    left: 20px;
+  }
+  .actions-list-name {
+    margin-top: 10px;
+    margin-bottom: 19px;
+  }
+  .actions-list-briefly {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .actions-link  {
+    min-height: 31px;
+    line-height: 31px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .actions-list-pic-wrapper {
+    height: 100%;
+  }
+  .actions-list-pic {
+    object-fit: cover;
+    height: 100%;
+  }
+  .actions-list-info {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .actions-list-name {
+    margin-bottom: 21px;
+  }
+  .actions-content {
+    margin-bottom: 60px;
+  }
+  .actions-list-img {
+    margin-bottom: 9px;
+  }
+}
+/* /actions */
