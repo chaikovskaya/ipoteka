@@ -519,7 +519,6 @@ blockquote {
   padding-bottom: 22px;
 }
 .breadcrumbs-list {
-  display: inline-block;
 }
 .breadcrumbs-item {
   display: inline;
@@ -776,7 +775,6 @@ blockquote {
   .breadcrumbs-list {
     position: relative; }
   .breadcrumbs_active {
-    height: 25px;
     overflow: hidden; }
   .breadcrumbs_active .breadcrumbs-item_more {
     display: block; }
@@ -3748,6 +3746,7 @@ body.mob-menu-show {
 }
 .visited-list-item_bank .visited-img {
   object-fit: none;
+  width: auto;
 }
 .visited-description {
   height: 100%;
@@ -3901,10 +3900,12 @@ body.mob-menu-show {
   .buildings-map {
     position: static;
     left: 68%;
-    width: 100%;
+    width: auto;
     height: 266px;
+    margin-right: -15px;
+    margin-left: -15px;
     margin-bottom: 30px;
-    border-radius: 20px;
+    border-radius: 0;
   }
   .buildings-map-switcher {
     display: none;
@@ -4435,7 +4436,6 @@ body.mob-menu-show {
 .card-map {
   min-height: 150px;
   height: 100%;
-  border-radius: 0 0 20px 20px;
 }
 .card-map-element {
   overflow: hidden;
@@ -4634,8 +4634,17 @@ body.mob-menu-show {
 .card-objects-title {
   margin-bottom: 0;
 }
+.card-objects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .card-objects-item {
   margin-bottom: 30px;
+  width: 33.3%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .card-objects-container {
   overflow: hidden;
@@ -4856,6 +4865,9 @@ body.mob-menu-show {
   .card-objects {
     margin-bottom: 25px;
   }
+  .card-objects-item {
+    width: 50%;
+  }
   .card-objects-name {
     margin-bottom: 5px;
     font-size: 17px;
@@ -5004,10 +5016,13 @@ body.mob-menu-show {
     font-size: 22px;
   }
   .card-map {
-    width: 100%;
+    width: auto;
+    margin-right: -15px;
+    margin-left: -15px;
   }
   .card-map-element {
     height: 266px;
+    border-radius: 0;
   }
   .card-banks-list {
     margin-right: 26px;
@@ -5045,6 +5060,25 @@ body.mob-menu-show {
   .card-characteristic-value {
     width: 100%;
     font-size: 15px;
+  }
+  .card-side_simple {
+    order: -1;
+  }
+  .card-objects-list .owl-stage {
+    display: flex;
+  }
+  .card-objects-container {
+    box-shadow: 0px 0px 40px rgba(235, 235, 233, 0.8);
+  }
+  .card-objects-list {
+    display: block;
+    margin-right: 26px;
+    margin-left: 0;
+  }
+  .card-objects-item {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 /* /card */
@@ -6663,6 +6697,9 @@ body.mob-menu-show {
   .banks-partners-img-element {
     width: 100%;
     height: auto;
+  }
+  .banks-partners-content ul li:before {
+    margin-top: -2px;
   }
 }
 

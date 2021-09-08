@@ -13,7 +13,7 @@ function initSliderRuler() {
             classActive = $element.data('range-active') || 'active',
             units = $element.data('range-units') || '';
 
-        $track.slider({
+        var $slider = $track.slider({
             range: "min",
             value: start,
             min: min,
@@ -26,14 +26,18 @@ function initSliderRuler() {
             create: function() {
                 var str = String($(this).slider("value")),
                     parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
-                $text.text(parsedStr + units);
+                //$text.text(parsedStr + units);
+                //add
+                $text.val($(this).slider("value"));
 
                 $amount.val( $track.slider("value") );
             },
             slide: function( event, ui ) {
                 var str = String(ui.value),
                     parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
-                $text.text(parsedStr + units);
+                //$text.text(parsedStr + units);
+                //add
+                $text.val(ui.value);
 
                 $amount.val( ui.value );
             },
@@ -42,6 +46,14 @@ function initSliderRuler() {
                     $element.addClass(classActive);
                 }
             }
+        });
+
+        //add
+        $text.on('input', function(e) {
+            var val = $text.val();
+            //console.log(val);
+            $slider.slider( "value", val );
+            $amount.val( val );
         });
     });
 }

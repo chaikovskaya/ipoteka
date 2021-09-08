@@ -171,8 +171,51 @@ function initSliderCardPlan() {
     });
 }
 
+function initSliderHousesNearby() {
+    $(".js-slider-housesNearby").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            items: 1,
+            margin: 20,
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+    });
+}
+function reInitSliderHousesNearby() {
+    $(".js-slider-housesNearby .js-slider-list").trigger('destroy.owl.carousel');
+}
+
+function initResizeCard() {
+    if (window.matchMedia('(max-width: ' + GLOBAL.mobile + 'px)').matches) {
+        GLOBAL.widthWindow = 'isMobile';
+        initSliderHousesNearby();
+    } else if (window.matchMedia('(max-width: ' + GLOBAL.tablet + 'px)').matches) {
+        GLOBAL.widthWindow = 'isTablet';
+        reInitSliderHousesNearby();
+    } else {
+        GLOBAL.widthWindow = '';
+        reInitSliderHousesNearby();
+    }
+}
 
 $(document).ready(function () {
+    initResizeCard();
+    $(window).resize(function(){
+        initResizeCard();
+    });
+
     initSliderCardGallery();
     initSliderCardBanks();
     initSliderQuarters();
