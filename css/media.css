@@ -501,4 +501,9 @@
 		padding-top: 50px; }
 	.coming-soon__img a img {
     	max-width: 100%; }
+    	
+    
+    .banner-section.banner-section_modified {
+	    margin-top: 0px;
+	    padding-top: 10px; }
 }

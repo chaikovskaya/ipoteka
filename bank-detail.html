@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
 </head>
 
@@ -463,60 +463,64 @@
                 <a class="bank-offers-more more" href="#">
                     <span class="more-label">Показать все</span>
                 </a>
-                <div class="bank-offers-item">
-                    <div class="bank-offers-img">
-                        <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-1.png" alt="" />
-                    </div>
-                    <div class="bank-offers-description">
-                        <span class="bank-offers-subtitle h2">Время менять старые квартиры по Военной ипотеке</span>
-                        <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
-                        <ul class="bank-offers-list">
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Ставка</span>
-                                <span class="bank-offers-list-value">-0,5%</span>
-                            </li>
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Первый взнос</span>
-                                <span class="bank-offers-list-value">-0,5%</span>
-                            </li>
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Срок</span>
-                                <span class="bank-offers-list-value">до 30 лет</span>
-                            </li>
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Сумма</span>
-                                <span class="bank-offers-list-value">до 50 млн</span>
-                            </li>
-                        </ul>
-                        <a class="button" href="#">Одобриться</a>
-                    </div>
-                </div>
-                <div class="bank-offers-item">
-                    <div class="bank-offers-img">
-                        <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-2.png" alt="" />
-                    </div>
-                    <div class="bank-offers-description">
-                        <span class="bank-offers-subtitle h2">Рефинансирование семейной ипотеки</span>
-                        <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
-                        <ul class="bank-offers-list">
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Ставка</span>
-                                <span class="bank-offers-list-value">-0,5%</span>
-                            </li>
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Первый взнос</span>
-                                <span class="bank-offers-list-value">-0,5%</span>
-                            </li>
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Срок</span>
-                                <span class="bank-offers-list-value">до 30 лет</span>
-                            </li>
-                            <li class="bank-offers-list-item">
-                                <span class="bank-offers-list-name">Сумма</span>
-                                <span class="bank-offers-list-value">до 50 млн</span>
-                            </li>
-                        </ul>
-                        <a class="button" href="#">Одобриться</a>
+                <div class="bank-offers-group js-slider-bank-offers">
+                    <div class="bank-offers-group-list js-slider-list">
+                        <div class="bank-offers-item js-slider-item">
+                            <div class="bank-offers-img">
+                                <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-1.png" alt="" />
+                            </div>
+                            <div class="bank-offers-description">
+                                <span class="bank-offers-subtitle h2">Время менять старые квартиры по Военной ипотеке</span>
+                                <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                <ul class="bank-offers-list">
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Ставка</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Первый взнос</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Срок</span>
+                                        <span class="bank-offers-list-value">до 30 лет</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Сумма</span>
+                                        <span class="bank-offers-list-value">до 50 млн</span>
+                                    </li>
+                                </ul>
+                                <a class="button" href="#">Одобриться</a>
+                            </div>
+                        </div>
+                        <div class="bank-offers-item js-slider-item">
+                            <div class="bank-offers-img">
+                                <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-2.png" alt="" />
+                            </div>
+                            <div class="bank-offers-description">
+                                <span class="bank-offers-subtitle h2">Рефинансирование семейной ипотеки</span>
+                                <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                <ul class="bank-offers-list">
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Ставка</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Первый взнос</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Срок</span>
+                                        <span class="bank-offers-list-value">до 30 лет</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Сумма</span>
+                                        <span class="bank-offers-list-value">до 50 млн</span>
+                                    </li>
+                                </ul>
+                                <a class="button" href="#">Одобриться</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

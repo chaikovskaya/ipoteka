@@ -604,15 +604,53 @@ function initAccordion() {
     });
 }
 
+function initSliderBankOffers() {
+    $(".js-slider-bank-offers").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20,
+                },
+                720: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+            },
+        }));
+    });
+}
+function reInitSliderBankOffers() {
+    $(".js-slider-bank-offers .js-slider-list").trigger('destroy.owl.carousel');
+}
+
+
 function initResizeWindow() {
     if (window.matchMedia('(max-width: ' + GLOBAL.mobile + 'px)').matches) {
         GLOBAL.widthWindow = 'isMobile';
+        initSliderBankOffers();
     } else if (window.matchMedia('(max-width: ' + GLOBAL.tablet + 'px)').matches) {
         GLOBAL.widthWindow = 'isTablet';
         initAdaptiveMenu();
+        initSliderBankOffers();
     } else {
         GLOBAL.widthWindow = '';
         initAdaptiveMenu();
+        reInitSliderBankOffers();
     }
 }
 

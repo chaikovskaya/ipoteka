@@ -5,6 +5,7 @@ function initSliderRuler() {
             $track = $element.find('.js-slider-rating-track'),
             $amount = $element.find('.js-slider-rating-value'),
             $handle = $element.find('.js-ui-slider-handle'),
+            $field = $element.find('.js-slider-rating-field'),
             $text = $element.find('.js-slider-rating-text'),
             min = $element.data('range-min') || 0,
             max = $element.data('range-max') || 0,
@@ -26,19 +27,17 @@ function initSliderRuler() {
             create: function() {
                 var str = String($(this).slider("value")),
                     parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
-                //$text.text(parsedStr + units);
-                //add
-                $text.val($(this).slider("value"));
 
+                $field.val($(this).slider("value"));
+                $text.text(parsedStr + units);
                 $amount.val( $track.slider("value") );
             },
             slide: function( event, ui ) {
                 var str = String(ui.value),
                     parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
-                //$text.text(parsedStr + units);
-                //add
-                $text.val(ui.value);
 
+                $field.val(ui.value);
+                $text.text(parsedStr + units);
                 $amount.val( ui.value );
             },
             start: function( event, ui ) {
@@ -47,13 +46,23 @@ function initSliderRuler() {
                 }
             }
         });
+        $field.on('blur', function(e) {
+            var val = $field.val();
+            if (!isNaN(val)) {
+                if (val < min) {
+                    val = min;
+                } else if (val > max) {
+                    val = max;
+                }
 
-        //add
-        $text.on('input', function(e) {
-            var val = $text.val();
-            //console.log(val);
-            $slider.slider( "value", val );
-            $amount.val( val );
+                var str = String(val),
+                    parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+                $field.val(val);
+                $text.text(parsedStr + units);
+                $slider.slider( "value", val );
+                $amount.val( val );
+            }
         });
     });
 }

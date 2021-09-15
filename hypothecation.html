@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body class="main-page">
@@ -402,143 +402,863 @@
             }">
                 <ul class="breadcrumbs-list js-expand-block">
                     <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная<i class="breadcrumbs-icon"></i></a></li>
-                    <li class="breadcrumbs-item">Ипотечные программы</li>
+                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Банки<i class="breadcrumbs-icon"></i></a></li>
+                    <li class="breadcrumbs-item">ВТБ</li>
                     <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
                 </ul>
+            </div>
+
+            <div class="banner-section banner-section_modified banner-section_hypothecation">
+                <div class="banner-section-container container">
+                    <div class="banner-section-detail">
+                        <img class="banner-section-logo" src="./images/card/bank-img-2.png" alt="" />
+                        <span class="banner-section-title h1">Ипотека с господдержкой</span>
+                        <div class="banner-section-info content">Выгодно измените срок или платеж кредита благодаря лучшим предложениям банков-партнеров</div>
+                    </div>
+                    <div class="banner-section-img">
+                        <div class="banner-section-pic">
+                            <svg class="banner-section-pic-element" width="503" height="434" viewBox="0 0 503 434">
+                                <defs>
+                                    <pattern id="image" patternUnits="userSpaceOnUse" width="503" height="434">
+                                        <image x="0" y="0" width="503" height="434" xlink:href="./images/bank-detail/bank-detail-banner-img-1.png" />
+                                    </pattern>
+                                </defs>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M288.445 72.1534C232.511 54.5188 188.421 80.8552 142.843 95.8213C105.859 107.965 68.2179 120.215 54.1666 149.081C39.7387 178.72 46.8932 215.202 67.6829 250.221C89.5737 287.095 122.259 324.359 169.959 344.126C217.546 363.845 265.493 357.905 309.459 350.411C354.967 342.655 423.897 322.872 443.464 292.478C465.067 258.921 465.391 217.785 441.254 175.629C415.672 130.947 347.74 90.8477 288.445 72.1534Z" fill="url(#image)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
 
         <div class="container">
 
-            <section class="hypothecation-schedule">
-                <h2 class="h1">График платежей</h2>
-                <div class="hypothecation-schedule-panel">
-                    <div class="hypothecation-schedule-panel-item">
-                        <div class="hypothecation-schedule-select">
-                            <select name="year" class="select select_simple js-select">
-                                <option selected disabled>Выберите год</option>
-                                <option value="year-1">2021</option>
-                                <option value="year-2">2021</option>
-                                <option value="year-3">2021</option>
-                                <option value="year-4">2021</option>
-                            </select>
+            <ul class="advantage advantage_simple">
+                <li class="advantage-item">
+                    <div class="advantage-block">
+                        <span class="advantage-name">Одобрено</span>
+                        <div class="advantage-description content">1500 чел</div>
+                    </div>
+                </li>
+                <li class="advantage-item">
+                    <div class="advantage-block">
+                        <span class="advantage-name">Сумма кредита, руб</span>
+                        <div class="advantage-description content">от 0,5 до 50 млн</div>
+                    </div>
+                </li>
+                <li class="advantage-item">
+                    <div class="advantage-block">
+                        <span class="advantage-name">Первоначальный взнос</span>
+                        <div class="advantage-description content">от 10 до 80%</div>
+                    </div>
+                </li>
+                <li class="advantage-item">
+                    <div class="advantage-block">
+                        <span class="advantage-name">Срок кредитования</span>
+                        <div class="advantage-description content">от 3 до 30 лет</div>
+                    </div>
+                </li>
+            </ul>
+
+            <section class="hypothecation-conditions">
+                <h2 class="h1">Условия ипотеки</h2>
+                <div class="JS-Tab" data-tab="{
+                   'classSwitcherActive': 'hypothecation-conditions-nav-item_active',
+                   'classItemActive': 'hypothecation-conditions-info_active'
+                }">
+                    <ul class="hypothecation-conditions-nav">
+                        <li class="hypothecation-conditions-nav-item JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Общие условия</a>
+                        </li>
+                        <li class="hypothecation-conditions-nav-item hypothecation-conditions-nav-item_active JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Ставка</a>
+                        </li>
+                        <li class="hypothecation-conditions-nav-item JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Первоначальный взнос</a>
+                        </li>
+                        <li class="hypothecation-conditions-nav-item JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Сроки</a>
+                        </li>
+                        <li class="hypothecation-conditions-nav-item JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Документы</a>
+                        </li>
+                    </ul>
+
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        Информация Общие условия
+                    </div>
+                    <div class="hypothecation-conditions-info hypothecation-conditions-info_active JS-Tab-Item">
+                        <div class="row">
+                            <div class="hypothecation-conditions-description col-lg-6">
+                                <div class="content">
+                                    <p class="hypothecation-conditions-title"><b>Ставка 5,59% годовых</b></p>
+                                    <p class="hypothecation-conditions-subtitle"><b>Действует при выполнении следующих условий:</b></p>
+                                    <ul>
+                                        <li><b>Сумма кредита:</b>
+                                            <p>-от 500 тыс. до 12 млн рублей для приобретения квартиры в новостройке в Москве и МО, Санкт-Петербурге и ЛО</p>
+                                            <p>-от 500 тыс. до 6 млн рублей для других регионов РФ первоначальный взнос — от 15% до 80%</p>
+                                        </li>
+                                        <li><b>Первоначальный взнос — от 15% до 80%</b></li>
+                                        <li><b>Страхование жизни и трудоспособности</b></li>
+                                    </ul>
+                                    <a class="button" href="#">Рассчитать</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="hypothecation-conditions-img" src="./images/hypothecation/hypothecation-conditions-img.jpg" alt="" />
+                            </div>
                         </div>
                     </div>
-                    <div class="hypothecation-schedule-panel-item">
-                        <span class="hypothecation-schedule-label">Выбранное:</span>
-                        <a class="hypothecation-schedule-link" href="#" rel="nofollow">2021<i class="buildings-result-icon"></i></a>
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        Информация Первоначальный взнос
+                    </div>
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        Информация Сроки
+                    </div>
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        Информация Документы
                     </div>
                 </div>
-                <div class="hypothecation-schedule-table-wrapper JS-ShowMore" data-showmore="{
+            </section>
+
+            <div class="refinancing-calc js-calc-mortgage">
+                <h2 class="refinancing-calc-title h1">Калькулятор военной ипотеки <span class="refinancing-calc-title-label">с расчётом именных накоплений военнослужащего</span></h2>
+                <div class="loading"></div>
+                <form method="POST" action="" class="mortgage-calc-form">
+                    <input type="hidden" name="ajax" value="Y" />
+                    <div class="row">
+                        <div class="refinancing-calc-item col-lg-6">
+                            <ul class="range-list">
+                                <li class="range-item js-slider-ruler" data-range-min="25" data-range-max="45" data-range-step="1" data-range-start="27" data-range-active="range-container_active">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Ваш возраст</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value js-change-calc" value="27" type="hidden" name="calc-age" data-calc="mortgage" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">25</div>
+                                                    <div class="range-scale-item">35</div>
+                                                    <div class="range-scale-item">45</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="range-checkbox">
+                                            <label class="checkbox-field">
+                                                <span class="checkbox-text">Учесть накопления НИС</span>
+                                                <span class="checkbox">
+	                                    <input class="checkbox-input" type="checkbox" name="calc-savings" />
+	                                    <i class="checkbox-check"></i>
+	                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="range-item js-slider-ruler" data-range-min="2010" data-range-max="2021" data-range-step="1" data-range-start="2013" data-range-active="range-container_active">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Год вступления в НИС</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value" type="hidden" name="calc-introduction-year" value="2013" data-calc="mortgage" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">2005</div>
+                                                    <div class="range-scale-item">2015</div>
+                                                    <div class="range-scale-item">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="range-item js-slider-ruler" data-range-min="1" data-range-max="12" data-range-step="1" data-range-start="3" data-range-active="range-container_active">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Месяц вступления в НИС</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value" type="hidden" name="calc-introduction-month" value="3" data-calc="mortgage" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">1</div>
+                                                    <div class="range-scale-item">6</div>
+                                                    <div class="range-scale-item">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="range-checkbox">
+                                            <label class="checkbox-field">
+                                                <span class="checkbox-text">Учесть стоимость квартиры</span>
+                                                <span class="checkbox">
+	                                    <input class="checkbox-input" type="checkbox" name="calc-price-kv-check" />
+	                                    <i class="checkbox-check"></i>
+	                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="range-item js-slider-ruler" data-range-min="400000" data-range-max="12000000" data-range-step="10" data-range-start="3000000" data-range-active="range-container_active" data-range-units="&nbsp;₽">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Стоимость квартиры</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value" type="hidden" name="calc-price-kv" data-calc="mortgage" data-price="yes" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">400 тыс</div>
+                                                    <div class="range-scale-item">6 млн</div>
+                                                    <div class="range-scale-item">12 млн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mortgage-calc-item mortgage-calc col-lg-6">
+                            <div class="mortgage-calc-block">
+                                <div class="mortgage-calc-block__wrapp">
+                                    <div class="mortgage-item__row">
+                                        <div class="mortgage-item__field">
+                                            <div class="calculation-item__field-item">
+                                                <div class="calculation-item__label">Выберите тип жилья</div>
+                                                <div class="calculation-item__select">
+                                                    <select name="calc-type-housing" class="select js-select js-calc-type-housing">
+                                                        <option value="">Выберите тип жилья</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mortgage-item__field">
+                                            <div class="calculation-item__field-item">
+                                                <div class="calculation-item__label">Выберите программу</div>
+                                                <div class="calculation-item__select">
+                                                    <select name="calc-programm" class="select js-select js-calc-programm">
+                                                        <option value="">Выберите программу</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mortgage-item__row">
+                                        <div class="mortgage-item__field">
+                                            <div class="mortgage-if">
+                                                <div class="mortgage-if__col-1">
+                                                    <div class="mortgage-if__item">
+                                                        <div class="mortgage-if__label">Ипотека от:</div>
+                                                        <div class="mortgage-if__info">
+                                                            <div class="calculation-item__select">
+                                                                <div class="calc-select-icon">
+                                                                    <select name="bank" class="select select_simple js-select-icons">
+                                                                        <option disabled>Банк</option>
+                                                                        <option selected class="calc-option-icon" value="bank-1" data-calc-icon="./images/card/bank-img-1.png">Сбербанк</option>
+                                                                        <option class="calc-option-icon" value="bank-2" data-calc-icon="./images/card/bank-img-2.png">ВТБ</option>
+                                                                        <option class="calc-option-icon" value="bank-3" data-calc-icon="./images/card/bank-img-3.png">Банк 1</option>
+                                                                        <option class="calc-option-icon" value="bank-4" data-calc-icon="./images/card/bank-img-4.png">Банк 2</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mortgage-if__col-2">
+                                                    <div class="mortgage-if__item">
+                                                        <div class="mortgage-if__label">Ставка:</div>
+                                                        <div class="mortgage-if__info">
+                                                            <div class="mortgage-if__value"><span class="js_bet_credit">---</span> %</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mortgage-item__field">
+                                            <div class="mortgage-if">
+                                                <div class="mortgage-if__col-1">
+                                                    <div class="mortgage-if__item mortgage-if__item-padd">
+                                                        <div class="mortgage-if__label">Ежемес. платёж:</div>
+                                                        <div class="mortgage-if__info">
+                                                            <div class="mortgage-if__value"><span class="js-calc-month-payment">---</span> ₽</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mortgage-if__col-2">
+                                                    <div class="mortgage-if__item">
+                                                        <div class="mortgage-if__label">Срок кредита:</div>
+                                                        <div class="mortgage-if__info text-left">
+                                                            <div class="mortgage-if__value"><span class="js-calc-loan-term">---</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mortgage-item__row">
+                                        <div class="mortgage-item__total">
+                                            <span class="name">Сумма ипотеки:</span> <span class="price"><span class="js_sum_credit">---</span> ₽</span> <a href="#" class="button">Получить одобрение</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="mortgage-list-info">
+                                        <div class="calc-savings__info">
+                                            <div class="mortgage-list-info__item mortgage-list-info__item-total">
+                                                <span class="mortgage-list-info__name">Ваши накопления:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-nakoplenovsego">---</span> ₽</span>
+                                            </div>
+
+                                            <div class="mortgage-list-info__item">
+                                                <span class="mortgage-list-info__name">Накопительные взносы:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-nakopitelniyvzos">---</span> ₽</span>
+                                            </div>
+
+                                            <div class="mortgage-list-info__item">
+                                                <span class="mortgage-list-info__name">Инвестиционный доход:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-ivestdohod">---</span> ₽</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-kv__info">
+                                            <div class="mortgage-list-info__item mortgage-list-info__item-bold pt-1">
+                                                <span class="mortgage-list-info__name">Собственные средства:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-own">---</span> ₽</span>
+                                            </div>
+
+                                            <div class="mortgage-list-info__item mortgage-list-info__item-bold pt-2">
+                                                <span class="mortgage-list-info__name">Стомость квартиры:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-kv">---</span> ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section style="display: block;" class="hypothecation-schedule">
+                        <h2 class="h1">График платежей</h2>
+                        <div class="hypothecation-schedule-panel">
+                            <div class="hypothecation-schedule-panel-item">
+                                <div class="hypothecation-schedule-select">
+                                    <select name="year" class="select select_simple js-select">
+                                        <option selected disabled>Выберите год</option>
+                                        <option value="year-1">2021</option>
+                                        <option value="year-2">2021</option>
+                                        <option value="year-3">2021</option>
+                                        <option value="year-4">2021</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hypothecation-schedule-panel-item">
+                                <span class="hypothecation-schedule-label">Выбранное:</span>
+                                <a class="hypothecation-schedule-link" href="#" rel="nofollow">2021<i class="buildings-result-icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="hypothecation-schedule-table-wrapper JS-ShowMore" data-showmore="{
                     'amount': 3,
                     'classHide': 'hypothecation-schedule-table-item_hide',
                     'elementItem': '.hypothecation-schedule-table-item'
                 }">
-                    <div class="hypothecation-schedule-table">
-                        <div class="hypothecation-schedule-table-item">
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-name">Месяц</span>
+                            <div class="hypothecation-schedule-table">
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Месяц</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Ежемес. платеж</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Выплата %</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Выплата долга</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Причисл.%</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Остаток долга</span>
+                                    </div>
+                                </div>
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">Июль</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">23 900</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">4 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">3 890 500</span>
+                                    </div>
+                                </div>
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">Июль</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">23 900</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">4 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">3 890 500</span>
+                                    </div>
+                                </div>
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">Июль</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">23 900</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">4 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">3 890 500</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-name">Ежемес. платеж</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-name">Выплата %</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-name">Выплата долга</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-name">Причисл.%</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-name">Остаток долга</span>
-                            </div>
-                        </div>
-                        <div class="hypothecation-schedule-table-item">
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">Июль</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">23 900</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">4 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">12 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">12 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">3 890 500</span>
-                            </div>
-                        </div>
-                        <div class="hypothecation-schedule-table-item">
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">Июль</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">23 900</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">4 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">12 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">12 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">3 890 500</span>
-                            </div>
-                        </div>
-                        <div class="hypothecation-schedule-table-item">
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">Июль</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">23 900</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">4 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">12 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">12 800</span>
-                            </div>
-                            <div class="hypothecation-schedule-table-col">
-                                <span class="hypothecation-schedule-table-value">3 890 500</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                            <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
                         <span class="show-more show-more_show">
                             <span class="show-more-label">Показать полный график</span><span class="hypothecation-schedule-icon"></span>
                         </span>
-                        <span class="show-more show-more_hide">
+                                <span class="show-more show-more_hide">
                             <span class="show-more-label">Свернуть</span><span class="hypothecation-schedule-icon"></span>
                         </span>
-                    </a>
+                            </a>
+                        </div>
+                    </section>
+                </form>
+            </div>
+
+            <section class="hypothecation-feedback">
+                <h2 class="h1">Онлайн заявка на военную ипотеку</h2>
+                <div class="refinancing-stages-list row">
+                    <div class="refinancing-stages-item col-md-6 col-lg-3">
+                        <div class="refinancing-stages-icon">
+                            <img src="./images/refinancing/refinancing-stages-icon-1.png" alt="" />
+                        </div>
+                        <span class="refinancing-stages-name">Консультация</span>
+                        <div class="refinancing-stages-description">Специалист по ипотеке позвонит в&nbsp;течение 10 минут. Выяснит ваши цели и расскажет, что делать дальше.</div>
+                    </div>
+                    <div class="refinancing-stages-item col-md-6 col-lg-3">
+                        <div class="refinancing-stages-icon">
+                            <img src="./images/refinancing/refinancing-stages-icon-2.png" alt="" />
+                        </div>
+                        <span class="refinancing-stages-name">Заполнение анкеты</span>
+                        <div class="refinancing-stages-description">Вы собираете все документы, прикрепляете их онлайн и заполняете данные о себе.</div>
+                    </div>
+                    <div class="refinancing-stages-item col-md-6 col-lg-3">
+                        <div class="refinancing-stages-icon">
+                            <img src="./images/refinancing/refinancing-stages-icon-3.png" alt="" />
+                        </div>
+                        <span class="refinancing-stages-name">Отправка заявки в банки</span>
+                        <div class="refinancing-stages-description">Наш специалист позвонит в течение 10 минут. Выяснит ваши цели и&nbsp;расскажет, что делать дальше.</div>
+                    </div>
+                    <div class="refinancing-stages-item col-md-6 col-lg-3">
+                        <div class="refinancing-stages-icon">
+                            <img src="./images/refinancing/refinancing-stages-icon-4.png" alt="" />
+                        </div>
+                        <span class="refinancing-stages-name">Одобрение ипотеки</span>
+                        <div class="refinancing-stages-description">После проверки банками мы сообщаем статус вашей заявки и&nbsp;условия банка.</div>
+                    </div>
+                </div>
+                <div class="hypothecation-feedback-container">
+                    <div class="hypothecation-feedback-content-block">
+                        <div class="hypothecation-feedback-indicator">
+                            <span class="hypothecation-feedback-indicator-title h2">Осталось заполнить 20 %</span>
+                            <div class="hypothecation-feedback-indicator-range">
+                                <div style="width: 42%;" class="hypothecation-feedback-indicator-quantity"></div>
+                                <div class="hypothecation-feedback-indicator-track"></div>
+                            </div>
+                        </div>
+                        <div class="hypothecation-feedback-content content">
+                            <ul>
+                                <li>Заполните анкету и отправьте нам “скан” этой анкеты, паспорта и Свидетельство участника НИС</li>
+                                <li>В течение следующих суток Вы получите одобрение военной ипотеки от Банка-парнёера</li>
+                                <li>Вы будете иметь доступ ко всей базе новостроек, аккредитованных Банками-парнёрами</li>
+                                <li>Мы будем деражать прямую связь со всеми менеджерами Банка-партнёра. Поэтому любые вопросы будем решать опертивно.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hypothecation-feedback-form-block">
+                        <div class="feedback-form">
+                            <form class="js-form-validate">
+                                <span class="feedback-form-name">Заполните поля</span>
+                                <div class="field js-form-validate-field">
+                                    <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                        <label class="field-label JS-FieldText-Label" for="feedback-name">Ваше Имя</label>
+                                        <input class="input-text JS-FieldText-Input" type="text" placeholder="" id="feedback-name" name="feedback-name" required />
+                                    </span>
+                                </div>
+                                <div class="field field_simple js-form-validate-field">
+                                    <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                        <label class="field-label JS-FieldText-Label" for="feedback-phone">Ваш телефон</label>
+                                        <input class="input-text JS-FieldText-Input js-phone" type="text" placeholder="" id="feedback-phone" name="feedback-phone" required />
+                                    </span>
+                                </div>
+                                <div class="switch-field">
+                                    <label class="switch">
+                                        <input class="switch-checkbox" type="checkbox" name="notifications" checked="checked" />
+                                        <span class="switch-decor">
+                                            <span class="switch-icon"></span>
+                                        </span>
+                                        <span class="switch-label">Я не робот</span>
+                                    </label>
+                                </div>
+                                <div class="feedback-field-button">
+                                    <button class="button button_wide">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <div class="calc-select-icon">
-                <select name="year" class="select select_simple js-select-icons">
-                    <option disabled>Банк</option>
-                    <option selected class="calc-option-icon" value="year-1" data-calc-icon="./images/card/bank-img-1.png">Сбербанк</option>
-                    <option class="calc-option-icon" value="year-2" data-calc-icon="./images/card/bank-img-2.png">ВТБ</option>
-                    <option class="calc-option-icon" value="year-3" data-calc-icon="./images/card/bank-img-3.png">Банк 1</option>
-                    <option class="calc-option-icon" value="year-4" data-calc-icon="./images/card/bank-img-4.png">Банк 2</option>
-                </select>
-            </div>
+            <section class="bank-offers bank-offers_simple">
+                <h2 class="bank-offers-title h1">Предложения банка</h2>
+                <a class="bank-offers-more more" href="#">
+                    <span class="more-label">Показать все</span>
+                </a>
+                <div class="bank-offers-group js-slider-bank-offers">
+                    <div class="bank-offers-group-list js-slider-list">
+                        <div class="bank-offers-item js-slider-item">
+                            <div class="bank-offers-img">
+                                <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-1.png" alt="" />
+                            </div>
+                            <div class="bank-offers-description">
+                                <span class="bank-offers-subtitle h2">Время менять старые квартиры по Военной ипотеке</span>
+                                <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                <ul class="bank-offers-list">
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Ставка</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Первый взнос</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Срок</span>
+                                        <span class="bank-offers-list-value">до 30 лет</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Сумма</span>
+                                        <span class="bank-offers-list-value">до 50 млн</span>
+                                    </li>
+                                </ul>
+                                <a class="button" href="#">Одобриться</a>
+                            </div>
+                        </div>
+                        <div class="bank-offers-item js-slider-item">
+                            <div class="bank-offers-img">
+                                <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-2.png" alt="" />
+                            </div>
+                            <div class="bank-offers-description">
+                                <span class="bank-offers-subtitle h2">Рефинансирование семейной ипотеки</span>
+                                <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                <ul class="bank-offers-list">
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Ставка</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Первый взнос</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Срок</span>
+                                        <span class="bank-offers-list-value">до 30 лет</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Сумма</span>
+                                        <span class="bank-offers-list-value">до 50 млн</span>
+                                    </li>
+                                </ul>
+                                <a class="button" href="#">Одобриться</a>
+                            </div>
+                        </div>
+                        <div class="bank-offers-item js-slider-item">
+                            <div class="bank-offers-img">
+                                <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-3.png" alt="" />
+                            </div>
+                            <div class="bank-offers-description">
+                                <span class="bank-offers-subtitle h2">Время менять старые квартиры по Военной ипотеке</span>
+                                <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                <ul class="bank-offers-list">
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Ставка</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Первый взнос</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Срок</span>
+                                        <span class="bank-offers-list-value">до 30 лет</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Сумма</span>
+                                        <span class="bank-offers-list-value">до 50 млн</span>
+                                    </li>
+                                </ul>
+                                <a class="button" href="#">Одобриться</a>
+                            </div>
+                        </div>
+                        <div class="bank-offers-item js-slider-item">
+                            <div class="bank-offers-img">
+                                <img class="bank-offers-pic" src="./images/bank-detail/bank-offers-img-4.png" alt="" />
+                            </div>
+                            <div class="bank-offers-description">
+                                <span class="bank-offers-subtitle h2">Рефинансирование семейной ипотеки</span>
+                                <div class="bank-offers-content content">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                                <ul class="bank-offers-list">
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Ставка</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Первый взнос</span>
+                                        <span class="bank-offers-list-value">-0,5%</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Срок</span>
+                                        <span class="bank-offers-list-value">до 30 лет</span>
+                                    </li>
+                                    <li class="bank-offers-list-item">
+                                        <span class="bank-offers-list-name">Сумма</span>
+                                        <span class="bank-offers-list-value">до 50 млн</span>
+                                    </li>
+                                </ul>
+                                <a class="button" href="#">Одобриться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="information">
+                <h2 class="information-title h1">SEO-текст</h2>
+                <div class="information-content content">
+                    <p>
+                        Integer tellus sed libero diam nulla massa facilisis vel felis, leo eu quis rhoncus, senectus et tellus, molestie imperdiet
+                        volutpat arcu arcu adipiscing morbi ullamcorper eu, neque, purus et sed tincidunt et habitasse augue sed aliquam quisque leo
+                        quisque interdum nisi sed amet nibh varius elit, volutpat pharetra odio morbil.Integer tellus sed libero diam nulla massa
+                        facilisis vel felis, leo eu quis rhoncus, senectus et tellus, molestie imperdiet volutpat arcu arcu adipiscing morbi ullamcorper
+                        eu, neque, purus et sed tincidunt et habitasse augue sed aliquam quisque leo quisque interdum nisi sed amet nibh varius elit,
+                        volutpat pharetra odio morbil olutpat pharetra odio morbil.haretra odio morbil.
+                    </p>
+                    <p>
+                        Bibendum lacus ultrices mus arcu eu velit magna lectus auctor facilisi nibh enim viverra volutpat consequat urna donec id
+                        lectus pulvinar nibh nibh blandit mauris tortor amet ut ac, augue sit quam ac nullam a nec, aliquam bibendum congue eget ornare
+                        scelerisque tristique erat dignissim fermentum vitae ac vulputate sit integer justo semper habitant tellus neque arcu aliquet
+                        iaculis nisl sagittis, consectetur amet in ac egestas risus nunc nam at sit molestie amet, imperdiet massa semper quam augue mauris
+                        nibh viverra urna tellus eget habitasse dui purus auctor a id sagittis tellus lacus viverra interdum semper nibh tristique lectus velit
+                    </p>
+                </div>
+            </section>
 
+            <section class="faq">
+                <h2 class="h1">Часто задаваемые вопросы</h2>
+                <ul class="faq-list">
+                    <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                        <div class="faq-panel JS-Accordion-Switcher">
+                            <span class="faq-name">Какой минимальный первоначальный взнос нужен на новостройку и вторичку?</span>
+                            <a href="javascript:;" class="faq-link">
+                                <i class="faq-icon"></i>
+                            </a>
+                        </div>
+                        <div class="faq-info content JS-Accordion-Menu">
+                            <p>Обычно 20%, но может быть ниже при определенных условиях застройщиков или банков</p>
+                        </div>
+                    </li>
+                    <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                        <div class="faq-panel JS-Accordion-Switcher">
+                            <span class="faq-name">Какие документы нужны для подачи заявки на ипотеку?</span>
+                            <a href="javascript:;" class="faq-link">
+                                <i class="faq-icon"></i>
+                            </a>
+                        </div>
+                        <div class="faq-info content JS-Accordion-Menu">
+                            <p>Обычно 20%, но может быть ниже при определенных условиях застройщиков или банков</p>
+                        </div>
+                    </li>
+                    <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                        <div class="faq-panel JS-Accordion-Switcher">
+                            <span class="faq-name">Какой должен быть максимальный и минимальный возраст заемщика по ипотеке?</span>
+                            <a href="javascript:;" class="faq-link">
+                                <i class="faq-icon"></i>
+                            </a>
+                        </div>
+                        <div class="faq-info content JS-Accordion-Menu">
+                            <p>Обычно 20%, но может быть ниже при определенных условиях застройщиков или банков</p>
+                        </div>
+                    </li>
+                    <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                        <div class="faq-panel JS-Accordion-Switcher">
+                            <span class="faq-name">Какую сумму одобрит банк при определённом размере дохода, какие будут ежемесячные платежи?</span>
+                            <a href="javascript:;" class="faq-link">
+                                <i class="faq-icon"></i>
+                            </a>
+                        </div>
+                        <div class="faq-info content JS-Accordion-Menu">
+                            <p>Обычно 20%, но может быть ниже при определенных условиях застройщиков или банков</p>
+                        </div>
+                    </li>
+                    <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                        <div class="faq-panel JS-Accordion-Switcher">
+                            <span class="faq-name">Плохая кредитная история, можно ли оформить ипотеку?</span>
+                            <a href="javascript:;" class="faq-link">
+                                <i class="faq-icon"></i>
+                            </a>
+                        </div>
+                        <div class="faq-info content JS-Accordion-Menu">
+                            <p>Обычно 20%, но может быть ниже при определенных условиях застройщиков или банков</p>
+                        </div>
+                    </li>
+                    <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                        <div class="faq-panel JS-Accordion-Switcher">
+                            <span class="faq-name">Может ли индивидуальный предприниматель оформить ипотеку?</span>
+                            <a href="javascript:;" class="faq-link">
+                                <i class="faq-icon"></i>
+                            </a>
+                        </div>
+                        <div class="faq-info content JS-Accordion-Menu">
+                            <p>Обычно 20%, но может быть ниже при определенных условиях застройщиков или банков</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="visited">
+                <div class="visited-container js-slider-visited">
+                    <h2 class="visited-title h1">Вы недавно смотрели</h2>
+                    <div class="visited-gallery">
+                        <div class="visited-list js-slider-list">
+                            <div class="visited-list-item js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img" src="./images/visited/visited-img-1.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">ЖК “Пушкин”</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                            <div class="visited-list-item visited-list-item_bank js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img visited-img_bank" src="./images/visited/visited-img-2.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">Банк: Сбербанк</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                            <div class="visited-list-item js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img" src="./images/visited/visited-img-3.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">Рефинансирование</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                            <div class="visited-list-item js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img" src="./images/visited/visited-img-4.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">ЖК “Иваново”</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visited-nav slider-nav js-slider-buttons">
+                            <button class="visited-button slider-button js-slider-prev">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                            <button class="visited-button slider-button slider-button_next js-slider-next">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
     </main>

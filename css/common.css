@@ -133,6 +133,8 @@ a {
   text-decoration: underline; }
   a:hover {
     color: #333; }
+  a:active {
+    color: #333; }
 
 a img {
   border: none; }
@@ -184,14 +186,14 @@ button {
   cursor: pointer;
   border: 0;
   outline: none;
-  font-family: 'Helvetica', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 input,
 textarea {
   padding: 6px;
   border-width: 0;
   outline: none;
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -296,12 +298,6 @@ blockquote {
   font-weight: 300; }
   .content b {
     font-weight: 700; }
-  .content a {
-    color: #333; }
-    .content a:hover {
-      color: #333; }
-    .content a:active {
-      color: #333; }
   .content ul {
     margin-left: 13px;
     margin-bottom: 20px; }
@@ -2280,9 +2276,6 @@ body.mob-menu-show {
   margin-right: 10px; }
 
 @media screen and (min-width: 720px) and (max-width: 992px) {
-  .footer-copyright {
-    font-size: 13px;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2296,6 +2289,7 @@ body.mob-menu-show {
     width: auto;
     flex-grow: 1;
     line-height: 23px;
+    font-size: 13px;
   }
   .footer-logo {
     margin-right: 26px;
@@ -5886,9 +5880,28 @@ body.mob-menu-show {
   background-size: 38% auto;
 }
 
+.banner-section_actions {}
 .banner-section_actions .banner-section-pic {
   padding-left: 19%;
   background-size: 50% auto;
+}
+
+.banner-section_hypothecation {}
+.banner-section_hypothecation .banner-section-detail {
+  width: 45%;
+}
+.banner-section_hypothecation .banner-section-img {
+  width: 55%;
+}
+.banner-section_hypothecation .banner-section-pic {
+  margin-right: -42px;
+  padding-left: 18%;
+  background-image: url(../images/hypothecation/hypothecation-banner-decor.png);
+  background-position:  0 42%;
+  background-size: 35% auto;
+}
+.banner-section_hypothecation .banner-section-logo {
+  width: 91px;
 }
 
 .refinancing-advantage {
@@ -5932,6 +5945,7 @@ body.mob-menu-show {
   position: relative;
   overflow: hidden;
   max-width: 570px;
+  height: 100%;
   padding: 36px 30px 68px;
   background-color: #ECEFF5;
   border-radius: 20px;
@@ -5980,15 +5994,10 @@ body.mob-menu-show {
   margin-bottom: 20px;
   padding-right: 15px;
 }
-.refinancing-calc-table-col:nth-child(2) {
-  width: 37%;
-}
-.refinancing-calc-table-col:nth-child(3) {
-  width: 29%;
-}
 .refinancing-calc-table-col_total {
   width: 66%;
 }
+.refinancing-calc-table-col_contribution {}
 .refinancing-calc-table-head {
   display: block;
   margin-bottom: 12px;
@@ -6166,20 +6175,30 @@ body.mob-menu-show {
     width: 50%;
     margin-bottom: 25px;
   }
-  .refinancing-calc-table-col:nth-child(2) {
-    width: 50%;
+  .refinancing-calc-table-col_mortgage {
+    width: 100%;
+    order: 1;
   }
-  .refinancing-calc-table-col:nth-child(3) {
+  .refinancing-calc-table-col_bid {
     width: 50%;
+    order: 3;
+  }
+  .refinancing-calc-table-col_time {
+    width: 50%;
+    order: 2;
+  }
+  .refinancing-calc-table-col_total {
+    width: 100%;
+    order: 4;
+  }
+  .refinancing-calc-table-col_contribution {
+    display: none;
   }
   .refinancing-calc-block {
     padding-bottom: 50px;
   }
   .refinancing-calc-block:after {
     margin-right: -220px;
-  }
-  .refinancing-calc-table-col_total {
-    width: 100%;
   }
   .refinancing-calc-table-head {
     margin-bottom: 7px;
@@ -6234,13 +6253,16 @@ body.mob-menu-show {
   z-index: 2;
 }
 .range-head {
+  display: flex;
+  align-items: center;
   min-height: 77px;
-  padding: 15px 30px 43px;
+  padding: 13px 30px 37px;
   background-color: #ECEFF5;
   border-radius: 20px 20px 0 0;
 }
 .range-name {
   display: block;
+  margin-right: 20px;
   font-size: 16px;
   line-height: 19px;
 }
@@ -6294,13 +6316,25 @@ body.mob-menu-show {
   top: -23px;
   left: 50%;
   padding: 0 3px;
-  min-width: 33px;
   transform: translateX(-50%);
   text-align: center;
   font-size: 16px;
   line-height: 19px;
   color: #333333;
   white-space: nowrap;
+  font-family: 'Lato', sans-serif;
+}
+.slider-range-field {
+  width: 160px;
+  height: 46px;
+  line-height: 46px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  font-size: 16px;
+  text-align: center!important;
 }
 
 .slider-range .slider-range-track {
@@ -6333,15 +6367,8 @@ body.mob-menu-show {
 .range-container_active .slider-range-track {
   background: #FFB52B;
 }
-.range-container_active .slider-range-text {
-  top: -53px;
-  height: 46px;
-  line-height: 46px;
-  padding-right: 27px;
-  padding-left: 27px;
-  background-color: #fff;
-  border: 0.7px solid #FFB52B;
-  border-radius: 15px;
+.range-container_active .slider-range-field {
+  border-color: #FFB52B;
 }
 
 @media screen and (max-width: 992px) {
@@ -6352,12 +6379,18 @@ body.mob-menu-show {
 }
 
 @media screen and (max-width: 720px) {
-  .range-container_active .slider-range-text {
-    top: -46px;
-    height: 36px;
-    line-height: 36px;
+  .range-head {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .slider-range-field {
+    width: 110px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .range-name {
+    margin-right: 15px;
+    font-size: 14px;
   }
 }
 /* /range */
@@ -6637,6 +6670,9 @@ body.mob-menu-show {
   .banks-partners {
     margin-bottom: 50px;
   }
+  .banks-partners-content ul li:before {
+    margin-top: -2px;
+  }
   .banks-actual-description {
     width: 46%;
   }
@@ -6698,14 +6734,14 @@ body.mob-menu-show {
     width: 100%;
     height: auto;
   }
-  .banks-partners-content ul li:before {
-    margin-top: -2px;
-  }
 }
 
 
 .bank-offers {
   margin-bottom: 153px;
+}
+.bank-offers_simple {
+  margin-bottom: 82px;
 }
 .bank-offers-title {
   float: left;
@@ -6714,6 +6750,11 @@ body.mob-menu-show {
 .bank-offers-more {
   float: right;
   margin-bottom: 37px;
+}
+.bank-offers-group {
+  clear: both;
+}
+.bank-offers-group-list {
 }
 .bank-offers-item {
   clear: both;
@@ -6768,6 +6809,9 @@ body.mob-menu-show {
   font-size: 24px;
   font-weight: 600;
 }
+.bank-offers .owl-stage {
+  display: flex;
+}
 
 @media screen and (max-width: 992px) {
   .bank-offers {
@@ -6778,6 +6822,12 @@ body.mob-menu-show {
   }
   .bank-offers-more {
     margin-bottom: 25px;
+  }
+  .bank-offers-group-list {
+    margin-right: 115px;
+  }
+  .bank-offers-item {
+    height: 100%;
   }
 }
 
@@ -6824,6 +6874,9 @@ body.mob-menu-show {
     align-self: center;
     margin-top: 40px;
     margin-bottom: 0;
+  }
+  .bank-offers-group-list {
+    margin-right: 26px;
   }
 }
 /* /banks */
@@ -6969,6 +7022,10 @@ body.mob-menu-show {
   transform: scaleY(-1);
 }
 
+.calc-select-icon {
+  width: 100%;
+  max-width: 130px;
+}
 .calc-select-icon .label {
   height: 35px;
   line-height: 35px;
@@ -6976,7 +7033,7 @@ body.mob-menu-show {
 .calc-option-icon {
   display: inline-block;
   vertical-align: middle;
-  height: 34px;
+  height: 33px;
   object-fit: contain;
 }
 
@@ -6988,6 +7045,59 @@ body.mob-menu-show {
 .calc-select-icon .selectric-items li:last-child {
   margin-bottom: 0;
 }
+
+.hypothecation-conditions {
+  margin-bottom: 90px;
+}
+.hypothecation-conditions-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 27px;
+}
+.hypothecation-conditions-nav-item {
+  margin-right: 11px;
+  margin-bottom: 10px;
+}
+.hypothecation-conditions-nav-item:last-child {
+  margin-right: 0;
+}
+.hypothecation-conditions-nav-link {
+  display: inline-block;
+  min-height: 36px;
+  line-height: 34px;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 10px;
+  background-color: #ECEFF5;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.hypothecation-conditions-nav-link:hover {
+  background-color: #F2F2F2;
+}
+.hypothecation-conditions-nav-item_active .hypothecation-conditions-nav-link {
+  background: linear-gradient(104deg, #FFC637 14.13%, #FFB32A 91.94%);
+}
+.hypothecation-conditions-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.hypothecation-conditions-title {
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+.hypothecation-conditions-subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.hypothecation-conditions-info {
+  display: none;
+}
+.hypothecation-conditions-info_active {
+  display: block;
+}
+.hypothecation-conditions-description {}
 
 @media screen and (max-width: 992px) {
   .hypothecation-schedule-table-wrapper {
@@ -7003,8 +7113,94 @@ body.mob-menu-show {
     padding-right: 14px;
     padding-left: 14px;
   }
+  .banner-section_hypothecation .banner-section-detail {
+    width: 52%;
+  }
+  .banner-section_hypothecation .banner-section-img {
+    width: 48%;
+  }
+  .banner-section_hypothecation .banner-section-pic {
+    margin-right: -31px;
+  }
+  .hypothecation-conditions {
+    margin-bottom: 50px;
+  }
+  .hypothecation-conditions-description {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .banner-section_hypothecation .banner-section-detail {
+    width: 100%;
+  }
+  .banner-section_hypothecation .banner-section-img {
+    width: 100%;
+  }
+  .banner-section_hypothecation .banner-section-pic {
+    margin-right: 0;
+  }
 }
 /* /hypothecation */
+
+/* hypothecation-feedback */
+.hypothecation-feedback {
+  margin-bottom: 130px;
+}
+.hypothecation-feedback-container {
+  display: flex;
+}
+.hypothecation-feedback-content-block {
+  width: 57%;
+  padding-right: 82px;
+}
+.hypothecation-feedback-form-block {
+  width: 43%;
+  padding-top: 52px;
+}
+.hypothecation-feedback-indicator {
+  margin-bottom: 39px;
+}
+.hypothecation-feedback-indicator-range {
+}
+.hypothecation-feedback-indicator-quantity {
+  height: 8px;
+  margin-top: -8px;
+  background-image: linear-gradient(to right, #E86203, #FDAD27);
+}
+.hypothecation-feedback-indicator-track {
+  height: 1px;
+  background-color: #FFB52B;
+}
+.hypothecation-feedback-indicator-title {
+  display: block;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .hypothecation-feedback {
+    margin-bottom: 60px;
+  }
+  .hypothecation-feedback-content-block {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hypothecation-feedback-container {
+    display: block;
+  }
+  .hypothecation-feedback-content-block {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  .hypothecation-feedback-form-block {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+/* /hypothecation-feedback */
 
 /* actions */
 .actions {
@@ -7178,3 +7374,4 @@ body.mob-menu-show {
   }
 }
 /* /actions */
+

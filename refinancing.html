@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body class="main-page">
@@ -494,11 +494,12 @@
                                 <div class="range-container">
                                     <div class="range-head">
                                         <span class="range-name">Остаток кредита</span>
+                                        <input class="slider-range-field js-slider-rating-field" type="text" name="balance-1" />
                                     </div>
                                     <div class="range-wrapper">
                                         <div class="range slider-range">
                                             <div class="slider-range-track js-slider-rating-track">
-                                                <input class="js-slider-rating-value" type="hidden" name="age" readonly="readonly" />
+                                                <input class="js-slider-rating-value" type="hidden" name="balance" readonly="readonly" />
                                                 <div class="ui-slider-handle js-ui-slider-handle">
                                                     <div class="slider-range-text js-slider-rating-text"></div>
                                                 </div>
@@ -523,13 +524,14 @@
                                 <div class="range-container">
                                     <div class="range-head">
                                         <span class="range-name">Текущая процентная ставка</span>
+                                        <input class="slider-range-field js-slider-rating-field" type="text" name="rate-1" />
                                     </div>
                                     <div class="range-wrapper">
                                         <div class="range slider-range">
                                             <div class="slider-range-track js-slider-rating-track">
-                                                <input class="js-slider-rating-value" type="hidden" name="age" readonly="readonly" />
+                                                <input class="js-slider-rating-value" type="hidden" name="rate" readonly="readonly" />
                                                 <div class="ui-slider-handle js-ui-slider-handle">
-                                                    <input class="slider-range-text js-slider-rating-text" type="text" name="age-1" value="" />
+                                                    <div class="slider-range-text js-slider-rating-text"></div>
                                                 </div>
                                             </div>
                                             <div class="range-scale">
@@ -551,6 +553,7 @@
                                 <div class="range-container">
                                     <div class="range-head">
                                         <span class="range-name">Ваш возраст</span>
+                                        <input class="slider-range-field js-slider-rating-field" type="text" name="balance-1" />
                                     </div>
                                     <div class="range-wrapper">
                                         <div class="range slider-range">
@@ -576,21 +579,29 @@
                             <div class="refinancing-calc-content">
                                 <span class="refinancing-calc-subtitle h2">Лучшее предложение</span>
                                 <div class="refinancing-calc-table">
-                                    <div class="refinancing-calc-table-col">
+                                    <div class="refinancing-calc-table-col refinancing-calc-table-col_mortgage">
                                         <span class="refinancing-calc-table-head">Ипотека от:</span>
-                                        <img src="./images/refinancing/banks-img-1.png" alt="" />
+                                        <div class="calc-select-icon">
+                                            <select name="year" class="select select_simple js-select-icons">
+                                                <option disabled>Банк</option>
+                                                <option selected class="calc-option-icon" value="year-1" data-calc-icon="./images/card/bank-img-1.png">Сбербанк</option>
+                                                <option class="calc-option-icon" value="year-2" data-calc-icon="./images/card/bank-img-2.png">ВТБ</option>
+                                                <option class="calc-option-icon" value="year-3" data-calc-icon="./images/card/bank-img-3.png">Банк 1</option>
+                                                <option class="calc-option-icon" value="year-4" data-calc-icon="./images/card/bank-img-4.png">Банк 2</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="refinancing-calc-table-col">
-                                        <span class="refinancing-calc-table-head">Срок кредита:</span>
-                                        <del class="refinancing-calc-table-old-val">56&nbsp;мес</del>
-                                        <span class="refinancing-calc-table-val">32&nbsp;мес</span>
-                                    </div>
-                                    <div class="refinancing-calc-table-col">
+                                    <div class="refinancing-calc-table-col refinancing-calc-table-col_bid">
                                         <span class="refinancing-calc-table-head">Ставка:</span>
                                         <del class="refinancing-calc-table-old-val">5,59&nbsp;%</del>
                                         <span class="refinancing-calc-table-val">4,5&nbsp;%</span>
                                     </div>
-                                    <div class="refinancing-calc-table-col">
+                                    <div class="refinancing-calc-table-col refinancing-calc-table-col_time">
+                                        <span class="refinancing-calc-table-head">Срок кредита:</span>
+                                        <del class="refinancing-calc-table-old-val">56&nbsp;мес</del>
+                                        <span class="refinancing-calc-table-val">32&nbsp;мес</span>
+                                    </div>
+                                    <div class="refinancing-calc-table-col refinancing-calc-table-col_contribution">
                                         <span class="refinancing-calc-table-head">Взнос:</span>
                                         <span class="refinancing-calc-table-val">12&nbsp;500&nbsp;₽</span>
                                     </div>
@@ -947,56 +958,56 @@
         </div>
 
         <section class="action">
-                <div class="action-container js-slider-action">
-                    <div class="action-block">
-                        <div class="action-list js-slider-list">
-                            <div class="action-list-item js-slider-item">
-                                <a class="action-link" href="#">
-                                    <img class="action-img" src="./images/action/action-img-1.png" alt="" />
-                                </a>
-                                <div class="action-content">
-                                    <div class="action-list-panel">
-                                        <a class="action-title h1" href="#">Акции</a>
-                                        <a class="action-more more more_dark" href="#">
-                                            <span class="more-label">Показать все</span>
-                                        </a>
-                                    </div>
-                                    <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
-                                    <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+            <div class="action-container js-slider-action">
+                <div class="action-block">
+                    <div class="action-list js-slider-list">
+                        <div class="action-list-item js-slider-item">
+                            <a class="action-link" href="#">
+                                <img class="action-img" src="./images/action/action-img-1.png" alt="" />
+                            </a>
+                            <div class="action-content">
+                                <div class="action-list-panel">
+                                    <a class="action-title h1" href="#">Акции</a>
+                                    <a class="action-more more more_dark" href="#">
+                                        <span class="more-label">Показать все</span>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="action-list-item js-slider-item">
-                                <a class="action-link" href="#">
-                                    <img class="action-img" src="./images/action/action-img-1.png" alt="" />
-                                </a>
-                                <div class="action-content">
-                                    <div class="action-list-panel">
-                                        <a class="action-title h1" href="#">Акции</a>
-                                        <a class="action-more more more_dark" href="#">
-                                            <span class="more-label">Показать все</span>
-                                        </a>
-                                    </div>
-                                    <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
-                                    <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
-                                </div>
+                                <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
+                                <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
                             </div>
                         </div>
-                        <div class="action-nav slider-nav js-slider-buttons">
-                            <button class="slider-button js-slider-prev">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                            <button class="slider-button slider-button_next js-slider-next">
-                                <span class="slider-button-icon"></span>
-                            </button>
+                        <div class="action-list-item js-slider-item">
+                            <a class="action-link" href="#">
+                                <img class="action-img" src="./images/new/new-3.jpg" alt="" />
+                            </a>
+                            <div class="action-content">
+                                <div class="action-list-panel">
+                                    <a class="action-title h1" href="#">Акции</a>
+                                    <a class="action-more more more_dark" href="#">
+                                        <span class="more-label">Показать все</span>
+                                    </a>
+                                </div>
+                                <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
+                                <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="action-more-panel">
-                        <a class="more more_dark" href="#">
-                            <span class="more-label">Показать все</span>
-                        </a>
+                    <div class="action-nav slider-nav js-slider-buttons">
+                        <button class="slider-button js-slider-prev">
+                            <span class="slider-button-icon"></span>
+                        </button>
+                        <button class="slider-button slider-button_next js-slider-next">
+                            <span class="slider-button-icon"></span>
+                        </button>
                     </div>
                 </div>
-            </section>
+                <div class="action-more-panel">
+                    <a class="more more_dark" href="#">
+                        <span class="more-label">Показать все</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <div class="container">
 
@@ -1258,6 +1269,7 @@
 <script src="./libs/jquery-ui/jquery-ui.min.js"></script>
 <script src="./libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
 <script src="./js/refinancing.js"></script>
+<script src="./js/hypothecation.js"></script>
 <!-- /Подключить скрипты только для раздела -->
 
 </body>
