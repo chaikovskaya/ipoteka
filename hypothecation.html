@@ -486,11 +486,18 @@
                     </ul>
 
                     <div class="hypothecation-conditions-info JS-Tab-Item">
-                        Информация Общие условия
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-description content">
+                                Информация Общие условия
+                            </div>
+                        </div>
                     </div>
                     <div class="hypothecation-conditions-info hypothecation-conditions-info_active JS-Tab-Item">
-                        <div class="row">
-                            <div class="hypothecation-conditions-description col-lg-6">
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-pic">
+                                <img class="hypothecation-conditions-img" src="./images/hypothecation/hypothecation-conditions-img.jpg" alt="" />
+                            </div>
+                            <div class="hypothecation-conditions-description">
                                 <div class="content">
                                     <p class="hypothecation-conditions-title"><b>Ставка 5,59% годовых</b></p>
                                     <p class="hypothecation-conditions-subtitle"><b>Действует при выполнении следующих условий:</b></p>
@@ -505,19 +512,28 @@
                                     <a class="button" href="#">Рассчитать</a>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <img class="hypothecation-conditions-img" src="./images/hypothecation/hypothecation-conditions-img.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-description content">
+                                Информация Первоначальный взнос
                             </div>
                         </div>
                     </div>
                     <div class="hypothecation-conditions-info JS-Tab-Item">
-                        Информация Первоначальный взнос
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-description content">
+                                Информация Сроки
+                            </div>
+                        </div>
                     </div>
                     <div class="hypothecation-conditions-info JS-Tab-Item">
-                        Информация Сроки
-                    </div>
-                    <div class="hypothecation-conditions-info JS-Tab-Item">
-                        Информация Документы
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-description content">
+                                Информация Документы
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -916,6 +932,8 @@
                 </div>
                 <div class="hypothecation-feedback-container">
                     <div class="hypothecation-feedback-content-block">
+                        <!-- Блока скорее всего не будет -->
+                        <!--
                         <div class="hypothecation-feedback-indicator">
                             <span class="hypothecation-feedback-indicator-title h2">Осталось заполнить 20 %</span>
                             <div class="hypothecation-feedback-indicator-range">
@@ -923,6 +941,7 @@
                                 <div class="hypothecation-feedback-indicator-track"></div>
                             </div>
                         </div>
+                        -->
                         <div class="hypothecation-feedback-content content">
                             <ul>
                                 <li>Заполните анкету и отправьте нам “скан” этой анкеты, паспорта и Свидетельство участника НИС</li>
@@ -1359,13 +1378,13 @@
 <script src="./js/JSC.ShowMore.js"></script>
 <script src="./js/JSC.AjaxMore.js"></script>
 <script src="./js/JSC.MobileMenu.js"></script>
+<script src="./js/JSC.FieldText.js"></script>
 <!--Добавить на все станицы -->
 <script src="./js/JSC.Accordion.js"></script>
 
 <script src="./js/main.js"></script>
 
 <!-- Подключить скрипты только для раздела -->
-<script src="./js/hypothecation.js"></script>
 <!-- /Подключить скрипты только для раздела -->
 
 </body>

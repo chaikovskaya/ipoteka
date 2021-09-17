@@ -638,19 +638,134 @@ function reInitSliderBankOffers() {
     $(".js-slider-bank-offers .js-slider-list").trigger('destroy.owl.carousel');
 }
 
+function initSelectIcons() {
+    $('.js-select-icons').selectric({
+        disableOnMobile: false,
+        nativeOnMobile: false,
+        arrowButtonMarkup: '<b class="selectric-button"><i class="selectric-icon"></i></b>',
+        labelBuilder: function(itemData) {
+            var ind = itemData.index,
+                image = $('.js-select-icons option').eq(ind).data('calc-icon');
+
+            return '<img src="' +
+                image +
+                '" class="' +
+                itemData.className +
+                '" />';
+        },
+        optionsItemBuilder: function(itemData, element, index) {
+            var ind = itemData.index,
+                image = $('.js-select-icons option').eq(ind).data('calc-icon');
+
+            return '<img src="' +
+                image +
+                '" class="' +
+                itemData.className +
+                '" />';
+        }
+    });
+}
+
+function initSliderBanksActual() {
+    $(".js-slider-banks-actual").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20,
+                },
+                720: {
+                    items: 1,
+                },
+                992: {
+                    items: 2,
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+
+function initSliderUsefulLinks() {
+    $(".js-slider-useful-links").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            merge:true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20,
+                },
+                720: {
+                    items: 2,
+                    margin: 30,
+                    mergeFit:true,
+                },
+                992: {
+                    items: 2,
+                    margin: 30,
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+    });
+}
+function reInitSliderUsefulLinks() {
+    $(".js-slider-useful-links .js-slider-list").trigger('destroy.owl.carousel');
+}
+
 
 function initResizeWindow() {
     if (window.matchMedia('(max-width: ' + GLOBAL.mobile + 'px)').matches) {
         GLOBAL.widthWindow = 'isMobile';
         initSliderBankOffers();
+        initSliderUsefulLinks();
     } else if (window.matchMedia('(max-width: ' + GLOBAL.tablet + 'px)').matches) {
         GLOBAL.widthWindow = 'isTablet';
         initAdaptiveMenu();
         initSliderBankOffers();
+        initSliderUsefulLinks();
     } else {
         GLOBAL.widthWindow = '';
         initAdaptiveMenu();
         reInitSliderBankOffers();
+        reInitSliderUsefulLinks();
     }
 }
 
@@ -683,4 +798,6 @@ $(document).ready(function () {
     initPopupForm();
     initPopupProfile();
     initAccordion();
+    initSelectIcons();
+    initSliderBanksActual();
 });

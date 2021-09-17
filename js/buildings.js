@@ -83,46 +83,6 @@ function reInitSliderBuildings() {
     $(".js-slider-buildings .js-slider-list").trigger('destroy.owl.carousel');
 }
 
-function initSliderUsefulLinks() {
-    $(".js-slider-useful-links").each(function(){
-        var $element = $(this),
-            $list = $element.find('.js-slider-list'),
-            $buttons = $element.find('.js-slider-buttons'),
-            $item = $list.find('.js-slider-item');
-
-        var isStart = $item.length > 1 ? true : false;
-
-        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
-            loop: isStart,
-            mouseDrag: isStart,
-            touchDrag: isStart,
-            autoHeight: false,
-            smartSpeed: 500,
-            merge:true,
-            responsive: {
-                0: {
-                    items: 1,
-                    margin: 20,
-                },
-                720: {
-                    items: 2,
-                    margin: 30,
-                    mergeFit:true,
-                },
-                992: {
-                    items: 2,
-                    margin: 30,
-                },
-            },
-        }));
-        if (!isStart) {
-            $buttons.remove();
-        }
-    });
-}
-function reInitSliderUsefulLinks() {
-    $(".js-slider-useful-links .js-slider-list").trigger('destroy.owl.carousel');
-}
 
 function initResizeWindowBuilding() {
     if (window.matchMedia('(max-width: ' + GLOBAL.mobile + 'px)').matches) {
@@ -130,17 +90,14 @@ function initResizeWindowBuilding() {
         initShowMoreFilter(localExtraProps);
 
         initSliderBuildings();
-        initSliderUsefulLinks();
     } else if (window.matchMedia('(max-width: ' + GLOBAL.tablet + 'px)').matches) {
         var localExtraProps = GLOBAL.parseData(jQuery('.JS-ShowMore-Filter').data('showmore-extra'));
         initShowMoreFilter(localExtraProps);
 
         reInitSliderBuildings();
-        initSliderUsefulLinks();
     } else {
         initShowMoreFilter();
         reInitSliderBuildings();
-        reInitSliderUsefulLinks();
     }
 }
 

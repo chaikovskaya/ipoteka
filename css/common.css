@@ -481,6 +481,10 @@ blockquote {
     width: 16px;
     height: 15px;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 7.5C0 13.6763 1.412 15 8 15C14.588 15 16 13.6763 16 7.5C16 1.32375 14.588 0 8 0C1.412 0 0 1.32375 0 7.5ZM1.33333 7.5C1.33333 9.01553 1.42169 10.1481 1.62514 11.0063C1.82522 11.8503 2.11845 12.3505 2.47231 12.6822C2.82616 13.0139 3.35966 13.2889 4.25995 13.4764C5.17538 13.6672 6.38343 13.75 8 13.75C9.61657 13.75 10.8246 13.6672 11.74 13.4764C12.6403 13.2889 13.1738 13.0139 13.5277 12.6822C13.8815 12.3505 14.1748 11.8503 14.3749 11.0063C14.5783 10.1481 14.6667 9.01553 14.6667 7.5C14.6667 5.98447 14.5783 4.85192 14.3749 3.99371C14.1748 3.14968 13.8815 2.64953 13.5277 2.31779C13.1738 1.98605 12.6403 1.71115 11.74 1.52357C10.8246 1.33284 9.61657 1.25 8 1.25C6.38343 1.25 5.17538 1.33284 4.25995 1.52357C3.35966 1.71115 2.82616 1.98605 2.47231 2.31779C2.11845 2.64953 1.82522 3.14968 1.62514 3.99371C1.42169 4.85192 1.33333 5.98447 1.33333 7.5Z' fill='%23828282'/%3e%3cpath d='M7.99996 3.0713C7.63177 3.0713 7.33329 3.35113 7.33329 3.6963V7.4463C7.33329 7.79147 7.63177 8.0713 7.99996 8.0713H12C12.3682 8.0713 12.6666 7.79147 12.6666 7.4463C12.6666 7.10113 12.3682 6.8213 12 6.8213H8.66663V3.6963C8.66663 3.35113 8.36815 3.0713 7.99996 3.0713Z' fill='%23828282'/%3e%3c/svg%3e"); }
+  .icon_time_dark {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 18C1.5885 18 0 16.4115 0 9C0 1.5885 1.5885 0 9 0C16.4115 0 18 1.5885 18 9C18 16.4115 16.4115 18 9 18ZM8.25 4.5C8.25 4.08577 8.58582 3.75 9 3.75C9.41418 3.75 9.75 4.08577 9.75 4.5V8.25H13.5C13.9142 8.25 14.25 8.58577 14.25 9C14.25 9.41423 13.9142 9.75 13.5 9.75H9C8.58582 9.75 8.25 9.41423 8.25 9V4.5Z' fill='%23333333'/%3e%3c/svg%3e"); }
+  .icon_email {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 9C0 16.4115 1.5885 18 9 18C16.4115 18 18 16.4115 18 9C18 6.96306 17.88 5.36595 17.5521 4.12078C16.7126 5.03897 15.6532 6.1431 14.5026 7.12657C12.8706 8.52141 10.8941 9.81818 9 9.81818C7.10589 9.81818 5.12941 8.52141 3.49745 7.12657C2.34679 6.1431 1.2874 5.03897 0.447866 4.12078C0.119987 5.36595 0 6.96306 0 9ZM6 12.2727C5.58579 12.2727 5.25 12.639 5.25 13.0909C5.25 13.5428 5.58579 13.9091 6 13.9091H12C12.4142 13.9091 12.75 13.5428 12.75 13.0909C12.75 12.639 12.4142 12.2727 12 12.2727H6Z' fill='%23333333'/%3e%3cpath d='M13.5775 5.83847C14.854 4.74736 16.0197 3.49144 16.8985 2.51436C15.7073 0.550308 13.3623 0 9 0C4.6377 0 2.29268 0.550308 1.1015 2.51436C1.98031 3.49144 3.14595 4.74736 4.42255 5.83847C6.03059 7.21286 7.65411 8.18182 9 8.18182C10.3459 8.18182 11.9694 7.21286 13.5775 5.83847Z' fill='%23333333'/%3e%3c/svg%3e "); }
 /* /icons*/
 .more {
   display: inline-block;
@@ -512,6 +516,8 @@ blockquote {
   padding-top: 52px;
   background-color: #ECEFF5; }
 .breadcrumbs-block {
+  position: relative;
+  z-index: 1;
   padding-bottom: 22px;
 }
 .breadcrumbs-list {
@@ -3841,6 +3847,10 @@ body.mob-menu-show {
   .buildings-list-price {
     font-size: 14px;
   }
+  .buildings-banner-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .buildings-banner-name {
     font-size: 24px;
     line-height: 35px;
@@ -4081,8 +4091,6 @@ body.mob-menu-show {
   }
   .buildings-banner-description {
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .buildings-top-link {
     display: none;
@@ -4103,9 +4111,6 @@ body.mob-menu-show {
   .information-content {
     column-count: auto;
     column-gap: 0;
-  }
-  .information-content p:first-child ~ p {
-    display: none;
   }
   .useful-links {
     margin-bottom: 30px;
@@ -4941,6 +4946,9 @@ body.mob-menu-show {
   .card-props {
     overflow: auto;
     margin-right: -15px;
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .card-props-list {
     width: 660px;
@@ -4982,6 +4990,9 @@ body.mob-menu-show {
   .card-tabs {
     overflow: auto;
     margin-right: -15px;
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .card-tabs-list {
     width: 660px;
@@ -5836,8 +5847,6 @@ body.mob-menu-show {
 .banner-section-pic {
 }
 .banner-section-pic-element {
-  position: relative;
-  z-index: 1;
   min-height: 250px;
   height: auto;
 }
@@ -5903,6 +5912,28 @@ body.mob-menu-show {
 .banner-section_hypothecation .banner-section-logo {
   width: 91px;
 }
+
+.banner-section_ref-bank {
+  margin-top: -65px;
+}
+.banner-section_ref-bank .banner-section-img {
+  margin-bottom: -20px;
+}
+.banner-section_ref-bank .banner-section-pic {
+  margin-right: -60px;
+  padding-left: 25%;
+  background-image: url(../images/ref-bank/ref-bank-banner-decor.png);
+}
+.banner-section_ref-bank .banner-section-detail {
+  width: 50%;
+}
+.banner-section_ref-bank .banner-section-img {
+  width: 50%;
+}
+.banner-section_ref-bank .banner-section-logo {
+  width: 91px;
+}
+
 
 .refinancing-advantage {
   margin-top: 90px;
@@ -6159,6 +6190,15 @@ body.mob-menu-show {
     width: 100%;
   }
   .banner-section_bank .banner-section-img {
+    width: 100%;
+  }
+  .banner-section_ref-bank .banner-section-pic {
+    margin-right: 0;
+  }
+  .banner-section_ref-bank .banner-section-detail {
+    width: 100%;
+  }
+  .banner-section_ref-bank .banner-section-img {
     width: 100%;
   }
 
@@ -6685,6 +6725,9 @@ body.mob-menu-show {
   .advantage-item {
     width: 100%;
   }
+  .advantage-block {
+    border-right-width: 0;
+  }
   .banks-advantage-block {
     border-color: transparent;
   }
@@ -7051,7 +7094,6 @@ body.mob-menu-show {
 }
 .hypothecation-conditions-nav {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 27px;
 }
 .hypothecation-conditions-nav-item {
@@ -7072,6 +7114,7 @@ body.mob-menu-show {
   text-decoration: none;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
 }
 .hypothecation-conditions-nav-link:hover {
   background-color: #F2F2F2;
@@ -7097,7 +7140,18 @@ body.mob-menu-show {
 .hypothecation-conditions-info_active {
   display: block;
 }
-.hypothecation-conditions-description {}
+.hypothecation-conditions-container {
+
+}
+.hypothecation-conditions-pic {
+  width: 50%;
+  float: right;
+  padding-left: 15px;
+}
+.hypothecation-conditions-description {
+  overflow: hidden;
+  padding-right: 15px;
+}
 
 @media screen and (max-width: 992px) {
   .hypothecation-schedule-table-wrapper {
@@ -7122,11 +7176,21 @@ body.mob-menu-show {
   .banner-section_hypothecation .banner-section-pic {
     margin-right: -31px;
   }
+  .hypothecation-conditions-nav {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: auto;
+  }
   .hypothecation-conditions {
     margin-bottom: 50px;
   }
   .hypothecation-conditions-description {
     margin-bottom: 30px;
+  }
+  .hypothecation-conditions-pic {
+    width: 40%;
   }
 }
 
@@ -7140,12 +7204,26 @@ body.mob-menu-show {
   .banner-section_hypothecation .banner-section-pic {
     margin-right: 0;
   }
+  .hypothecation-conditions-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hypothecation-conditions-pic {
+    order: 1;
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+  .hypothecation-conditions-description {
+    overflow: visible;
+    padding-right: 0;
+  }
 }
 /* /hypothecation */
 
 /* hypothecation-feedback */
 .hypothecation-feedback {
-  margin-bottom: 130px;
+  margin-bottom: 80px;
 }
 .hypothecation-feedback-container {
   display: flex;
@@ -7156,7 +7234,6 @@ body.mob-menu-show {
 }
 .hypothecation-feedback-form-block {
   width: 43%;
-  padding-top: 52px;
 }
 .hypothecation-feedback-indicator {
   margin-bottom: 39px;
@@ -7197,7 +7274,6 @@ body.mob-menu-show {
   }
   .hypothecation-feedback-form-block {
     width: 100%;
-    padding-top: 0;
   }
 }
 /* /hypothecation-feedback */
@@ -7375,3 +7451,728 @@ body.mob-menu-show {
 }
 /* /actions */
 
+/* ref-bank */
+.ref-bank-plus {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 82px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.ref-bank-plus-detail {
+  width: 67%;
+  padding: 44px 28px 49px;
+}
+.ref-bank-plus-img {
+  position: relative;
+  width: 33%;
+  min-height: 250px;
+}
+.ref-bank-plus-pic {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: none;
+}
+.ref-bank-plus-content {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 720px) {
+  .ref-bank-plus {
+    display: block;
+  }
+  .ref-bank-plus-detail {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .ref-bank-plus-img {
+    width: 100%;
+    min-height: auto;
+    height: 200px;
+  }
+  .ref-bank-plus-pic {
+    max-height: 100%;
+  }
+}
+/* /ref-bank */
+
+/* ref-bank-action */
+.ref-bank-action {
+  margin-bottom: 80px;
+  background-color: #ECEFF5;
+}
+.ref-bank-action-container {
+  display: flex;
+  align-items: center;
+}
+.ref-bank-action-img {
+  width: 40%;
+  padding-right: 10px;
+}
+.ref-bank-action-detail {
+  width: 60%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ref-bank-action-img-element {
+  height: auto;
+  margin-left: -14px;
+}
+.ref-bank-action-title {
+  max-width: 600px;
+  margin-bottom: 23px;
+}
+.ref-bank-action-content {
+  margin-bottom: 28px;
+}
+
+@media screen and (max-width: 720px) {
+  .ref-bank-action {
+    padding-bottom: 20px;
+  }
+  .ref-bank-action-container {
+    flex-direction: column;
+  }
+  .ref-bank-action-img {
+    order: 1;
+    width: 100%;
+    padding-right: 0;
+  }
+  .ref-bank-action-detail {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .ref-bank-action-img-element {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* /ref-bank-action */
+
+/* builders */
+.builders-banner-section {}
+.builders-banner-section .banner-section-detail {
+  width: 50%;
+}
+.builders-banner-section .banner-section-img {
+  width: 50%;
+}
+.builders-banner-section .banner-section-pic {
+  padding-left: 26%;
+  background-image: url(../images/hypothecation/hypothecation-banner-decor.png);
+  background-size: 39% auto;
+  background-position: 0 62%;
+}
+
+.builders-content {
+  margin-top: 82px;
+  margin-bottom: 20px;
+}
+.builders-tabs-title {
+  float: left;
+  width: 390px;
+  padding-right: 30px;
+}
+.builders-tabs-content:after {
+  content: "";
+  clear: both;
+  display: table;
+  line-height: 0;
+}
+
+.builders-list {
+  margin-bottom: 90px;
+}
+.builders-list-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+.builders-list .owl-stage {
+  display: flex;
+}
+.builders-list-item {
+  width: 33.3%;
+  margin-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.builders-list-block {
+  height: 100%;
+  padding: 27px 28px 49px;
+  border: 1px solid #D4D5D6;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.builders-list-block:hover {
+  border-color: transparent;
+  box-shadow: 0px 0px 40px rgba(235, 235, 233, 0.8);
+}
+.builders-list-head {
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ECEFF5;
+  padding-bottom: 13px;
+  margin-bottom: 24px;
+}
+.builders-list-logo-link {
+  max-width: 52%;
+}
+.builders-list-logo-img {
+  max-height: 49px;
+}
+.builders-list-name {
+  display: block;
+  width: 48%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: right;
+}
+.builders-list-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.builders-list-info:last-child {
+  margin-bottom: 0;
+}
+.builders-list-info-item {
+  width: 50%;
+  padding-right: 15px;
+}
+.builders-list-info-item:last-child {
+  padding-right: 0;
+}
+.builders-list-discount {
+  display: inline-block;
+  padding: 9px 14px;
+  background-color: rgba(255, 181, 43, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.builders-list-label {
+  display: block;
+  margin-bottom: 2px;
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+.builders-list-value {
+  font-family: 'Rubik';
+  font-size: 16px;
+}
+.builders-list-button {
+  display: block;
+  max-width: 151px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.builders-list-price {
+  padding-top: 10px;
+}
+
+
+.builders-plus {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 82px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.builders-plus-detail {
+  width: 70%;
+  padding: 44px 28px 30px;
+}
+.builders-plus-content {
+  font-weight: 400;
+}
+.builders-plus-img {
+  display: flex;
+  width: 30%;
+}
+.builders-plus-pic {
+  margin-top: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .builders-content {
+    margin-top: 50px;
+  }
+  .builders-list-item {
+    width: 50%;
+  }
+  .builders-list-block {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+  .builders-list-name {
+    font-size: 15px;
+  }
+  .builders-list-value {
+    font-size: 14px;
+  }
+  .builders-list-discount {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .builders-tabs-title {
+    float: none;
+    display: block;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .builders-banner-section .banner-section-detail {
+    width: 100%;
+  }
+  .builders-banner-section .banner-section-img {
+    width: 100%;
+  }
+  .builders-plus {
+    display: block;
+  }
+  .builders-plus-detail {
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+  .builders-plus-img {
+    width: 100%;
+    height: 200px;
+  }
+  .builders-list-item {
+    width: 100%;
+  }
+  .builders-list-group {
+    margin-right: 26px;
+    margin-left: 0;
+  }
+  .builders-list-item {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/* /builders */
+
+/* builders-detail */
+.builders-detail-banner {
+  padding-bottom: 60px;
+}
+.builders-detail-banner .banner-section-pic {
+  background-image: url(../images/hypothecation/hypothecation-banner-decor.png);
+  background-size: 48% auto;
+}
+.builders-detail-banner-logo {
+  display: inline-block;
+  width: 136px;
+  height: 44px;
+  margin-bottom: 22px;
+  padding: 7px 18px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.builders-detail-banner-logo-img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.builders-detail-main {
+  display: flex;
+  margin-bottom: 40px;
+}
+.builders-detail-main-title {
+  min-width: 300px;
+  padding-right: 30px;
+}
+
+.builders-detail-plus {
+  margin-bottom: 53px;
+}
+.builders-detail-plus-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.builders-detail-plus .owl-stage {
+  display: flex;
+}
+.builders-detail-plus-item {
+  width: 25%;
+  margin-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.builders-detail-plus-block {
+  padding: 28px;
+  border: 1px solid #D4D5D6;
+  border-radius: 20px;
+}
+.builders-detail-plus-item:hover .builders-detail-plus-block {
+  border-color: transparent;
+  box-shadow: 0px 0px 40px rgba(235, 235, 233, 0.8);
+}
+.builders-detail-plus-name {
+  display: block;
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.builders-detail-plus-info {}
+.builders-detail-buildings-title {
+  margin-bottom: 5px;
+}
+
+.builders-more {
+  margin-bottom: 80px;
+}
+.builders-more .owl-stage {
+  display: flex;
+}
+.builders-more-gallery {
+  position: relative;
+}
+.builders-more-list {
+  overflow: hidden;
+}
+.builders-more-item {
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .builders-detail-plus-item {
+    width: 50%;
+  }
+  .builders-detail-plus-block {
+    padding-top: 23px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .builders-detail-main-title {
+    min-width: 210px;
+  }
+  .builders-more-list {
+    overflow: visible;
+    margin-right: 115px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .builders-detail-plus-list {
+    margin-right: 26px;
+    margin-left: 0;
+  }
+  .builders-detail-plus-item {
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .builders-detail-main {
+    display: block;
+  }
+  .builders-detail-main-title {
+    min-width: auto;
+    padding-right: 0;
+  }
+  .builders-more-list {
+    margin-right: 26px;
+  }
+}
+/* /builders-detail */
+
+/* contacts */
+.contacts-main {
+  margin-bottom: 23px;
+}
+.contacts-main-item {
+}
+.contacts-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.contacts-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts-info-item {
+  width: 50%;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+.contacts-info-name {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 16px;
+}
+.contacts-info-link {
+  text-decoration: none;
+}
+.contacts-info-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.contacts-title {
+  margin-bottom: 37px;
+  font-size: 18px;
+}
+.contacts-list {
+}
+.contacts-list-item {
+  margin-bottom: 20px;
+}
+.contacts-messengers {
+  display: flex;
+  align-items: center;
+}
+.contacts-messengers-item {
+  margin-right: 12px;
+}
+.contacts-messengers-item:last-child {
+  margin-right: 0;
+}
+.contacts-messengers-link:hover .messengers-icon {
+  transform: scale(1.15); }
+
+.contacts-map {
+  margin-top: 65px;
+  margin-bottom: 80px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.contacts-action {
+  display: flex;
+  overflow: hidden;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.contacts-action-img {
+  display: flex;
+  width: 32%;
+}
+.contacts-action-detail {
+  width: 68%;
+  padding: 35px 30px 36px;
+}
+.contacts-action-content {
+  margin-bottom: 33px;
+}
+.contacts-action-pic {
+  margin-top: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .contacts-main-item {
+    margin-bottom: 15px;
+  }
+  .contacts-main-item:last-child {
+    margin-bottom: 0;
+  }
+  .contacts-action-detail {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .contacts-map {
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contacts-action {
+    flex-direction: column;
+  }
+  .contacts-action-img {
+    order: 1;
+    width: 100%;
+    height: 180px;
+  }
+  .contacts-action-pic {
+    transform: scaleX(-1);
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .contacts-action-detail {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .contacts-info-item {
+    width: 100%;
+  }
+  .contacts-map {
+    margin-right: -15px;
+    margin-left: -15px;
+    border-radius: 0;
+  }
+}
+/* /contacts */
+
+/* team */
+.team {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.team-banner {}
+.team-banner .banner-section-detail {
+  width: 50%;
+}
+.team-banner .banner-section-img {
+  width: 50%;
+}
+.team-banner .banner-section-pic {
+  margin-right: 36px;
+  background-image: url(../images/team/team-banner-decor.png);
+  background-size: 44% auto;
+}
+.team .owl-stage {
+  display: flex;
+}
+.team-list-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  padding-top: 60px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.team-list-item {
+  width: 25%;
+  margin-bottom: 42px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.team-list-item:first-child {
+  margin-left: 25%;
+}
+.team-list-img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+.team-list-img-link {
+  display: block;
+  margin-bottom: 25px;
+}
+.team-list-name {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.team-list-name:hover {
+  color: #0D0D0D;
+}
+.team-list-description {
+  margin-top: 10px;
+  font-family: 'Rubik';
+}
+.team-list-label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 18px;
+}
+.team-list-select {
+  display: inline-block;
+}
+.team-list-select .label {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 300;
+}
+.team-list-title {
+  display: block;
+  margin-bottom: 30px;
+}
+.team-advantage {
+  display: flex;
+  overflow: hidden;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.team-advantage-detail {
+  width: 60%;
+  padding: 40px 27px;
+}
+.team-advantage-img {
+  display: flex;
+  width: 40%;
+}
+.team-advantage-pic {
+  margin-top: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .team-banner .banner-section-detail {
+    width: 100%;
+  }
+  .team-banner .banner-section-img {
+    width: 100%;
+  }
+  .team-banner .banner-section-pic {
+    margin-right: 0;
+  }
+  .team-list-item {
+    width: 33.3%;
+  }
+  .team-list-item:first-child {
+    margin-left: 33.3%;
+  }
+  .team {
+    margin-top: 50px;
+  }
+  .team-list-name {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .team-list-head {
+    position: static;
+    width: auto;
+    padding-top: 0;
+  }
+  .team-list {
+    margin-right: 26px;
+    margin-left: 0;
+  }
+  .team-list-item {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .team-list-item:first-child {
+    margin-left: 0;
+  }
+}
+/* /team */
