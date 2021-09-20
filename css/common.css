@@ -6709,6 +6709,8 @@ body.mob-menu-show {
   }
   .banks-partners {
     margin-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .banks-partners-content ul li:before {
     margin-top: -2px;
@@ -6733,9 +6735,7 @@ body.mob-menu-show {
   }
   .banks-partners {
     display: block;
-    padding-right: 27px;
     padding-top: 25px;
-    padding-left: 20px;
     padding-bottom: 30px;
   }
   .banks-partners-content {
@@ -7949,7 +7949,8 @@ body.mob-menu-show {
   margin-right: 0;
 }
 .contacts-messengers-link:hover .messengers-icon {
-  transform: scale(1.15); }
+  transform: scale(1.15);
+}
 
 .contacts-map {
   margin-top: 65px;
@@ -8118,18 +8119,78 @@ body.mob-menu-show {
   overflow: hidden;
   background-color: #ECEFF5;
   border-radius: 20px;
+  margin-bottom: 90px;
 }
 .team-advantage-detail {
-  width: 60%;
-  padding: 40px 27px;
+  width: 62%;
+  padding: 35px 27px;
 }
 .team-advantage-img {
+  position: relative;
   display: flex;
-  width: 40%;
+  width: 38%;
+}
+.team-advantage-title {
+  margin-right: 70px;
 }
 .team-advantage-pic {
-  margin-top: auto;
-  margin-left: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: none;
+}
+
+.team-advantage-detail ul {
+  margin-left: 43px;
+  margin-bottom: 0;
+}
+.team-advantage-detail ul li {
+  position: relative;
+}
+.team-advantage-detail ul li:before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  margin-top: 7px;
+  margin-left: -43px;
+  margin-right: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.1673 13.0904C25.5916 13.444 25.6489 14.0746 25.2953 14.4989L19.0437 22.0008C19.0314 22.0156 19.0191 22.0304 19.0068 22.0452C18.7112 22.4 18.4268 22.7413 18.1558 22.9879C17.8522 23.264 17.4463 23.5347 16.8969 23.5596C16.3475 23.5845 15.9188 23.3517 15.5914 23.1042C15.2991 22.8832 14.9851 22.569 14.6586 22.2424C14.645 22.2288 14.6314 22.2152 14.6177 22.2016L11.5741 19.158C11.1836 18.7674 11.1836 18.1343 11.5741 17.7438C11.9647 17.3532 12.5978 17.3532 12.9884 17.7438L16.0319 20.7873C16.4149 21.1703 16.6299 21.3821 16.7977 21.5089C16.7998 21.5106 16.802 21.5122 16.8041 21.5138C16.806 21.512 16.808 21.5102 16.81 21.5084C16.9656 21.3668 17.1606 21.1365 17.5073 20.7204L23.7589 13.2185C24.1125 12.7942 24.743 12.7369 25.1673 13.0904Z' fill='white'/%3e%3c/svg%3e "), linear-gradient(to right, #FFE259, #FFA751);
+  border-radius: 50%;
+}
+
+.team-socials {
+  overflow: hidden;
+  margin-bottom: 82px;
+  padding: 40px 25px 45px;
+  border-radius: 20px;
+  background: #ECEFF5 url(../images/team/team-messangers-bgr.png) no-repeat right top;
+  background-size: 55% auto;
+}
+.team-socials-detail {
+  width: 42%;
+}
+.team-socials-title {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.team-messengers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.team-messengers-item {
+  margin-right: 12px;
+}
+.team-messengers-item:last-child {
+  margin-right: 0;
+}
+.team-messengers-link:hover .messengers-icon {
+  transform: scale(1.15);
 }
 
 @media screen and (max-width: 992px) {
@@ -8150,9 +8211,26 @@ body.mob-menu-show {
   }
   .team {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   .team-list-name {
     font-size: 17px;
+  }
+  .team-advantage {
+    margin-bottom: 50px;
+  }
+  .team-advantage-title {
+    margin-right: 0px;
+  }
+  .team-advantage-detail {
+    padding: 30px 20px;
+  }
+  .team-socials {
+    margin-bottom: 50px;
+    padding: 30px 20px;
+  }
+  .team-socials-detail {
+    width: 55%;
   }
 }
 
@@ -8174,5 +8252,321 @@ body.mob-menu-show {
   .team-list-item:first-child {
     margin-left: 0;
   }
+  .team-advantage {
+    display: block;
+  }
+  .team-advantage-detail {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .team-advantage-img {
+    width: 100%;
+    height: 200px;
+  }
+  .team-advantage-pic {
+    max-height: 100%;
+  }
+  .team-socials {
+    background-image: none;
+  }
+  .team-socials-detail {
+    width: auto;
+  }
 }
 /* /team */
+
+/* team-detail */
+.team-detail {
+  margin-bottom: 82px;
+}
+.team-detail-main {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 38px;
+  margin-bottom: 25px;
+}
+.team-detail-main-img {
+  order: -1;
+  width: 33.3%;
+  padding-right: 30px;
+}
+.team-detail-main-png {
+  width: 100%;
+  border-radius: 20px;
+}
+.team-detail-main-info {
+  width: 66%;
+}
+.team-detail-main-title {
+  margin-bottom: 15px;
+}
+.team-detail-main-post {
+  margin-bottom: 22px;
+  font-family: 'Rubik';
+}
+.team-detail-successes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ECEFF5;
+}
+.team-detail-successes-item {
+  margin-right: 40px;
+  margin-bottom: 17px;
+  font-weight: 300;
+  font-size: 16px;
+}
+.team-detail-successes-item:last-child {
+  margin-right: 0;
+}
+.team-detail-successes-digit {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFB52B;
+}
+.team-detail-successes-label {
+  color: #FFB52B;
+  font-weight: 700;
+}
+.team-detail-name {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.team-detail-main-content {
+  max-width: 600px;
+}
+.team-detail-main-content ul {
+  column-count: 2;
+  column-gap: 30px;
+  margin-bottom: 0;
+}
+.team-detail-main-content ul li {
+  margin-bottom: 10px;
+}
+.team-detail-info {
+  display: flex;
+  margin-bottom: 35px;
+}
+.team-detail-info-item {
+  width: 33.3%;
+  padding-right: 30px;
+}
+
+.team-more {
+  margin-bottom: 70px;
+}
+.team-more-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.team-more-list-item {
+  width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.team-more-list-img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+.team-more-list-img-link {
+  display: block;
+  margin-bottom: 25px;
+}
+.team-more-list-name {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.team-more-list-name:hover {
+  color: #0D0D0D;
+}
+.team-more-list-description {
+  margin-top: 10px;
+  font-family: 'Rubik';
+}
+.team-more-list-label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 18px;
+}
+.team-more-list-select {
+  display: inline-block;
+}
+.team-more-list-select .label {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 300;
+}
+.team-more-list .owl-stage {
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .team-detail-main-post {
+    margin-bottom: 10px;
+  }
+  .team-detail {
+    margin-bottom: 50px;
+  }
+  .team-detail-successes-digit {
+    font-size: 24px;
+  }
+  .team-detail-successes-item {
+    margin-bottom: 10px;
+  }
+  .team-more {
+    margin-bottom: 50px;
+  }
+  .team-more-list {
+    margin-right: 26px;
+    margin-left: 0;
+  }
+  .team-more-list-item {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .team-detail-main {
+    display: block;
+  }
+  .team-detail-main-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .team-detail-main-img {
+    order: -1;
+    width: 100%;
+    padding-right: 0;
+  }
+  .team-detail-main-content ul {
+    column-count: auto;
+  }
+  .team-detail-info-wrapper {
+    overflow: auto;
+    padding-right: 26px;
+    padding-left: 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+  }
+  .team-detail-info {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  .team-detail-info-item {
+    width: auto;
+    display: inline-block;
+    white-space: normal;
+    padding-right: 20px;
+  }
+}
+/* /team-detail */
+
+/* guarantees */
+.guarantees-banner {
+}
+.guarantees-banner .banner-section-detail {
+  width: 50%;
+}
+.guarantees-banner .banner-section-img {
+  width: 50%;
+}
+.guarantees-list-item {
+  margin-bottom: 90px;
+}
+.guarantees-list-detail {}
+.guarantees-list-side {}
+.guarantees-block {
+  padding: 30px 30px 40px;
+  background-color: #ECEFF5;
+  border-radius: 20px;
+}
+.guarantees-block-label {
+  display: block;
+}
+.guarantees-docs {
+  margin-left: 52px;
+  margin-bottom: 0;
+}
+.guarantees-docs-item {
+  margin-bottom: 25px;
+}
+.guarantees-docs-item:last-child {
+  margin-bottom: 0;
+}
+.guarantees-docs-link {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 16px;
+}
+.guarantees-docs-link:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  transform: translateY(-50%);
+  margin-left: -52px;
+  margin-right: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.73464 3.4375C5.6968 3.4375 4.85547 4.27883 4.85547 5.31666V15.895C4.85547 16.9328 5.6968 17.7742 6.73464 17.7742H16.268C17.3058 17.7742 18.1471 16.9328 18.1471 15.895V7.33333C18.1471 6.95364 18.4549 6.64583 18.8346 6.64583C19.2143 6.64583 19.5221 6.95364 19.5221 7.33333V15.895C19.5221 17.6922 18.0652 19.1492 16.268 19.1492H6.73464C4.93741 19.1492 3.48047 17.6922 3.48047 15.895V5.31666C3.48047 3.51944 4.93741 2.0625 6.73464 2.0625H14.2513C14.631 2.0625 14.9388 2.3703 14.9388 2.75C14.9388 3.1297 14.631 3.4375 14.2513 3.4375H6.73464Z' fill='white'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.5625 3.05098C13.5625 2.1708 14.6267 1.73 15.2491 2.35238L19.2309 6.33419C19.8532 6.95657 19.4124 8.02075 18.5323 8.02075H14.5505C14.0048 8.02075 13.5625 7.57842 13.5625 7.03279V3.05098ZM14.9375 3.98538V6.64575H17.5979L14.9375 3.98538Z' fill='white'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.75 13.979C8.75 13.5993 9.0578 13.2915 9.4375 13.2915H13.5625C13.9422 13.2915 14.25 13.5993 14.25 13.979C14.25 14.3587 13.9422 14.6665 13.5625 14.6665H9.4375C9.0578 14.6665 8.75 14.3587 8.75 13.979Z' fill='white'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.83594 11.229C7.83594 10.8493 8.14374 10.5415 8.52344 10.5415H14.4818C14.8615 10.5415 15.1693 10.8493 15.1693 11.229C15.1693 11.6087 14.8615 11.9165 14.4818 11.9165H8.52344C8.14374 11.9165 7.83594 11.6087 7.83594 11.229Z' fill='white'/%3e%3c/svg%3e"), linear-gradient(to right, #FFC133, #FFAD26);
+  border-radius: 50%;
+}
+.guarantees-docs-link:hover {
+  text-decoration: underline;
+}
+.guarantees-content ul {
+  margin-left: 52px;
+  margin-bottom: 0;
+}
+.guarantees-content ul li {
+  position: relative;
+  min-height: 36px;
+  margin-bottom: 27px;
+}
+.guarantees-content ul li:last-child {
+  margin-bottom: 0;
+}
+.guarantees-content ul li:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin-left: -52px;
+  margin-right: 15px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.5 36.875C28.6482 36.875 36.875 28.6482 36.875 18.5C36.875 8.35177 28.6482 0.125 18.5 0.125C8.35177 0.125 0.125 8.35177 0.125 18.5C0.125 28.6482 8.35177 36.875 18.5 36.875ZM27.4355 13.0152C27.789 12.5909 27.7317 11.9603 27.3074 11.6068C26.8831 11.2532 26.2526 11.3105 25.899 11.7348L17.0927 22.3024C16.746 22.7184 16.5511 22.9488 16.3955 23.0903L16.3895 23.0957L16.3831 23.0909C16.2153 22.964 16.0004 22.7522 15.6174 22.3693L11.041 17.7929C10.6505 17.4024 10.0173 17.4024 9.6268 17.7929C9.23628 18.1834 9.23627 18.8166 9.6268 19.2071L14.2032 23.7835L14.244 23.8243L14.244 23.8244C14.5705 24.151 14.8846 24.4652 15.1768 24.6861C15.5042 24.9337 15.9329 25.1665 16.4823 25.1415C17.0317 25.1166 17.4376 24.846 17.7412 24.5698C18.0123 24.3233 18.2966 23.9819 18.5922 23.6271L18.5922 23.6271L18.6292 23.5827L27.4355 13.0152Z' fill='url(%23paint0_linear)'/%3e%3cdefs%3e%3clinearGradient id='paint0_linear' x1='18.5' y1='0.125' x2='18.5' y2='36.875' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23FFBF32'/%3e%3cstop offset='1' stop-color='%23FFAF28'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 720px) {
+  .guarantees-banner .banner-section-detail {
+    width: 100%;
+  }
+  .guarantees-banner .banner-section-img {
+    width: 100%;
+  }
+}
+/* /guarantees */
