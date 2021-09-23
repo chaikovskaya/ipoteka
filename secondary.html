@@ -572,7 +572,7 @@
                                     <span class="secondary-service-img-block">
                                         <img class="secondary-service-pic" src="./images/secondary/secondary-service-img-3.jpg" alt="" />
                                     </span>
-                                    <span class="secondary-service-price">Бесплатно</span>
+                                    <span class="secondary-service-price">от 20 000 ₽</span>
                                 </div>
                                 <div class="secondary-plus-detail">
                                     <span class="secondary-service-name">Рефинансирование</span>
@@ -602,7 +602,7 @@
                                     <span class="secondary-service-img-block">
                                         <img class="secondary-service-pic" src="./images/secondary/secondary-service-img-5.jpg" alt="" />
                                     </span>
-                                    <span class="secondary-service-price">Бесплатно</span>
+                                    <span class="secondary-service-price">Договорная</span>
                                 </div>
                                 <div class="secondary-plus-detail">
                                     <span class="secondary-service-name">Покупка квартиры у родственников</span>
@@ -617,7 +617,7 @@
                                     <span class="secondary-service-img-block">
                                         <img class="secondary-service-pic" src="./images/secondary/secondary-service-img-6.jpg" alt="" />
                                     </span>
-                                    <span class="secondary-service-price">Бесплатно</span>
+                                    <span class="secondary-service-price">Договорная</span>
                                 </div>
                                 <div class="secondary-plus-detail">
                                     <span class="secondary-service-name">Аккредитация недвижимости</span>
@@ -632,7 +632,7 @@
                                     <span class="secondary-service-img-block">
                                         <img class="secondary-service-pic" src="./images/secondary/secondary-service-img-7.jpg" alt="" />
                                     </span>
-                                    <span class="secondary-service-price">Бесплатно</span>
+                                    <span class="secondary-service-price">Договорная</span>
                                 </div>
                                 <div class="secondary-plus-detail">
                                     <span class="secondary-service-name">Одобрение ипотеки с плохой кредитной историей</span>
@@ -647,7 +647,7 @@
                                     <span class="secondary-service-img-block">
                                         <img class="secondary-service-pic" src="./images/secondary/secondary-service-img-8.jpg" alt="" />
                                     </span>
-                                    <span class="secondary-service-price">Бесплатно</span>
+                                    <span class="secondary-service-price">Договорная</span>
                                 </div>
                                 <div class="secondary-plus-detail">
                                     <span class="secondary-service-name">Cбор документов</span>
@@ -655,6 +655,1099 @@
                                     <a class="secondary-service-link button" href="#">Подробнее</a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="refinancing-calc js-calc-mortgage">
+                <h2 class="refinancing-calc-title h1">Калькулятор военной ипотеки <span class="refinancing-calc-title-label">с расчётом именных накоплений военнослужащего</span></h2>
+                <div class="loading"></div>
+                <form method="POST" action="" class="mortgage-calc-form">
+                    <input type="hidden" name="ajax" value="Y" />
+                    <div class="row">
+                        <div class="refinancing-calc-item col-lg-6">
+                            <ul class="range-list">
+                                <li class="range-item js-slider-ruler" data-range-min="25" data-range-max="45" data-range-step="1" data-range-start="27" data-range-active="range-container_active">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Ваш возраст</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value js-change-calc" value="27" type="hidden" name="calc-age" data-calc="mortgage" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">25</div>
+                                                    <div class="range-scale-item">35</div>
+                                                    <div class="range-scale-item">45</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="range-checkbox">
+                                            <label class="checkbox-field">
+                                                <span class="checkbox-text">Учесть накопления НИС</span>
+                                                <span class="checkbox">
+	                                    <input class="checkbox-input" type="checkbox" name="calc-savings" />
+	                                    <i class="checkbox-check"></i>
+	                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="range-item js-slider-ruler" data-range-min="2010" data-range-max="2021" data-range-step="1" data-range-start="2013" data-range-active="range-container_active">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Год вступления в НИС</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value" type="hidden" name="calc-introduction-year" value="2013" data-calc="mortgage" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">2005</div>
+                                                    <div class="range-scale-item">2015</div>
+                                                    <div class="range-scale-item">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="range-item js-slider-ruler" data-range-min="1" data-range-max="12" data-range-step="1" data-range-start="3" data-range-active="range-container_active">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Месяц вступления в НИС</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value" type="hidden" name="calc-introduction-month" value="3" data-calc="mortgage" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">1</div>
+                                                    <div class="range-scale-item">6</div>
+                                                    <div class="range-scale-item">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="range-checkbox">
+                                            <label class="checkbox-field">
+                                                <span class="checkbox-text">Учесть стоимость квартиры</span>
+                                                <span class="checkbox">
+	                                    <input class="checkbox-input" type="checkbox" name="calc-price-kv-check" />
+	                                    <i class="checkbox-check"></i>
+	                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="range-item js-slider-ruler" data-range-min="400000" data-range-max="12000000" data-range-step="10" data-range-start="3000000" data-range-active="range-container_active" data-range-units="&nbsp;₽">
+                                    <div class="range-container">
+                                        <div class="range-head">
+                                            <span class="range-name">Стоимость квартиры</span>
+                                        </div>
+                                        <div class="range-wrapper">
+                                            <div class="range slider-range">
+                                                <div class="slider-range-track js-slider-rating-track">
+                                                    <input class="js-slider-rating-value" type="hidden" name="calc-price-kv" data-calc="mortgage" data-price="yes" readonly />
+                                                    <div class="ui-slider-handle js-ui-slider-handle">
+                                                        <div class="slider-range-text js-slider-rating-text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="range-scale">
+                                                    <div class="range-scale-item">400 тыс</div>
+                                                    <div class="range-scale-item">6 млн</div>
+                                                    <div class="range-scale-item">12 млн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mortgage-calc-item mortgage-calc col-lg-6">
+                            <div class="mortgage-calc-block">
+                                <div class="mortgage-calc-block__wrapp">
+                                    <div class="mortgage-item__row">
+                                        <div class="mortgage-item__field">
+                                            <div class="calculation-item__field-item">
+                                                <div class="calculation-item__label">Выберите тип жилья</div>
+                                                <div class="calculation-item__select">
+                                                    <select name="calc-type-housing" class="select js-select js-calc-type-housing">
+                                                        <option value="">Выберите тип жилья</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mortgage-item__field">
+                                            <div class="calculation-item__field-item">
+                                                <div class="calculation-item__label">Выберите программу</div>
+                                                <div class="calculation-item__select">
+                                                    <select name="calc-programm" class="select js-select js-calc-programm">
+                                                        <option value="">Выберите программу</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mortgage-item__row">
+                                        <div class="mortgage-item__field">
+                                            <div class="mortgage-if">
+                                                <div class="mortgage-if__col-1">
+                                                    <div class="mortgage-if__item">
+                                                        <div class="mortgage-if__label">Ипотека от:</div>
+                                                        <div class="mortgage-if__info">
+                                                            <div class="calculation-item__select">
+                                                                <div class="calc-select-icon">
+                                                                    <select name="bank" class="select select_simple js-select-icons">
+                                                                        <option disabled>Банк</option>
+                                                                        <option selected class="calc-option-icon" value="bank-1" data-calc-icon="./images/card/bank-img-1.png">Сбербанк</option>
+                                                                        <option class="calc-option-icon" value="bank-2" data-calc-icon="./images/card/bank-img-2.png">ВТБ</option>
+                                                                        <option class="calc-option-icon" value="bank-3" data-calc-icon="./images/card/bank-img-3.png">Банк 1</option>
+                                                                        <option class="calc-option-icon" value="bank-4" data-calc-icon="./images/card/bank-img-4.png">Банк 2</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mortgage-if__col-2">
+                                                    <div class="mortgage-if__item">
+                                                        <div class="mortgage-if__label">Ставка:</div>
+                                                        <div class="mortgage-if__info">
+                                                            <div class="mortgage-if__value"><span class="js_bet_credit">---</span> %</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mortgage-item__field">
+                                            <div class="mortgage-if">
+                                                <div class="mortgage-if__col-1">
+                                                    <div class="mortgage-if__item mortgage-if__item-padd">
+                                                        <div class="mortgage-if__label">Ежемес. платёж:</div>
+                                                        <div class="mortgage-if__info">
+                                                            <div class="mortgage-if__value"><span class="js-calc-month-payment">---</span> ₽</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mortgage-if__col-2">
+                                                    <div class="mortgage-if__item">
+                                                        <div class="mortgage-if__label">Срок кредита:</div>
+                                                        <div class="mortgage-if__info text-left">
+                                                            <div class="mortgage-if__value"><span class="js-calc-loan-term">---</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mortgage-item__row">
+                                        <div class="mortgage-item__total">
+                                            <span class="name">Сумма ипотеки:</span> <span class="price"><span class="js_sum_credit">---</span> ₽</span> <a href="#" class="button">Получить одобрение</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="mortgage-list-info">
+                                        <div class="calc-savings__info">
+                                            <div class="mortgage-list-info__item mortgage-list-info__item-total">
+                                                <span class="mortgage-list-info__name">Ваши накопления:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-nakoplenovsego">---</span> ₽</span>
+                                            </div>
+
+                                            <div class="mortgage-list-info__item">
+                                                <span class="mortgage-list-info__name">Накопительные взносы:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-nakopitelniyvzos">---</span> ₽</span>
+                                            </div>
+
+                                            <div class="mortgage-list-info__item">
+                                                <span class="mortgage-list-info__name">Инвестиционный доход:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-ivestdohod">---</span> ₽</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-kv__info">
+                                            <div class="mortgage-list-info__item mortgage-list-info__item-bold pt-1">
+                                                <span class="mortgage-list-info__name">Собственные средства:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-own">---</span> ₽</span>
+                                            </div>
+
+                                            <div class="mortgage-list-info__item mortgage-list-info__item-bold pt-2">
+                                                <span class="mortgage-list-info__name">Стомость квартиры:</span>
+                                                <span class="mortgage-list-info__value"><span class="js-calc-kv">---</span> ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section style="display: block;" class="hypothecation-schedule">
+                        <h2 class="h1">График платежей</h2>
+                        <div class="hypothecation-schedule-panel">
+                            <div class="hypothecation-schedule-panel-item">
+                                <div class="hypothecation-schedule-select">
+                                    <select name="year" class="select select_simple js-select">
+                                        <option selected disabled>Выберите год</option>
+                                        <option value="year-1">2021</option>
+                                        <option value="year-2">2021</option>
+                                        <option value="year-3">2021</option>
+                                        <option value="year-4">2021</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hypothecation-schedule-panel-item">
+                                <span class="hypothecation-schedule-label">Выбранное:</span>
+                                <a class="hypothecation-schedule-link" href="#" rel="nofollow">2021<i class="buildings-result-icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="hypothecation-schedule-table-wrapper JS-ShowMore" data-showmore="{
+                    'amount': 3,
+                    'classHide': 'hypothecation-schedule-table-item_hide',
+                    'elementItem': '.hypothecation-schedule-table-item'
+                }">
+                            <div class="hypothecation-schedule-table">
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Месяц</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Ежемес. платеж</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Выплата %</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Выплата долга</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Причисл.%</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-name">Остаток долга</span>
+                                    </div>
+                                </div>
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">Июль</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">23 900</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">4 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">3 890 500</span>
+                                    </div>
+                                </div>
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">Июль</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">23 900</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">4 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">3 890 500</span>
+                                    </div>
+                                </div>
+                                <div class="hypothecation-schedule-table-item">
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">Июль</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">23 900</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">4 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">12 800</span>
+                                    </div>
+                                    <div class="hypothecation-schedule-table-col">
+                                        <span class="hypothecation-schedule-table-value">3 890 500</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
+                        <span class="show-more show-more_show">
+                            <span class="show-more-label">Показать полный график</span><span class="hypothecation-schedule-icon"></span>
+                        </span>
+                                <span class="show-more show-more_hide">
+                            <span class="show-more-label">Свернуть</span><span class="hypothecation-schedule-icon"></span>
+                        </span>
+                            </a>
+                        </div>
+                    </section>
+                </form>
+            </div>
+
+            <section class="approval">
+                <h2 class="approval-title h1">Одобрение военной ипотеки</h2>
+
+                <div class="article JS-AjaxMore">
+                    <div class="ajax_load_box">
+
+
+                        <div class="approval__container">
+                            <div class="js-ajax-more-content">
+                                <div class="approval-item approval-item__panel">
+                                    <div class="approval-row">
+                                        <div class="approval-col approval-col_logo">
+                                            <div class="approval-filter js-switch-checkbox">
+                                                <label class="approval-filter__label checkbox-switch">
+                                                    <input type="checkbox" class="js-switch-input" value="Y" />
+                                                    <span class="checkbox-switch-circle"></span>
+                                                </label>
+                                                <div class="approval-filter__text js-switch-list">
+                                                    <ul>
+                                                        <li class="is-active" data-id="2899">Жильё на вторичном рынке</li>
+                                                        <li data-id="2898">Квартира в новостройке</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="approval-link">
+                                                <a href="#" class="btn-border">Показать все</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="approval-col">
+                                            Господдержка для семей с детьми						</div>
+                                        <div class="approval-col">
+                                            Господдержка на квартиру в новостройке						</div>
+                                        <div class="approval-col">
+                                            Стандартная						</div>
+                                        <div class="approval-col">
+                                            Объединение ипотек супругов						</div>
+
+                                        <div class="approval-col text-right">
+                                            <span class="approval-info">i</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="approval__list">
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-1.png" alt="" />
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-2.png" alt="">
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-3.png" alt="">
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="approval-item">
+                                        <div class="approval-row">
+                                            <div class="approval-col approval-col_logo">
+                                                <div class="approval-col__img">
+                                                    <img src="./images/card/bank-img-4.png" alt="">
+                                                </div>
+                                                <div class="approval-col__link-mob">
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка для семей с детьми">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Господдержка на квартиру в новостройке">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Стандартная">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="approval-col">
+                                                <div class="approval-offers__item" data-label="Объединение ипотек супругов">
+                                                    <div class="approval-offers__box">
+                                                        <div class="approval-percent">4,6%</div>
+                                                        <div class="approval-sum">4 320 000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="approval-col approval-col_more">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="approval-link approval-link__bottom">
+                                    <a href="#" class="btn-border">Показать все</a>
+                                </div>
+
+
+                                <div class="approval-more">
+                                    <a href="javascript:;" class="btn-border js_ajax_more_link">Показать еще</a>
+                                </div>
+
+                                <div class="pager-container-ajax js-ajaxmore-pager">
+                                    <ul class="pager JS-AjaxMore-Pager">
+                                        <li class="pager-item pager-item_left  disabled">
+                                        </li>
+
+
+                                        <li class="pager-item pager-item_active"><span class="pager-link">1</span></li>
+
+                                        <li class="pager-item"><a class="pager-link" href="/?PAGEN_1=2">2</a></li>
+
+                                        <li class="pager-item"><a class="pager-link" href="/?PAGEN_1=3">3</a></li>
+
+                                        <li class="pager-item"><span class='pager-link'>...</span></li>
+                                        <li class="pager-item">
+                                            <a class="pager-link" href="/?PAGEN_1=4">4</a>
+                                        </li>
+
+                                        <li class="pager-item pager-item_right ">
+                                            <a class="pager-link" href="/?PAGEN_1=2">
+                                                <i class="pager-icon fas fa-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="pager-quantity">Слайдер 1 - 4 из 13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feedback">
+                <h2 class="h1">Онлайн заявка на военную ипотеку</h2>
+                <div class="feedback-container">
+                    <div class="feedback-content-block">
+                        <div class="feedback-content content">
+                            <ul>
+                                <li>Заполните анкету и отправьте нам “скан” этой анкеты, паспорта и Свидетельство участника НИС</li>
+                                <li>В течение следующих суток Вы получите одобрение военной ипотеки от Банка-парнёера</li>
+                                <li>Вы будете иметь доступ ко всей базе новостроек, аккредитованных Банками-парнёрами</li>
+                                <li>Мы будем деражать прямую связь со всеми менеджерами Банка-партнёра. Поэтому любые вопросы будем решать опертивно.</li>
+                                <li>Вы сможете выбрать наиболее удобное отделение Банка-парнёра</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feedback-form-block">
+                        <div class="feedback-form">
+                            <form class="js-form-validate">
+                                <span class="feedback-form-name">Заполните поля</span>
+                                <div class="field js-form-validate-field">
+                                    <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                        <label class="field-label JS-FieldText-Label" for="feedback-name">Ваше Имя</label>
+                                        <input class="input-text JS-FieldText-Input" type="text" placeholder="" id="feedback-name" name="feedback-name" required />
+                                    </span>
+                                </div>
+                                <div class="field field_simple js-form-validate-field">
+                                    <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                        <label class="field-label JS-FieldText-Label" for="feedback-phone">Ваш телефон</label>
+                                        <input class="input-text JS-FieldText-Input js-phone" type="text" placeholder="" id="feedback-phone" name="feedback-phone" required />
+                                    </span>
+                                </div>
+                                <div class="switch-field">
+                                    <label class="switch">
+                                        <input class="switch-checkbox" type="checkbox" name="notifications" checked="checked" />
+                                        <span class="switch-decor">
+                                            <span class="switch-icon"></span>
+                                        </span>
+                                        <span class="switch-label">Солгласен на получение уведомлений sms, е-mail</span>
+                                    </label>
+                                </div>
+                                <div class="feedback-field-button">
+                                    <button class="button button_wide">Получить код из SMS</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hypothecation-conditions">
+                <h2 class="h1">Полезно знать</h2>
+                <div class="JS-Tab" data-tab="{
+                   'classSwitcherActive': 'hypothecation-conditions-nav-item_active',
+                   'classItemActive': 'hypothecation-conditions-info_active'
+                }">
+                    <ul class="hypothecation-conditions-nav">
+                        <li class="hypothecation-conditions-nav-item JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Базовые ставки</a>
+                        </li>
+                        <li class="hypothecation-conditions-nav-item hypothecation-conditions-nav-item_active JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Основные требования</a>
+                        </li>
+                        <li class="hypothecation-conditions-nav-item JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Необходимые документы</a>
+                        </li>
+                        <li class="hypothecation-conditions-nav-item JS-Tab-Switcher">
+                            <a class="hypothecation-conditions-nav-link" href="javascript:;">Общие условия</a>
+                        </li>
+                    </ul>
+
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-description content">
+                                Информация Базовые ставки
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hypothecation-conditions-info hypothecation-conditions-info_active JS-Tab-Item">
+                        Требования к заёмщику
+                        Количество созаемщиков — до 3-х.
+                        Гражданство — Россия, Украина, Республика Беларусь.
+                        Возраст на момент подачи заявки — от 21 года.
+                        Стаж на последнем месте работы — не менее 4-х месяцев.
+                        Возраст на момент погашения — до 70 лет.
+                        Общий трудовой стаж — не менее 1 года.
+
+                        Требования к документам
+                        Количество созаемщиков — до 3-х.
+                        Гражданство — Россия, Украина, Республика Беларусь.
+                        Возраст на момент подачи заявки — от 21 года.
+                        Стаж на последнем месте работы — не менее 4-х месяцев.
+                        Возраст на момент погашения — до 70 лет.
+                        Общий трудовой стаж — не менее 1 года.
+                    </div>
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-description content">
+                                Информация Необходимые документы
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hypothecation-conditions-info JS-Tab-Item">
+                        <div class="hypothecation-conditions-container">
+                            <div class="hypothecation-conditions-description content">
+                                Информация Общие условия
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="action">
+            <div class="action-container js-slider-action">
+                <div class="action-block">
+                    <div class="action-list js-slider-list">
+                        <div class="action-list-item js-slider-item">
+                            <a class="action-link" href="#">
+                                <img class="action-img" src="./images/action/action-img-1.png" alt="" />
+                            </a>
+                            <div class="action-content">
+                                <div class="action-list-panel">
+                                    <a class="action-title h1" href="#">Акции</a>
+                                    <a class="action-more more more_dark" href="#">
+                                        <span class="more-label">Показать все</span>
+                                    </a>
+                                </div>
+                                <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
+                                <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                            </div>
+                        </div>
+                        <div class="action-list-item js-slider-item">
+                            <a class="action-link" href="#">
+                                <img class="action-img" src="./images/new/new-3.jpg" alt="" />
+                            </a>
+                            <div class="action-content">
+                                <div class="action-list-panel">
+                                    <a class="action-title h1" href="#">Акции</a>
+                                    <a class="action-more more more_dark" href="#">
+                                        <span class="more-label">Показать все</span>
+                                    </a>
+                                </div>
+                                <div class="action-info">Время менять старые квартиры по Военной ипотеке</div>
+                                <div class="action-description">До 14 мая 2021 года квартиру в новостройке можно купить по сниженной ставке — 5,59%. Если вы ждали момента, чтобы приобрести новое жильё, то сейчас самое лучшее время.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-nav slider-nav js-slider-buttons">
+                        <button class="slider-button js-slider-prev">
+                            <span class="slider-button-icon"></span>
+                        </button>
+                        <button class="slider-button slider-button_next js-slider-next">
+                            <span class="slider-button-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="action-more-panel">
+                    <a class="more more_dark" href="#">
+                        <span class="more-label">Показать все</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <section class="information">
+                <h2 class="information-title h1">SEO-текст</h2>
+                <div class="information-content content">
+                    <p>
+                        Integer tellus sed libero diam nulla massa facilisis vel felis, leo eu quis rhoncus, senectus et tellus, molestie imperdiet
+                        volutpat arcu arcu adipiscing morbi ullamcorper eu, neque, purus et sed tincidunt et habitasse augue sed aliquam quisque leo
+                        quisque interdum nisi sed amet nibh varius elit, volutpat pharetra odio morbil.Integer tellus sed libero diam nulla massa
+                        facilisis vel felis, leo eu quis rhoncus, senectus et tellus, molestie imperdiet volutpat arcu arcu adipiscing morbi ullamcorper
+                        eu, neque, purus et sed tincidunt et habitasse augue sed aliquam quisque leo quisque interdum nisi sed amet nibh varius elit,
+                        volutpat pharetra odio morbil olutpat pharetra odio morbil.haretra odio morbil.
+                    </p>
+                    <p>
+                        Bibendum lacus ultrices mus arcu eu velit magna lectus auctor facilisi nibh enim viverra volutpat consequat urna donec id
+                        lectus pulvinar nibh nibh blandit mauris tortor amet ut ac, augue sit quam ac nullam a nec, aliquam bibendum congue eget ornare
+                        scelerisque tristique erat dignissim fermentum vitae ac vulputate sit integer justo semper habitant tellus neque arcu aliquet
+                        iaculis nisl sagittis, consectetur amet in ac egestas risus nunc nam at sit molestie amet, imperdiet massa semper quam augue mauris
+                        nibh viverra urna tellus eget habitasse dui purus auctor a id sagittis tellus lacus viverra interdum semper nibh tristique lectus velit
+                    </p>
+                </div>
+            </section>
+
+            <section class="articles">
+                <div class="container">
+                    <div class="articles-wrapp">
+                        <div class="section-title">
+                            Полезные статьи<a class="new-more more" href="#">
+                            <span class="more-label">Показать все</span>
+                        </a></div>
+
+                        <div class="articles-list mob-list-slider">
+                            <div class="row js-slider-list">
+                                <div class="col-lg-8 cols js-slider-item">
+                                    <div class="articles-item articles-item__large">
+                                        <div class="articles-item  ">
+                                            <div class="articles-item__wrapp js-articles-matchheight" style="background-image: url(/upload/iblock/45a/articles_1.jpg);">
+                                                <div class="articles-item__img">
+                                                    <a href="/articles/voennaya_ipoteka_v_sankt-peterburge/" style="background-image: url(/upload/iblock/45a/articles_1.jpg);"></a>
+                                                    <div class="articles-item__data mob-show">
+										<span class="calendar-icon">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M5.33333 0.965393C5.69232 0.965393 5.98333 1.25641 5.98333 1.61539V2.28425C6.59463 2.24699 7.26511 2.23078 8 2.23078C8.73489 2.23078 9.40537 2.24699 10.0167 2.28425V1.61539C10.0167 1.25641 10.3077 0.965393 10.6667 0.965393C11.0257 0.965393 11.3167 1.25641 11.3167 1.61539V2.40868C14.3611 2.82842 15.5419 4.08315 15.8842 7.11924C15.9077 7.32743 15.9272 7.54399 15.9432 7.76924C15.9579 7.97805 15.9696 8.19432 15.9784 8.4183C15.9932 8.79514 16 9.19378 16 9.61539C16 15.6966 14.588 17 8 17C1.412 17 0 15.6966 0 9.61539C0 9.19378 0.0067871 8.79514 0.0216154 8.4183C0.0304286 8.19432 0.0420824 7.97805 0.0568403 7.76924C0.0727597 7.54399 0.092291 7.32743 0.115765 7.11924C0.45809 4.08315 1.63886 2.82842 4.68333 2.40868V1.61539C4.68333 1.25641 4.97435 0.965393 5.33333 0.965393ZM4.68333 3.72258C3.75426 3.86467 3.12325 4.08581 2.67905 4.38641C2.06436 4.80239 1.62601 5.51175 1.42484 7.11924H14.5752C14.374 5.51175 13.9356 4.80239 13.321 4.38641C12.8768 4.08581 12.2457 3.86467 11.3167 3.72258V4.07693C11.3167 4.43592 11.0257 4.72693 10.6667 4.72693C10.3077 4.72693 10.0167 4.43592 10.0167 4.07693V3.5877C9.43161 3.54974 8.76377 3.53078 8 3.53078C7.23623 3.53078 6.56839 3.54974 5.98333 3.5877V4.07693C5.98333 4.43592 5.69232 4.72693 5.33333 4.72693C4.97435 4.72693 4.68333 4.43592 4.68333 4.07693V3.72258ZM14.7 9.61539C14.7 9.18759 14.6928 8.78969 14.6774 8.41924H1.32264C1.30723 8.78969 1.3 9.18759 1.3 9.61539C1.3 12.6924 1.6961 13.9728 2.41126 14.6329C2.76712 14.9614 3.31241 15.2392 4.23194 15.4279C5.16083 15.6184 6.38016 15.7 8 15.7C9.61984 15.7 10.8392 15.6184 11.7681 15.4279C12.6876 15.2392 13.2329 14.9614 13.5887 14.6329C14.3039 13.9728 14.7 12.6924 14.7 9.61539Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M3.3501 10.8462C3.3501 10.4872 3.64111 10.1962 4.0001 10.1962H6.0001C6.35908 10.1962 6.6501 10.4872 6.6501 10.8462C6.6501 11.2052 6.35908 11.4962 6.0001 11.4962H4.0001C3.64111 11.4962 3.3501 11.2052 3.3501 10.8462ZM10.0001 10.1962C9.64111 10.1962 9.3501 10.4872 9.3501 10.8462C9.3501 11.2052 9.64111 11.4962 10.0001 11.4962H12.0001C12.3591 11.4962 12.6501 11.2052 12.6501 10.8462C12.6501 10.4872 12.3591 10.1962 12.0001 10.1962H10.0001ZM10.0001 12.6577C9.64111 12.6577 9.3501 12.9487 9.3501 13.3077C9.3501 13.6667 9.64111 13.9577 10.0001 13.9577H12.0001C12.3591 13.9577 12.6501 13.6667 12.6501 13.3077C12.6501 12.9487 12.3591 12.6577 12.0001 12.6577H10.0001ZM4.0001 12.6577C3.64111 12.6577 3.3501 12.9487 3.3501 13.3077C3.3501 13.6667 3.64111 13.9577 4.0001 13.9577H6.0001C6.35908 13.9577 6.6501 13.6667 6.6501 13.3077C6.6501 12.9487 6.35908 12.6577 6.0001 12.6577H4.0001Z" fill="white"/>
+											</svg>										</span>
+                                                        26.08.2021									</div>
+                                                </div>
+                                                <div class="articles-item__info">
+                                                    <div class="articles-item__data mob-show">
+											<span class="calendar-icon">
+												<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M5.33333 0.965393C5.69232 0.965393 5.98333 1.25641 5.98333 1.61539V2.28425C6.59463 2.24699 7.26511 2.23078 8 2.23078C8.73489 2.23078 9.40537 2.24699 10.0167 2.28425V1.61539C10.0167 1.25641 10.3077 0.965393 10.6667 0.965393C11.0257 0.965393 11.3167 1.25641 11.3167 1.61539V2.40868C14.3611 2.82842 15.5419 4.08315 15.8842 7.11924C15.9077 7.32743 15.9272 7.54399 15.9432 7.76924C15.9579 7.97805 15.9696 8.19432 15.9784 8.4183C15.9932 8.79514 16 9.19378 16 9.61539C16 15.6966 14.588 17 8 17C1.412 17 0 15.6966 0 9.61539C0 9.19378 0.0067871 8.79514 0.0216154 8.4183C0.0304286 8.19432 0.0420824 7.97805 0.0568403 7.76924C0.0727597 7.54399 0.092291 7.32743 0.115765 7.11924C0.45809 4.08315 1.63886 2.82842 4.68333 2.40868V1.61539C4.68333 1.25641 4.97435 0.965393 5.33333 0.965393ZM4.68333 3.72258C3.75426 3.86467 3.12325 4.08581 2.67905 4.38641C2.06436 4.80239 1.62601 5.51175 1.42484 7.11924H14.5752C14.374 5.51175 13.9356 4.80239 13.321 4.38641C12.8768 4.08581 12.2457 3.86467 11.3167 3.72258V4.07693C11.3167 4.43592 11.0257 4.72693 10.6667 4.72693C10.3077 4.72693 10.0167 4.43592 10.0167 4.07693V3.5877C9.43161 3.54974 8.76377 3.53078 8 3.53078C7.23623 3.53078 6.56839 3.54974 5.98333 3.5877V4.07693C5.98333 4.43592 5.69232 4.72693 5.33333 4.72693C4.97435 4.72693 4.68333 4.43592 4.68333 4.07693V3.72258ZM14.7 9.61539C14.7 9.18759 14.6928 8.78969 14.6774 8.41924H1.32264C1.30723 8.78969 1.3 9.18759 1.3 9.61539C1.3 12.6924 1.6961 13.9728 2.41126 14.6329C2.76712 14.9614 3.31241 15.2392 4.23194 15.4279C5.16083 15.6184 6.38016 15.7 8 15.7C9.61984 15.7 10.8392 15.6184 11.7681 15.4279C12.6876 15.2392 13.2329 14.9614 13.5887 14.6329C14.3039 13.9728 14.7 12.6924 14.7 9.61539Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M3.3501 10.8462C3.3501 10.4872 3.64111 10.1962 4.0001 10.1962H6.0001C6.35908 10.1962 6.6501 10.4872 6.6501 10.8462C6.6501 11.2052 6.35908 11.4962 6.0001 11.4962H4.0001C3.64111 11.4962 3.3501 11.2052 3.3501 10.8462ZM10.0001 10.1962C9.64111 10.1962 9.3501 10.4872 9.3501 10.8462C9.3501 11.2052 9.64111 11.4962 10.0001 11.4962H12.0001C12.3591 11.4962 12.6501 11.2052 12.6501 10.8462C12.6501 10.4872 12.3591 10.1962 12.0001 10.1962H10.0001ZM10.0001 12.6577C9.64111 12.6577 9.3501 12.9487 9.3501 13.3077C9.3501 13.6667 9.64111 13.9577 10.0001 13.9577H12.0001C12.3591 13.9577 12.6501 13.6667 12.6501 13.3077C12.6501 12.9487 12.3591 12.6577 12.0001 12.6577H10.0001ZM4.0001 12.6577C3.64111 12.6577 3.3501 12.9487 3.3501 13.3077C3.3501 13.6667 3.64111 13.9577 4.0001 13.9577H6.0001C6.35908 13.9577 6.6501 13.6667 6.6501 13.3077C6.6501 12.9487 6.35908 12.6577 6.0001 12.6577H4.0001Z" fill="white"/>
+											</svg>											</span>
+                                                        26.08.2021										</div>
+
+                                                    <div class="articles-item__name"><a href="/articles/voennaya_ipoteka_v_sankt-peterburge/">Военная ипотека в Санкт-Петербурге</a></div>
+                                                    <div class="articles-item__text mob-show">Ленинградская область и Санкт - Петербург, на сегодняшний день, занимают почетное 3-е место среди ре ..</div>
+                                                    <div class="articles-item__btn">
+                                                        <a href="/articles/voennaya_ipoteka_v_sankt-peterburge/" class="button width-152">Читать</a>
+                                                        <span class="view">
+											<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="9" r="2.5" stroke="#828282" stroke-width="5"/>
+<path d="M24.1991 7.92714C24.5828 8.40964 24.7746 8.65089 24.7746 9C24.7746 9.34911 24.5828 9.59036 24.1991 10.0729C22.465 12.2538 18.1047 17 13 17C7.89527 17 3.53501 12.2538 1.80088 10.0729C1.41723 9.59036 1.22541 9.34911 1.22541 9C1.22541 8.65089 1.41723 8.40964 1.80088 7.92714C3.53501 5.74621 7.89527 1 13 1C18.1047 1 22.465 5.74621 24.1991 7.92714Z" stroke="#828282" stroke-width="1.3"/>
+</svg> 467										</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 cols js-slider-item">
+                                    <div class="articles-item ">
+                                        <div class="articles-item articles-item__small ">
+                                            <div class="articles-item__wrapp js-articles-matchheight" >
+                                                <div class="articles-item__img">
+                                                    <a href="/articles/bankrotstvo/" style="background-image: url(/upload/iblock/2fb/bankrotstvo.jpg);"></a>
+                                                    <div class="articles-item__data mob-show">
+										<span class="calendar-icon">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M5.33333 0.965393C5.69232 0.965393 5.98333 1.25641 5.98333 1.61539V2.28425C6.59463 2.24699 7.26511 2.23078 8 2.23078C8.73489 2.23078 9.40537 2.24699 10.0167 2.28425V1.61539C10.0167 1.25641 10.3077 0.965393 10.6667 0.965393C11.0257 0.965393 11.3167 1.25641 11.3167 1.61539V2.40868C14.3611 2.82842 15.5419 4.08315 15.8842 7.11924C15.9077 7.32743 15.9272 7.54399 15.9432 7.76924C15.9579 7.97805 15.9696 8.19432 15.9784 8.4183C15.9932 8.79514 16 9.19378 16 9.61539C16 15.6966 14.588 17 8 17C1.412 17 0 15.6966 0 9.61539C0 9.19378 0.0067871 8.79514 0.0216154 8.4183C0.0304286 8.19432 0.0420824 7.97805 0.0568403 7.76924C0.0727597 7.54399 0.092291 7.32743 0.115765 7.11924C0.45809 4.08315 1.63886 2.82842 4.68333 2.40868V1.61539C4.68333 1.25641 4.97435 0.965393 5.33333 0.965393ZM4.68333 3.72258C3.75426 3.86467 3.12325 4.08581 2.67905 4.38641C2.06436 4.80239 1.62601 5.51175 1.42484 7.11924H14.5752C14.374 5.51175 13.9356 4.80239 13.321 4.38641C12.8768 4.08581 12.2457 3.86467 11.3167 3.72258V4.07693C11.3167 4.43592 11.0257 4.72693 10.6667 4.72693C10.3077 4.72693 10.0167 4.43592 10.0167 4.07693V3.5877C9.43161 3.54974 8.76377 3.53078 8 3.53078C7.23623 3.53078 6.56839 3.54974 5.98333 3.5877V4.07693C5.98333 4.43592 5.69232 4.72693 5.33333 4.72693C4.97435 4.72693 4.68333 4.43592 4.68333 4.07693V3.72258ZM14.7 9.61539C14.7 9.18759 14.6928 8.78969 14.6774 8.41924H1.32264C1.30723 8.78969 1.3 9.18759 1.3 9.61539C1.3 12.6924 1.6961 13.9728 2.41126 14.6329C2.76712 14.9614 3.31241 15.2392 4.23194 15.4279C5.16083 15.6184 6.38016 15.7 8 15.7C9.61984 15.7 10.8392 15.6184 11.7681 15.4279C12.6876 15.2392 13.2329 14.9614 13.5887 14.6329C14.3039 13.9728 14.7 12.6924 14.7 9.61539Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M3.3501 10.8462C3.3501 10.4872 3.64111 10.1962 4.0001 10.1962H6.0001C6.35908 10.1962 6.6501 10.4872 6.6501 10.8462C6.6501 11.2052 6.35908 11.4962 6.0001 11.4962H4.0001C3.64111 11.4962 3.3501 11.2052 3.3501 10.8462ZM10.0001 10.1962C9.64111 10.1962 9.3501 10.4872 9.3501 10.8462C9.3501 11.2052 9.64111 11.4962 10.0001 11.4962H12.0001C12.3591 11.4962 12.6501 11.2052 12.6501 10.8462C12.6501 10.4872 12.3591 10.1962 12.0001 10.1962H10.0001ZM10.0001 12.6577C9.64111 12.6577 9.3501 12.9487 9.3501 13.3077C9.3501 13.6667 9.64111 13.9577 10.0001 13.9577H12.0001C12.3591 13.9577 12.6501 13.6667 12.6501 13.3077C12.6501 12.9487 12.3591 12.6577 12.0001 12.6577H10.0001ZM4.0001 12.6577C3.64111 12.6577 3.3501 12.9487 3.3501 13.3077C3.3501 13.6667 3.64111 13.9577 4.0001 13.9577H6.0001C6.35908 13.9577 6.6501 13.6667 6.6501 13.3077C6.6501 12.9487 6.35908 12.6577 6.0001 12.6577H4.0001Z" fill="white"/>
+											</svg>										</span>
+                                                        31.03.2021									</div>
+                                                </div>
+                                                <div class="articles-item__info">
+                                                    <div class="articles-item__name"><a href="/articles/bankrotstvo/">Банкротство и Военная ипотека</a></div>
+                                                    <div class="articles-item__text mob-show">Что делать военнослужащему участнику НИС при банкротстве застройщика? ..</div>
+                                                    <div class="articles-item__btn">
+                                                        <a href="/articles/bankrotstvo/" class="button width-152">Читать</a>
+                                                        <span class="view">
+											<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="9" r="2.5" stroke="#828282" stroke-width="5"/>
+<path d="M24.1991 7.92714C24.5828 8.40964 24.7746 8.65089 24.7746 9C24.7746 9.34911 24.5828 9.59036 24.1991 10.0729C22.465 12.2538 18.1047 17 13 17C7.89527 17 3.53501 12.2538 1.80088 10.0729C1.41723 9.59036 1.22541 9.34911 1.22541 9C1.22541 8.65089 1.41723 8.40964 1.80088 7.92714C3.53501 5.74621 7.89527 1 13 1C18.1047 1 22.465 5.74621 24.1991 7.92714Z" stroke="#828282" stroke-width="1.3"/>
+</svg> 1371										</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 cols js-slider-item">
+                                    <div class="articles-item ">
+                                        <div class="articles-item  articles-item__line">
+                                            <div class="articles-item__wrapp js-articles-matchheight" >
+                                                <div class="articles-item__img">
+                                                    <a href="/articles/besplatniy-rieltor/" style="background-image: url('/images/no_img.jpg');"></a>
+                                                    <div class="articles-item__data mob-show">
+										<span class="calendar-icon">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M5.33333 0.965393C5.69232 0.965393 5.98333 1.25641 5.98333 1.61539V2.28425C6.59463 2.24699 7.26511 2.23078 8 2.23078C8.73489 2.23078 9.40537 2.24699 10.0167 2.28425V1.61539C10.0167 1.25641 10.3077 0.965393 10.6667 0.965393C11.0257 0.965393 11.3167 1.25641 11.3167 1.61539V2.40868C14.3611 2.82842 15.5419 4.08315 15.8842 7.11924C15.9077 7.32743 15.9272 7.54399 15.9432 7.76924C15.9579 7.97805 15.9696 8.19432 15.9784 8.4183C15.9932 8.79514 16 9.19378 16 9.61539C16 15.6966 14.588 17 8 17C1.412 17 0 15.6966 0 9.61539C0 9.19378 0.0067871 8.79514 0.0216154 8.4183C0.0304286 8.19432 0.0420824 7.97805 0.0568403 7.76924C0.0727597 7.54399 0.092291 7.32743 0.115765 7.11924C0.45809 4.08315 1.63886 2.82842 4.68333 2.40868V1.61539C4.68333 1.25641 4.97435 0.965393 5.33333 0.965393ZM4.68333 3.72258C3.75426 3.86467 3.12325 4.08581 2.67905 4.38641C2.06436 4.80239 1.62601 5.51175 1.42484 7.11924H14.5752C14.374 5.51175 13.9356 4.80239 13.321 4.38641C12.8768 4.08581 12.2457 3.86467 11.3167 3.72258V4.07693C11.3167 4.43592 11.0257 4.72693 10.6667 4.72693C10.3077 4.72693 10.0167 4.43592 10.0167 4.07693V3.5877C9.43161 3.54974 8.76377 3.53078 8 3.53078C7.23623 3.53078 6.56839 3.54974 5.98333 3.5877V4.07693C5.98333 4.43592 5.69232 4.72693 5.33333 4.72693C4.97435 4.72693 4.68333 4.43592 4.68333 4.07693V3.72258ZM14.7 9.61539C14.7 9.18759 14.6928 8.78969 14.6774 8.41924H1.32264C1.30723 8.78969 1.3 9.18759 1.3 9.61539C1.3 12.6924 1.6961 13.9728 2.41126 14.6329C2.76712 14.9614 3.31241 15.2392 4.23194 15.4279C5.16083 15.6184 6.38016 15.7 8 15.7C9.61984 15.7 10.8392 15.6184 11.7681 15.4279C12.6876 15.2392 13.2329 14.9614 13.5887 14.6329C14.3039 13.9728 14.7 12.6924 14.7 9.61539Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M3.3501 10.8462C3.3501 10.4872 3.64111 10.1962 4.0001 10.1962H6.0001C6.35908 10.1962 6.6501 10.4872 6.6501 10.8462C6.6501 11.2052 6.35908 11.4962 6.0001 11.4962H4.0001C3.64111 11.4962 3.3501 11.2052 3.3501 10.8462ZM10.0001 10.1962C9.64111 10.1962 9.3501 10.4872 9.3501 10.8462C9.3501 11.2052 9.64111 11.4962 10.0001 11.4962H12.0001C12.3591 11.4962 12.6501 11.2052 12.6501 10.8462C12.6501 10.4872 12.3591 10.1962 12.0001 10.1962H10.0001ZM10.0001 12.6577C9.64111 12.6577 9.3501 12.9487 9.3501 13.3077C9.3501 13.6667 9.64111 13.9577 10.0001 13.9577H12.0001C12.3591 13.9577 12.6501 13.6667 12.6501 13.3077C12.6501 12.9487 12.3591 12.6577 12.0001 12.6577H10.0001ZM4.0001 12.6577C3.64111 12.6577 3.3501 12.9487 3.3501 13.3077C3.3501 13.6667 3.64111 13.9577 4.0001 13.9577H6.0001C6.35908 13.9577 6.6501 13.6667 6.6501 13.3077C6.6501 12.9487 6.35908 12.6577 6.0001 12.6577H4.0001Z" fill="white"/>
+											</svg>										</span>
+                                                        31.03.2021									</div>
+                                                </div>
+                                                <div class="articles-item__info">
+                                                    <div class="articles-item__name"><a href="/articles/besplatniy-rieltor/">Бесплатный дорогой риэлтор</a></div>
+                                                    <div class="articles-item__text ">А Вы верите в бесплатного риэлтора?! ..</div>
+                                                    <div class="articles-item__btn">
+                                                        <a href="/articles/besplatniy-rieltor/" class="button width-152">Читать</a>
+                                                        <span class="view">
+											<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="9" r="2.5" stroke="#828282" stroke-width="5"/>
+<path d="M24.1991 7.92714C24.5828 8.40964 24.7746 8.65089 24.7746 9C24.7746 9.34911 24.5828 9.59036 24.1991 10.0729C22.465 12.2538 18.1047 17 13 17C7.89527 17 3.53501 12.2538 1.80088 10.0729C1.41723 9.59036 1.22541 9.34911 1.22541 9C1.22541 8.65089 1.41723 8.40964 1.80088 7.92714C3.53501 5.74621 7.89527 1 13 1C18.1047 1 22.465 5.74621 24.1991 7.92714Z" stroke="#828282" stroke-width="1.3"/>
+</svg> 1875										</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 cols js-slider-item">
+                                    <div class="articles-item ">
+                                        <div class="articles-item  articles-item__line">
+                                            <div class="articles-item__wrapp js-articles-matchheight" >
+                                                <div class="articles-item__img">
+                                                    <a href="/articles/voennaya-ipoteka-rieltor/" style="background-image: url(/upload/iblock/a79/3MBAyvthEzU.jpg);"></a>
+                                                    <div class="articles-item__data mob-show">
+										<span class="calendar-icon">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M5.33333 0.965393C5.69232 0.965393 5.98333 1.25641 5.98333 1.61539V2.28425C6.59463 2.24699 7.26511 2.23078 8 2.23078C8.73489 2.23078 9.40537 2.24699 10.0167 2.28425V1.61539C10.0167 1.25641 10.3077 0.965393 10.6667 0.965393C11.0257 0.965393 11.3167 1.25641 11.3167 1.61539V2.40868C14.3611 2.82842 15.5419 4.08315 15.8842 7.11924C15.9077 7.32743 15.9272 7.54399 15.9432 7.76924C15.9579 7.97805 15.9696 8.19432 15.9784 8.4183C15.9932 8.79514 16 9.19378 16 9.61539C16 15.6966 14.588 17 8 17C1.412 17 0 15.6966 0 9.61539C0 9.19378 0.0067871 8.79514 0.0216154 8.4183C0.0304286 8.19432 0.0420824 7.97805 0.0568403 7.76924C0.0727597 7.54399 0.092291 7.32743 0.115765 7.11924C0.45809 4.08315 1.63886 2.82842 4.68333 2.40868V1.61539C4.68333 1.25641 4.97435 0.965393 5.33333 0.965393ZM4.68333 3.72258C3.75426 3.86467 3.12325 4.08581 2.67905 4.38641C2.06436 4.80239 1.62601 5.51175 1.42484 7.11924H14.5752C14.374 5.51175 13.9356 4.80239 13.321 4.38641C12.8768 4.08581 12.2457 3.86467 11.3167 3.72258V4.07693C11.3167 4.43592 11.0257 4.72693 10.6667 4.72693C10.3077 4.72693 10.0167 4.43592 10.0167 4.07693V3.5877C9.43161 3.54974 8.76377 3.53078 8 3.53078C7.23623 3.53078 6.56839 3.54974 5.98333 3.5877V4.07693C5.98333 4.43592 5.69232 4.72693 5.33333 4.72693C4.97435 4.72693 4.68333 4.43592 4.68333 4.07693V3.72258ZM14.7 9.61539C14.7 9.18759 14.6928 8.78969 14.6774 8.41924H1.32264C1.30723 8.78969 1.3 9.18759 1.3 9.61539C1.3 12.6924 1.6961 13.9728 2.41126 14.6329C2.76712 14.9614 3.31241 15.2392 4.23194 15.4279C5.16083 15.6184 6.38016 15.7 8 15.7C9.61984 15.7 10.8392 15.6184 11.7681 15.4279C12.6876 15.2392 13.2329 14.9614 13.5887 14.6329C14.3039 13.9728 14.7 12.6924 14.7 9.61539Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M3.3501 10.8462C3.3501 10.4872 3.64111 10.1962 4.0001 10.1962H6.0001C6.35908 10.1962 6.6501 10.4872 6.6501 10.8462C6.6501 11.2052 6.35908 11.4962 6.0001 11.4962H4.0001C3.64111 11.4962 3.3501 11.2052 3.3501 10.8462ZM10.0001 10.1962C9.64111 10.1962 9.3501 10.4872 9.3501 10.8462C9.3501 11.2052 9.64111 11.4962 10.0001 11.4962H12.0001C12.3591 11.4962 12.6501 11.2052 12.6501 10.8462C12.6501 10.4872 12.3591 10.1962 12.0001 10.1962H10.0001ZM10.0001 12.6577C9.64111 12.6577 9.3501 12.9487 9.3501 13.3077C9.3501 13.6667 9.64111 13.9577 10.0001 13.9577H12.0001C12.3591 13.9577 12.6501 13.6667 12.6501 13.3077C12.6501 12.9487 12.3591 12.6577 12.0001 12.6577H10.0001ZM4.0001 12.6577C3.64111 12.6577 3.3501 12.9487 3.3501 13.3077C3.3501 13.6667 3.64111 13.9577 4.0001 13.9577H6.0001C6.35908 13.9577 6.6501 13.6667 6.6501 13.3077C6.6501 12.9487 6.35908 12.6577 6.0001 12.6577H4.0001Z" fill="white"/>
+											</svg>										</span>
+                                                        31.03.2021									</div>
+                                                </div>
+                                                <div class="articles-item__info">
+                                                    <div class="articles-item__name"><a href="/articles/voennaya-ipoteka-rieltor/">Риэлтор: враг или друг?! Или 5 типичных ошибок военнослужащих при покупке квартир по военной ипотеке!</a></div>
+                                                    <div class="articles-item__text ">Мы представляем Вам список из 5 типичных ошибок, которые совершают изо дня в день военнослужащие, по ..</div>
+                                                    <div class="articles-item__btn">
+                                                        <a href="/articles/voennaya-ipoteka-rieltor/" class="button width-152">Читать</a>
+                                                        <span class="view">
+											<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="9" r="2.5" stroke="#828282" stroke-width="5"/>
+<path d="M24.1991 7.92714C24.5828 8.40964 24.7746 8.65089 24.7746 9C24.7746 9.34911 24.5828 9.59036 24.1991 10.0729C22.465 12.2538 18.1047 17 13 17C7.89527 17 3.53501 12.2538 1.80088 10.0729C1.41723 9.59036 1.22541 9.34911 1.22541 9C1.22541 8.65089 1.41723 8.40964 1.80088 7.92714C3.53501 5.74621 7.89527 1 13 1C18.1047 1 22.465 5.74621 24.1991 7.92714Z" stroke="#828282" stroke-width="1.3"/>
+</svg> 4885										</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 cols js-slider-item">
+                                    <div class="articles-item ">
+                                        <div class="articles-item  articles-item__line">
+                                            <div class="articles-item__wrapp js-articles-matchheight" >
+                                                <div class="articles-item__img">
+                                                    <a href="/articles/buy-novostroy/" style="background-image: url('/images/no_img.jpg');"></a>
+                                                    <div class="articles-item__data mob-show">
+										<span class="calendar-icon">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M5.33333 0.965393C5.69232 0.965393 5.98333 1.25641 5.98333 1.61539V2.28425C6.59463 2.24699 7.26511 2.23078 8 2.23078C8.73489 2.23078 9.40537 2.24699 10.0167 2.28425V1.61539C10.0167 1.25641 10.3077 0.965393 10.6667 0.965393C11.0257 0.965393 11.3167 1.25641 11.3167 1.61539V2.40868C14.3611 2.82842 15.5419 4.08315 15.8842 7.11924C15.9077 7.32743 15.9272 7.54399 15.9432 7.76924C15.9579 7.97805 15.9696 8.19432 15.9784 8.4183C15.9932 8.79514 16 9.19378 16 9.61539C16 15.6966 14.588 17 8 17C1.412 17 0 15.6966 0 9.61539C0 9.19378 0.0067871 8.79514 0.0216154 8.4183C0.0304286 8.19432 0.0420824 7.97805 0.0568403 7.76924C0.0727597 7.54399 0.092291 7.32743 0.115765 7.11924C0.45809 4.08315 1.63886 2.82842 4.68333 2.40868V1.61539C4.68333 1.25641 4.97435 0.965393 5.33333 0.965393ZM4.68333 3.72258C3.75426 3.86467 3.12325 4.08581 2.67905 4.38641C2.06436 4.80239 1.62601 5.51175 1.42484 7.11924H14.5752C14.374 5.51175 13.9356 4.80239 13.321 4.38641C12.8768 4.08581 12.2457 3.86467 11.3167 3.72258V4.07693C11.3167 4.43592 11.0257 4.72693 10.6667 4.72693C10.3077 4.72693 10.0167 4.43592 10.0167 4.07693V3.5877C9.43161 3.54974 8.76377 3.53078 8 3.53078C7.23623 3.53078 6.56839 3.54974 5.98333 3.5877V4.07693C5.98333 4.43592 5.69232 4.72693 5.33333 4.72693C4.97435 4.72693 4.68333 4.43592 4.68333 4.07693V3.72258ZM14.7 9.61539C14.7 9.18759 14.6928 8.78969 14.6774 8.41924H1.32264C1.30723 8.78969 1.3 9.18759 1.3 9.61539C1.3 12.6924 1.6961 13.9728 2.41126 14.6329C2.76712 14.9614 3.31241 15.2392 4.23194 15.4279C5.16083 15.6184 6.38016 15.7 8 15.7C9.61984 15.7 10.8392 15.6184 11.7681 15.4279C12.6876 15.2392 13.2329 14.9614 13.5887 14.6329C14.3039 13.9728 14.7 12.6924 14.7 9.61539Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M3.3501 10.8462C3.3501 10.4872 3.64111 10.1962 4.0001 10.1962H6.0001C6.35908 10.1962 6.6501 10.4872 6.6501 10.8462C6.6501 11.2052 6.35908 11.4962 6.0001 11.4962H4.0001C3.64111 11.4962 3.3501 11.2052 3.3501 10.8462ZM10.0001 10.1962C9.64111 10.1962 9.3501 10.4872 9.3501 10.8462C9.3501 11.2052 9.64111 11.4962 10.0001 11.4962H12.0001C12.3591 11.4962 12.6501 11.2052 12.6501 10.8462C12.6501 10.4872 12.3591 10.1962 12.0001 10.1962H10.0001ZM10.0001 12.6577C9.64111 12.6577 9.3501 12.9487 9.3501 13.3077C9.3501 13.6667 9.64111 13.9577 10.0001 13.9577H12.0001C12.3591 13.9577 12.6501 13.6667 12.6501 13.3077C12.6501 12.9487 12.3591 12.6577 12.0001 12.6577H10.0001ZM4.0001 12.6577C3.64111 12.6577 3.3501 12.9487 3.3501 13.3077C3.3501 13.6667 3.64111 13.9577 4.0001 13.9577H6.0001C6.35908 13.9577 6.6501 13.6667 6.6501 13.3077C6.6501 12.9487 6.35908 12.6577 6.0001 12.6577H4.0001Z" fill="white"/>
+											</svg>										</span>
+                                                        31.03.2021									</div>
+                                                </div>
+                                                <div class="articles-item__info">
+                                                    <div class="articles-item__name"><a href="/articles/buy-novostroy/">Купить квартиру сейчас или дождаться лучшего предложения?</a></div>
+                                                    <div class="articles-item__text "><p class="p_main">В статье предлагаем порассуждать на тему &quot;Купить квартиру сейчас (из того, чт ..</div>
+                                                    <div class="articles-item__btn">
+                                                        <a href="/articles/buy-novostroy/" class="button width-152">Читать</a>
+                                                        <span class="view">
+											<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="9" r="2.5" stroke="#828282" stroke-width="5"/>
+<path d="M24.1991 7.92714C24.5828 8.40964 24.7746 8.65089 24.7746 9C24.7746 9.34911 24.5828 9.59036 24.1991 10.0729C22.465 12.2538 18.1047 17 13 17C7.89527 17 3.53501 12.2538 1.80088 10.0729C1.41723 9.59036 1.22541 9.34911 1.22541 9C1.22541 8.65089 1.41723 8.40964 1.80088 7.92714C3.53501 5.74621 7.89527 1 13 1C18.1047 1 22.465 5.74621 24.1991 7.92714Z" stroke="#828282" stroke-width="1.3"/>
+</svg> 359										</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new-nav slider-nav js-slider-buttons">
+                                <button class="new-button slider-button js-slider-prev">
+                                    <span class="slider-button-icon"></span>
+                                </button>
+                                <button class="new-button slider-button slider-button_next js-slider-next">
+                                    <span class="slider-button-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="articles-bottom">
+                            <a class="new-more more" href="#"><span class="more-label">Показать все</span></a>			</div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="visited">
+                <div class="visited-container js-slider-visited">
+                    <h2 class="visited-title h1">Вы недавно смотрели</h2>
+                    <div class="visited-gallery">
+                        <div class="visited-list js-slider-list">
+                            <div class="visited-list-item js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img" src="./images/visited/visited-img-1.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">ЖК “Пушкин”</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                            <div class="visited-list-item visited-list-item_bank js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img visited-img_bank" src="./images/visited/visited-img-2.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">Банк: Сбербанк</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                            <div class="visited-list-item js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img" src="./images/visited/visited-img-3.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">Рефинансирование</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                            <div class="visited-list-item js-slider-item">
+                                <div class="visited-block">
+                                    <a class="visited-list-link" href="#">
+                                        <img class="visited-img" src="./images/visited/visited-img-4.jpg" alt="" />
+                                    </a>
+                                    <a class="visited-wishlist" href="javascript:;">
+                                        <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                    </a>
+                                </div>
+                                <div class="visited-description">
+                                    <a class="visited-name" href="#">ЖК “Иваново”</a>
+                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visited-nav slider-nav js-slider-buttons">
+                            <button class="visited-button slider-button js-slider-prev">
+                                <span class="slider-button-icon"></span>
+                            </button>
+                            <button class="visited-button slider-button slider-button_next js-slider-next">
+                                <span class="slider-button-icon"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
