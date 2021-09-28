@@ -3,16 +3,17 @@
 
 <head>
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>База знаний. Детальная. Военная ипотека</title>
+    <title>Мои документы. Личный кабинет. Военная ипотека</title>
 
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/Selectric/public/selectric.css" />
     <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -396,9 +397,9 @@
     <main class="main-content">
         <div class="breadcrumbs">
             <div class="breadcrumbs-block container js-expand" data-expand="{
-                    'classActive': 'breadcrumbs_active',
-                    'classShow': 'breadcrumbs_show'
-                    }">
+                'classActive': 'breadcrumbs_active',
+                'classShow': 'breadcrumbs_show'
+            }">
                 <ul class="breadcrumbs-list js-expand-block">
                     <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная<i class="breadcrumbs-icon"></i></a></li>
                     <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Военнослужащим<i class="breadcrumbs-icon"></i></a></li>
@@ -408,333 +409,394 @@
             </div>
         </div>
 
-        <div class="container">
-            <a class="back-link" href="#">
-                <span class="back-link-icon"></span>Вернуться к списку
-            </a>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="articles-detail-title h2">Рефинансирование ипотеки: тонкости перекредитования</h1>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="articles-detail-panel">
-                        <li class="articles-detail-panel-item">
-                                <span class="articles-detail-date">
-                                    <span class="articles-detail-date-icon icon icon_calendar"></span>21.06.2021
-                                </span>
+        <div class="profile">
+            <div class="profile-container container">
+                <aside class="profile-side">
+                    <span class="profile-title h2">Ваши обращения</span>
+                    <ul class="profile-menu">
+                        <li class="profile-menu-item">
+                            <a class="profile-menu-link" href="#">Личные данные</a>
                         </li>
-                        <li class="articles-detail-panel-item">
-                                <span class="articles-detail-views articles-detail-panel-item">
-                                    <span class="articles-detail-views-icon icon icon_views"></span>568
-                                </span>
+                        <li class="profile-menu-item profile-menu-item_active">
+                            <a class="profile-menu-link" href="#">Мои документы</a>
                         </li>
-                        <li class="articles-detail-panel-item">
-                            <a class="articles-detail-share articles-detail-panel-item" href="#">
-                                <span class="articles-detail-share-icon icon icon_share"></span>
-                            </a>
+                        <li class="profile-menu-item">
+                            <a class="profile-menu-link" href="#">Мои обращения <span class="profile-menu-amount">3</span></a>
+                        </li>
+                        <li class="profile-menu-item">
+                            <a class="profile-menu-link" href="#">Уведомления  <span class="profile-menu-amount">5</span></a>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div class="articles-detail-main row">
-                <div class="articles-detail-main-item col-md-6">
-                    <div class="articles-detail-main-pic">
-                        <img class="articles-detail-main-img" src="./images/articles/articles-img-3.jpg" alt="" />
-                        <span class="articles-detail-time">
-                            <span class="articles-detail-time-icon icon icon_time"></span>20 мин.
-                        </span>
+                    <div class="profile-menu-mob JS-MobileMenu" data-mobilemenu="{
+                        'classActive': 'open',
+                        'classShow': 'mob-menu-show',
+                        'classElementActive': 'mob-menu_active'
+                    }">
+                        <a class="profile-menu-mob-switcher JS-MobileMenu-Burger" href="javascript:;">
+                            <span class="profile-menu-mob-icon"></span>
+                        </a>
+                        <div class="mob-block JS-MobileMenu-Dropdown">
+                            <div class="mob-close-panel">
+                                <a href="javascript:;" class="mob-close JS-MobileMenu-Close"><i class="mob-close-icon las la-times"></i></a>
+                            </div>
+                            <div class="mob-nav">
+                                <ul class="mob-list">
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link" href="#">Личные данные</a>
+                                    </li>
+                                    <li class="mob-list-item mob-list-item_active">
+                                        <a class="mob-list-link" href="#">Мои документы</a>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link" href="#">Мои обращения<span class="mob-list-informer">3</span></a>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link" href="#">Уведомления<span class="mob-list-informer">5</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                    </div>
+                </aside>
+                <div class="profile-content">
+                    <div class="profile-block">
+                        <span class="profile-name">Мои документы</span>
+                        <div class="profile-panel">
+                            <div class="profile-total">
+                                <span class="profile-label">Всего добавлено документов</span>
+                                <span class="profile-amount">5</span>
+                            </div>
+                            <a class="profile-link" href="#">+ Добавить документы</a>
+                        </div>
+                    </div>
+                    <div class="profile-list">
+                        <div class="profile-list-item profile-block js-item-check JS-Accordion" data-accordion="{'classActive': 'profile-list-item_current'}" data-accordion-id="1">
+                            <div class="profile-list-block">
+                                <div class="profile-list-col profile-list-col_info">
+                                    <div class="profile-list-info">
+                                        <span class="profile-list-pic profile-list-pic_active">
+                                            <span class="profile-list-icon profile-list-icon_doc"></span>
+                                        </span>
+                                        <div class="profile-list-detail">
+                                            <div class="profile-list-content">Паспорт гражданина РФ или паспорт иностранного гражданина</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-list-col profile-list-col_actions">
+                                     <label class="profile-list-checkbox checkbox checkbox_dark">
+	                                    <input class="checkbox-input js-item-check-input" type="checkbox" name="value-1" />
+	                                    <i class="checkbox-check"></i>
+	                                 </label>
+                                    <span class="profile-list-switcher-wrap">
+                                        <a class="profile-list-switcher JS-Accordion-Switcher" href="javascript:;"></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="profile-list-container JS-Accordion-Menu">
+                                <div class="profile-list-block profile-list-block_simple">
+                                    <div class="profile-list-col profile-list-col_info">
+                                        <div class="profile-list-info">
+                                            <span class="profile-list-pic">
+                                                <span class="profile-list-icon profile-list-icon_list"></span>
+                                            </span>
+                                            <div class="profile-list-detail">
+                                                <div class="profile-list-content">Номер СНИЛС (свидетельство о пенсионном страховании) или ИНН (индивидуальный номер налогоплательщика) для лиц..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list-col profile-list-col_actions">
+                                        <a class="profile-docs-icon icon icon_download" href="javascript:;"></a>
+                                        <a class="profile-docs-icon icon icon_cross" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                                <div class="profile-list-block profile-list-block_simple">
+                                    <div class="profile-list-col profile-list-col_info">
+                                        <div class="profile-list-info">
+                                            <span class="profile-list-pic">
+                                                <span class="profile-list-icon profile-list-icon_list"></span>
+                                            </span>
+                                            <div class="profile-list-detail">
+                                                <div class="profile-list-content">Копия трудовой книжки, заверенная работодателем, или справка/выписка из Трудовой книжки или электронная выписка</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list-col profile-list-col_actions">
+                                        <a class="profile-docs-icon icon icon_download" href="javascript:;"></a>
+                                        <a class="profile-docs-icon icon icon_cross" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                                <div class="profile-list-block profile-list-block_simple">
+                                    <div class="profile-list-col profile-list-col_info">
+                                        <div class="profile-list-info">
+                                            <span class="profile-list-pic">
+                                                <img class="profile-list-img" src="./images/profile/profile-docs-img.jpg" alt="" />
+                                            </span>
+                                            <div class="profile-list-detail">
+                                                <div class="profile-list-content">Фотография для карточки клиента</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list-col profile-list-col_actions">
+                                        <a class="profile-docs-icon icon icon_download" href="javascript:;"></a>
+                                        <a class="profile-docs-icon icon icon_cross" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-list-item profile-block js-item-check JS-Accordion" data-accordion="{'classActive': 'profile-list-item_current'}" data-accordion-id="1">
+                            <div class="profile-list-block">
+                                <div class="profile-list-col profile-list-col_info">
+                                    <div class="profile-list-info">
+                                        <span class="profile-list-pic profile-list-pic_active">
+                                            <span class="profile-list-icon profile-list-icon_doc"></span>
+                                        </span>
+                                        <div class="profile-list-detail">
+                                            <div class="profile-list-content">Номер СНИЛС (свидетельство о пенсионном страховании) или ИНН (индивидуальный номер налогоплательщика) для лиц..</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-list-col profile-list-col_actions">
+                                    <label class="profile-list-checkbox checkbox checkbox_dark">
+                                        <input class="checkbox-input js-item-check-input" type="checkbox" name="value-2" />
+                                        <i class="checkbox-check"></i>
+                                    </label>
+                                    <span class="profile-list-switcher-wrap">
+                                        <a class="profile-list-switcher JS-Accordion-Switcher" href="javascript:;"></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="profile-list-container JS-Accordion-Menu">
+                                <div class="profile-list-block profile-list-block_simple">
+                                    <div class="profile-list-col profile-list-col_info">
+                                        <div class="profile-list-info">
+                                            <span class="profile-list-pic">
+                                                <span class="profile-list-icon profile-list-icon_list"></span>
+                                            </span>
+                                            <div class="profile-list-detail">
+                                                <div class="profile-list-content">Номер СНИЛС (свидетельство о пенсионном страховании) или ИНН (индивидуальный номер налогоплательщика) для лиц..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list-col profile-list-col_actions">
+                                        <a class="profile-docs-icon icon icon_download" href="javascript:;"></a>
+                                        <a class="profile-docs-icon icon icon_cross" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-list-item profile-block js-item-check JS-Accordion" data-accordion="{'classActive': 'profile-list-item_current'}" data-accordion-id="1">
+                            <div class="profile-list-block">
+                                <div class="profile-list-col profile-list-col_info">
+                                    <div class="profile-list-info">
+                                        <span class="profile-list-pic profile-list-pic_active">
+                                            <span class="profile-list-icon profile-list-icon_doc"></span>
+                                        </span>
+                                        <div class="profile-list-detail">
+                                            <div class="profile-list-content">Копия трудовой книжки, заверенная работодателем, или справка/выписка из Трудовой книжки или электронная выписка</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-list-col profile-list-col_actions">
+                                    <label class="profile-list-checkbox checkbox checkbox_dark">
+                                        <input class="checkbox-input js-item-check-input" type="checkbox" name="value-3" />
+                                        <i class="checkbox-check"></i>
+                                    </label>
+                                    <span class="profile-list-switcher-wrap">
+                                        <a class="profile-list-switcher JS-Accordion-Switcher" href="javascript:;"></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="profile-list-container JS-Accordion-Menu">
+                                <div class="profile-list-block profile-list-block_simple">
+                                    <div class="profile-list-col profile-list-col_info">
+                                        <div class="profile-list-info">
+                                            <span class="profile-list-pic">
+                                                <span class="profile-list-icon profile-list-icon_list"></span>
+                                            </span>
+                                            <div class="profile-list-detail">
+                                                <div class="profile-list-content">Номер СНИЛС (свидетельство о пенсионном страховании) или ИНН (индивидуальный номер налогоплательщика) для лиц..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list-col profile-list-col_actions">
+                                        <a class="profile-docs-icon icon icon_download" href="javascript:;"></a>
+                                        <a class="profile-docs-icon icon icon_cross" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-list-item profile-block js-item-check JS-Accordion" data-accordion="{'classActive': 'profile-list-item_current'}" data-accordion-id="1">
+                            <div class="profile-list-block">
+                                <div class="profile-list-col profile-list-col_info">
+                                    <div class="profile-list-info">
+                                        <span class="profile-list-pic profile-list-pic_active">
+                                            <span class="profile-list-icon profile-list-icon_doc"></span>
+                                        </span>
+                                        <div class="profile-list-detail">
+                                            <div class="profile-list-content">Документ, подтверждающий законность пребывания и занятости на территории РФ, для иностранных граждан</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-list-col profile-list-col_actions">
+                                    <label class="profile-list-checkbox checkbox checkbox_dark">
+                                        <input class="checkbox-input js-item-check-input" type="checkbox" name="value-4" />
+                                        <i class="checkbox-check"></i>
+                                    </label>
+                                    <span class="profile-list-switcher-wrap">
+                                        <a class="profile-list-switcher JS-Accordion-Switcher" href="javascript:;"></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="profile-list-container JS-Accordion-Menu">
+                                <div class="profile-list-block profile-list-block_simple">
+                                    <div class="profile-list-col profile-list-col_info">
+                                        <div class="profile-list-info">
+                                            <span class="profile-list-pic">
+                                                <span class="profile-list-icon profile-list-icon_list"></span>
+                                            </span>
+                                            <div class="profile-list-detail">
+                                                <div class="profile-list-content">Номер СНИЛС (свидетельство о пенсионном страховании) или ИНН (индивидуальный номер налогоплательщика) для лиц..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list-col profile-list-col_actions">
+                                        <a class="profile-docs-icon icon icon_download" href="javascript:;"></a>
+                                        <a class="profile-docs-icon icon icon_cross" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-block">
+                        <div class="profile-actions">
+                            <ul class="profile-actions-list">
+                                <li class="profile-actions-list-item">
+                                    <a class="profile-actions-list-link" href="javascript:;">
+                                        <span class="profile-actions-list-icon icon icon_select-all"></span>Выбрать все
+                                    </a>
+                                </li>
+                                <li class="profile-actions-list-item">
+                                    <a class="profile-actions-list-link" href="javascript:;">
+                                        <span class="profile-actions-list-icon icon icon_read"></span>Добавлено
+                                    </a>
+                                </li>
+                                <li class="profile-actions-list-item">
+                                    <a class="profile-actions-list-link" href="javascript:;">
+                                        <span class="profile-actions-list-icon icon icon_cross"></span>Удалить
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="profile-pager">
+                                <li class="profile-pager-item profile-pager-item_side profile-pager-item_first">
+                                    <a class="profile-pager-link" href="#">
+                                        <i class="profile-pager-icon"></i>
+                                    </a>
+                                </li>
+                                <!-- Добавить класс profile-pager-item_default, если страницы пролистаны
+                                <li class="profile-pager-item profile-pager-item_side profile-pager-item_first profile-pager-item_default">
+                                    <span class="profile-pager-link">
+                                        <i class="profile-pager-icon"></i>
+                                    </span>
+                                </li>
+                                <!-- //Добавить класс profile-pager-item_default, если страницы пролистаны -->
+                                <li class="profile-pager-item"><a class="profile-pager-link" href="#">1</a></li>
+                                <li class="profile-pager-item profile-pager-item_active"><a class="profile-pager-link" href="#">2</a></li>
+                                <li class="profile-pager-item"><a class="profile-pager-link" href="#">3</a></li>
+                                <li class="profile-pager-item"><a class="profile-pager-link" href="#">...</a></li>
+                                <li class="profile-pager-item"><a class="profile-pager-link" href="#">12</a></li>
+                                <!-- Добавить класс profile-pager-item_default, если страницы пролистаны -->
+                                <li class="profile-pager-item profile-pager-item_side profile-pager-item_last profile-pager-item_default">
+                                    <span class="profile-pager-link profile-pager-link_last">
+                                        <i class="profile-pager-icon"></i>
+                                    </span>
+                                </li>
+                                <!-- //Добавить класс profile-pager-item_default, если страницы пролистаны -->
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="articles-detail-main-item col-md-6">
-                    <div class="articles-detail-notes">
-                        <span class="articles-detail-title h2">Оглавление</span>
-                        <ol class="articles-detail-notes-list">
-                            <li class="articles-detail-notes-item">
-                                <a class="articles-detail-notes-link" href="#refinancing">Рефинасирование</a>
-                            </li>
-                            <li class="articles-detail-notes-item">
-                                <a class="articles-detail-notes-link" href="#refinancing-stages">Этапы рефинансирования</a>
-                            </li>
-                            <li class="articles-detail-notes-item">
-                                <a class="articles-detail-notes-link" href="#calculator">Калькулятор</a>
-                            </li>
-                            <li class="articles-detail-notes-item">
-                                <a class="articles-detail-notes-link" href="#mortgage">Ипотека</a>
-                            </li>
-                            <li class="articles-detail-notes-item">
-                                <a class="articles-detail-notes-link" href="#government-support">Господдержка</a>
-                            </li>
-                            <li class="articles-detail-notes-item">
-                                <a class="articles-detail-notes-link" href="#military-mortgage">Военная ипотека</a>
-                            </li>
-                            <li class="articles-detail-notes-item">
-                                <a class="articles-detail-notes-link" href="#banks">Банки</a>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
             </div>
-            <div class="articles-detail content">
-                <p id="refinancing"><b>Рефинансирование</b> простыми словами, рефинансирование — это погашение
-                    нескольких кредитов сразу одним новым на более выгодных условиях.
-                    Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставке
-                    от 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек.
-                    Однако делать это стоит только в том случае, когда это действительно выгодно.
-                    Планируя рефинансирование ипотеки, учитывайте также, что рефинансировать
-                    кредит повторно и снизить ставку несколько раз подряд вряд ли получится.
-                    Банкам экономически невыгодно брать себе кредиты, которые ранее
-                    рефинансировалисьв этом и других банках — их воспринимают какпотенциально
-                    убыточные.Главная Ипотека Выгодно ли рефинансировать ипотеку?
-                    Простыми словами, рефинансирование — это погашение старого кредита или
-                    нескольких кредитов сразу одним новым на более выгодных условиях.
-                    Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставке
-                    от 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек.</p>
-                <p id="refinancing-stages"><b>Этапы рефинансирования.</b> Простыми словами, рефинансирование
-                    нескольких кредитов сразу одним новым на более выгодных условиях.
-                    Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставке
-                    от 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек.
-                    Однако делать это стоит только в том случае, когда это действительно выгодно.
-                    Планируя рефинансирование ипотеки, учитывайте также, что рефинансировать
-                    кредит повторно и снизить ставку несколько раз подряд вряд ли получится.
-                    Банкам экономически невыгодно брать себе кредиты, которые ранее
-                    рефинансировалисьв этом и других банках — их воспринимают какпотенциально</p>
-                <p><b>Экспертная проверка объекта недвижимость включая:</b></p>
-                <ul>
-                    <li>Проверку достаточности и необходимости пакета документов</li>
-                    <li>Проверку дееспособности продавца</li>
-                    <li>Проверку истории квартиры</li>
-                    <li>Получение информации о лицах, имеющих право пользования и проживания в данном объекте</li>
-                    <li>А главное - выявление возможных РИСКОВ, связанных с покупкой конкретного объекта</li>
-                </ul>
-                <p id="government-support"><b>Господдержка</b> простыми словами, рефинансирование — это погашение
-                    нескольких кредитов сразу одним новым на более выгодных условиях.
-                    Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставке
-                    от 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек.
-                    Однако делать это стоит только в том случае, когда это действительно выгодно.
-                    Планируя рефинансирование ипотеки, учитывайте также, что рефинансировать
-                    кредит повторно и снизить ставку несколько раз подряд вряд ли получится.
-                    Банкам экономически невыгодно брать себе кредиты, которые ранее
-                    рефинансировалисьв этом и других банках — их воспринимают какпотенциально
-                    убыточные.Главная
-                    Ипотека
-                    Выгодно ли рефинансировать ипотеку?
-                    Простыми словами, рефинансирование — это погашение старого кредита или
-                    нескольких кредитов сразу одним новым на более выгодных условиях.
-                    Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставке
-                    от 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек.</p>
-                <p id="military-mortgage"><b>Военная ипотека</b> простыми словами, рефинансирование — это погашение старого кредита илинескольких кредитов сразу одним новым на более выгодных условиях.Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставкеот 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек. Однако делать это стоит только в том случае, когда это действительно выгодно.Планируя рефинансирование ипотеки, учитывайте также, что рефинансировать кредит повторно и снизить ставку несколько раз подряд вряд ли получится. Банкам экономически невыгодно брать себе кредиты, которые ранее рефинансировалисьв этом и других банках — их воспринимают как потенциально убыточные.</p>
-                <p>Главная Ипотека Выгодно ли рефинансировать ипотеку? Банкам экономически невыгодно брать себе кредиты, которые ранее рефинансировалисьв этом и других банках — их воспринимают как потенциально убыточные.</p>
-                <p id="calculator"><b>Калькулятор</b> рефинансирование — это погашение старого кредита илинескольких кредитов сразу одним новым на более выгодных условиях.Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставкеот 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек. Однако делать это стоит только в том случае, когда это действительно выгодно.Планируя рефинансирование ипотеки, учитывайте также, что рефинансировать кредит повторно и снизить ставку несколько раз подряд вряд ли получится. Банкам экономически невыгодно брать себе кредиты, которые ранее рефинансировалисьв этом и других банках — их воспринимают как потенциально убыточные.Главная
-                Ипотека Выгодно ли рефинансировать ипотеку?
-                Простыми словами, рефинансирование — это погашение старого кредита или без просрочек.</p>
-                <blockquote>“Рефинансирование — это погашение старого кредита или нескольких кредитов сразу одним новым на более выгодных условиях.”</blockquote>
-                <p id="mortgage"><b>Ипотека</b> простыми словами, рефинансирование — это погашение старого кредита илинескольких кредитов сразу одним новым на более выгодных условиях.Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставкеот 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек. Однако делать это стоит только в том случае, когда это действительно выгодно.Планируя рефинансирование ипотеки, учитывайте также, что рефинансировать кредит повторно и снизить ставку несколько раз подряд вряд ли получится. Банкам экономически невыгодно брать себе кредиты, которые ранее рефинансировалисьв этом и других банках — их воспринимают как потенциально убыточные.Главная
-                    Ипотека Выгодно ли рефинансировать ипотеку?</p>
-                <img src="./images/articles/articles-img-4.jpg" alt="" /><br /><br />
-                <p id="banks"><b>Банки</b> простыми словами, рефинансирование — это погашение старого кредита илинескольких кредитов сразу одним новым на более выгодных условиях.Например, в Сбербанке можно рефинансировать ипотеку другого банка по ставкеот 7,9% годовых, если вы выплачиваете её не меньше полугода без просрочек. Однако делать это стоит только в том случае, когда это действительно выгодно.Планируя рефинансирование ипотеки, учитывайте также, что рефинансировать кредит повторно и снизить ставку несколько раз подряд вряд ли получится. Банкам экономически невыгодно брать себе кредиты, которые ранее рефинансировалисьв этом и других банках — их воспринимают как потенциально убыточные.</p>
-            </div>
+        </div>
 
-            <section class="articles-feed">
-                <h2 class="h1">Читайте также:</h2>
-                <div class="row">
-                    <div class="articles-feed-item col-md-6 col-lg-4">
-                        <div class="articles-feed-container">
-                            <div class="articles-feed-block">
-                                <a class="articles-feed-link" href="#">
-                                    <img class="articles-feed-img" src="./images/articles/articles-feed-img-1.jpg" alt="" />
-                                </a>
-                            </div>
-                            <div class="articles-feed-description">
-                                <a class="articles-feed-name" href="#">Рефинансирование ипотеки: тонкости перекредитования</a>
-                                <div class="articles-feed-info content">Рефинансирование ипотеки означает, что заёмщик оформляет новый кредит для..</div>
-                                <div class="articles-feed-panel">
-                                    <a class="articles-feed-button button" href="#">Читать</a>
-                                    <span class="articles-feed-views">
-                                        <i class="articles-feed-views-icon icon icon_views"></i>568
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="articles-feed-item col-md-6 col-lg-4">
-                        <div class="articles-feed-container">
-                            <div class="articles-feed-block">
-                                <a class="articles-feed-link" href="#">
-                                    <img class="articles-feed-img" src="./images/articles/articles-feed-img-2.jpg" alt="" />
-                                </a>
-                            </div>
-                            <div class="articles-feed-description">
-                                <a class="articles-feed-name" href="#">Рефинансирование ипотеки: тонкости перекредитования</a>
-                                <div class="articles-feed-info content">Рефинансирование ипотеки означает, что заёмщик оформляет новый кредит для..</div>
-                                <div class="articles-feed-panel">
-                                    <a class="articles-feed-button button" href="#">Читать</a>
-                                    <span class="articles-feed-views">
-                                        <i class="articles-feed-views-icon icon icon_views"></i>568
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="articles-feed-item col-md-6 col-lg-4">
-                        <div class="articles-feed-container">
-                            <div class="articles-feed-block">
-                                <a class="articles-feed-link" href="#">
-                                    <img class="articles-feed-img" src="./images/articles/articles-feed-img-3.jpg" alt="" />
-                                </a>
-                                <span class="articles-feed-date">
-                                    <span class="articles-feed-date-icon icon icon_calendar"></span>21.06.2021
-                                </span>
-                            </div>
-                            <div class="articles-feed-description">
-                                <a class="articles-feed-name" href="#">Рефинансирование ипотеки: тонкости перекредитования</a>
-                                <div class="articles-feed-info content">Рефинансирование ипотеки означает, что заёмщик оформляет новый кредит для..</div>
-                                <div class="articles-feed-panel">
-                                    <a class="articles-feed-button button" href="#">Читать</a>
-                                    <span class="articles-feed-views">
-                                        <i class="articles-feed-views-icon icon icon_views"></i>568
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="articles-feed-item col-md-6 col-lg-4">
-                        <div class="articles-feed-container">
-                            <div class="articles-feed-block">
-                                <a class="articles-feed-link" href="#">
-                                    <img class="articles-feed-img" src="./images/articles/articles-feed-img-4.jpg" alt="" />
-                                </a>
-                            </div>
-                            <div class="articles-feed-description">
-                                <a class="articles-feed-name" href="#">Рефинансирование ипотеки: тонкости перекредитования</a>
-                                <div class="articles-feed-info content">Рефинансирование ипотеки означает, что заёмщик оформляет новый кредит для..</div>
-                                <div class="articles-feed-panel">
-                                    <a class="articles-feed-button button" href="#">Читать</a>
-                                    <span class="articles-feed-views">
-                                        <i class="articles-feed-views-icon icon icon_views"></i>568
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="articles-feed-item col-md-6 col-lg-4">
-                        <div class="articles-feed-container">
-                            <div class="articles-feed-block">
-                                <a class="articles-feed-link" href="#">
-                                    <img class="articles-feed-img" src="./images/articles/articles-feed-img-5.jpg" alt="" />
-                                </a>
-                            </div>
-                            <div class="articles-feed-description">
-                                <a class="articles-feed-name" href="#">Рефинансирование ипотеки: тонкости перекредитования</a>
-                                <div class="articles-feed-info content">Рефинансирование ипотеки означает, что заёмщик оформляет новый кредит для..</div>
-                                <div class="articles-feed-panel">
-                                    <a class="articles-feed-button button" href="#">Читать</a>
-                                    <span class="articles-feed-views">
-                                        <i class="articles-feed-views-icon icon icon_views"></i>568
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="articles-feed-item col-md-6 col-lg-4">
-                        <div class="articles-feed-container">
-                            <div class="articles-feed-block">
-                                <a class="articles-feed-link" href="#">
-                                    <img class="articles-feed-img" src="./images/articles/articles-feed-img-6.jpg" alt="" />
-                                </a>
-                            </div>
-                            <div class="articles-feed-description">
-                                <a class="articles-feed-name" href="#">Рефинансирование ипотеки: тонкости перекредитования</a>
-                                <div class="articles-feed-info content">Рефинансирование ипотеки означает, что заёмщик оформляет новый кредит для..</div>
-                                <div class="articles-feed-panel">
-                                    <a class="articles-feed-button button" href="#">Читать</a>
-                                    <span class="articles-feed-views">
-                                        <i class="articles-feed-views-icon icon icon_views"></i>568
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+        <div class="container">
             <section class="visited">
-                <div class="visited-container js-slider-visited">
-                    <h2 class="visited-title h1">Вы недавно смотрели</h2>
-                    <div class="visited-gallery">
-                        <div class="visited-list js-slider-list">
-                            <div class="visited-list-item js-slider-item">
-                                <div class="visited-block">
-                                    <a class="visited-list-link" href="#">
-                                        <img class="visited-img" src="./images/visited/visited-img-1.jpg" alt="" />
-                                    </a>
-                                    <a class="visited-wishlist" href="javascript:;">
-                                        <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
-                                    </a>
-                                </div>
-                                <div class="visited-description">
-                                    <a class="visited-name" href="#">ЖК “Пушкин”</a>
-                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
-                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
-                                </div>
+            <div class="visited-container js-slider-visited">
+                <h2 class="visited-title h1">Вы недавно смотрели</h2>
+                <div class="visited-gallery">
+                    <div class="visited-list js-slider-list">
+                        <div class="visited-list-item js-slider-item">
+                            <div class="visited-block">
+                                <a class="visited-list-link" href="#">
+                                    <img class="visited-img" src="./images/visited/visited-img-1.jpg" alt="" />
+                                </a>
+                                <a class="visited-wishlist" href="javascript:;">
+                                    <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                </a>
                             </div>
-                            <div class="visited-list-item visited-list-item_bank js-slider-item">
-                                <div class="visited-block">
-                                    <a class="visited-list-link" href="#">
-                                        <img class="visited-img visited-img_bank" src="./images/visited/visited-img-2.jpg" alt="" />
-                                    </a>
-                                    <a class="visited-wishlist" href="javascript:;">
-                                        <i class="visited-wishlist-icon icon icon_wishlist"></i>
-                                    </a>
-                                </div>
-                                <div class="visited-description">
-                                    <a class="visited-name" href="#">Банк: Сбербанк</a>
-                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
-                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
-                                </div>
-                            </div>
-                            <div class="visited-list-item js-slider-item">
-                                <div class="visited-block">
-                                    <a class="visited-list-link" href="#">
-                                        <img class="visited-img" src="./images/visited/visited-img-3.jpg" alt="" />
-                                    </a>
-                                    <a class="visited-wishlist" href="javascript:;">
-                                        <i class="visited-wishlist-icon icon icon_wishlist"></i>
-                                    </a>
-                                </div>
-                                <div class="visited-description">
-                                    <a class="visited-name" href="#">Рефинансирование</a>
-                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
-                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
-                                </div>
-                            </div>
-                            <div class="visited-list-item js-slider-item">
-                                <div class="visited-block">
-                                    <a class="visited-list-link" href="#">
-                                        <img class="visited-img" src="./images/visited/visited-img-4.jpg" alt="" />
-                                    </a>
-                                    <a class="visited-wishlist" href="javascript:;">
-                                        <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
-                                    </a>
-                                </div>
-                                <div class="visited-description">
-                                    <a class="visited-name" href="#">ЖК “Иваново”</a>
-                                    <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
-                                    <div><a class="visited-list-button button" href="#">Подробнее</a></div>
-                                </div>
+                            <div class="visited-description">
+                                <a class="visited-name" href="#">ЖК “Пушкин”</a>
+                                <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                <div><a class="visited-list-button button" href="#">Подробнее</a></div>
                             </div>
                         </div>
-                        <div class="visited-nav slider-nav js-slider-buttons">
-                            <button class="visited-button slider-button js-slider-prev">
-                                <span class="slider-button-icon"></span>
-                            </button>
-                            <button class="visited-button slider-button slider-button_next js-slider-next">
-                                <span class="slider-button-icon"></span>
-                            </button>
+                        <div class="visited-list-item visited-list-item_bank js-slider-item">
+                            <div class="visited-block">
+                                <a class="visited-list-link" href="#">
+                                    <img class="visited-img visited-img_bank" src="./images/visited/visited-img-2.jpg" alt="" />
+                                </a>
+                                <a class="visited-wishlist" href="javascript:;">
+                                    <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                </a>
+                            </div>
+                            <div class="visited-description">
+                                <a class="visited-name" href="#">Банк: Сбербанк</a>
+                                <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                            </div>
+                        </div>
+                        <div class="visited-list-item js-slider-item">
+                            <div class="visited-block">
+                                <a class="visited-list-link" href="#">
+                                    <img class="visited-img" src="./images/visited/visited-img-3.jpg" alt="" />
+                                </a>
+                                <a class="visited-wishlist" href="javascript:;">
+                                    <i class="visited-wishlist-icon icon icon_wishlist"></i>
+                                </a>
+                            </div>
+                            <div class="visited-description">
+                                <a class="visited-name" href="#">Рефинансирование</a>
+                                <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                            </div>
+                        </div>
+                        <div class="visited-list-item js-slider-item">
+                            <div class="visited-block">
+                                <a class="visited-list-link" href="#">
+                                    <img class="visited-img" src="./images/visited/visited-img-4.jpg" alt="" />
+                                </a>
+                                <a class="visited-wishlist" href="javascript:;">
+                                    <i class="visited-wishlist-icon icon icon_wishlist icon_wishlist_active"></i>
+                                </a>
+                            </div>
+                            <div class="visited-description">
+                                <a class="visited-name" href="#">ЖК “Иваново”</a>
+                                <div class="visited-info content">Nisi, proin amet nisi, vitae varius. Dictum lorem massa pellentesque lorem diam suspendisse.</div>
+                                <div><a class="visited-list-button button" href="#">Подробнее</a></div>
+                            </div>
                         </div>
                     </div>
+                    <div class="visited-nav slider-nav js-slider-buttons">
+                        <button class="visited-button slider-button js-slider-prev">
+                            <span class="slider-button-icon"></span>
+                        </button>
+                        <button class="visited-button slider-button slider-button_next js-slider-next">
+                            <span class="slider-button-icon"></span>
+                        </button>
+                    </div>
                 </div>
-            </section>
-
+            </div>
+        </section>
         </div>
 
     </main>
@@ -836,11 +898,13 @@
 <script src="./js/JSC.AjaxMore.js"></script>
 <script src="./js/JSC.MobileMenu.js"></script>
 <script src="./js/JSC.FieldText.js"></script>
+<!--Добавить на все станицы -->
+<script src="./js/JSC.Accordion.js"></script>
 
 <script src="./js/main.js"></script>
 
 <!-- Подключить скрипты только для раздела -->
-<script src="./js/news.js"></script>
+<script src="./js/profile.js"></script>
 <!-- /Подключить скрипты только для раздела -->
 
 </body>
