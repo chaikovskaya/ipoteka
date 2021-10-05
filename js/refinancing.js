@@ -28,6 +28,10 @@ function initSliderRuler() {
                 var str = String($(this).slider("value")),
                     parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
 
+                if (parsedStr.indexOf('.') != -1) {
+                    parsedStr = parsedStr.replace(/.([^.]*)$/, ",$1");
+                }
+
                 $field.val($(this).slider("value"));
                 $text.text(parsedStr + units);
                 $amount.val( $track.slider("value") );
@@ -35,6 +39,10 @@ function initSliderRuler() {
             slide: function( event, ui ) {
                 var str = String(ui.value),
                     parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+                if (parsedStr.indexOf('.') != -1) {
+                    parsedStr = parsedStr.replace(/.([^.]*)$/, ",$1");
+                }
 
                 $field.val(ui.value);
                 $text.text(parsedStr + units);
@@ -58,11 +66,19 @@ function initSliderRuler() {
                 var str = String(val),
                     parsedStr = str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
 
+                if (parsedStr.indexOf('.') != -1) {
+                    parsedStr = parsedStr.replace(/.([^.]*)$/, ",$1");
+                }
+
                 $field.val(val);
                 $text.text(parsedStr + units);
                 $slider.slider( "value", val );
                 $amount.val( val );
             }
+        });
+        $field.on('input', function(e) {
+            var val = $(this).val();
+            $(this).val(val.replace(",", '.'));
         });
     });
 }
