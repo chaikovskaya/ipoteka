@@ -11,7 +11,7 @@
         this.classShow = this.params.classShow || '';
         this.eventName = this.params.eventName || 'click';
         this.backgroundDisabled = this.params.backgroundDisabled || false;
-        this.toggle = this.params.toggle;
+        this.toggle = this.params.toggle || undefined;
 
         this.__construct();
     };
@@ -58,7 +58,9 @@
         if (this.classShow != '') {
             this.$document.toggleClass(this.classShow);
         }
-        this.toggle();
+        if (this.toggle) {
+            this.toggle();
+        }
     };
 
     Dropdown.prototype._outside = function _outside(e) {
