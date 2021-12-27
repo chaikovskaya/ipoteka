@@ -779,11 +779,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="buildings-map JS-Dropdown" id="buildings-map" data-dropdown="{
+                        <div class="buildings-map JS-Dropdown" data-dropdown="{
                             'classActive': 'buildings-map_active',
                             'backgroundDisabled': true
-                            }">
-                            <span class="buildings-map-switcher">
+                            }" data-sticky-container>
+                            <div class="buildings-map-block js-fix-sticky" id="buildings-map">
+                                <span class="buildings-map-switcher">
                                 <a class="buildings-map-switcher-link JS-Dropdown-Switcher" href="javascript:;">
                                     <span class="buildings-map-switcher-icon buildings-map-switcher-icon_left"></span>
                                     <span class="buildings-map-switcher-icon buildings-map-switcher-icon_right"></span>
@@ -791,6 +792,7 @@
                                 <span class="buildings-map-switcher-tooltip buildings-map-switcher-tooltip_show">Показать карту</span>
                                 <span class="buildings-map-switcher-tooltip buildings-map-switcher-tooltip_hide">Скрыть карту</span>
                             </span>
+                            </div>
                         </div>
                         <div class="buildings-load-more load-more">
                             <a class="buildings-more more JS-AjaxMore-Link" href="javascript:;">
@@ -1133,6 +1135,7 @@
     <!-- Подключить скрипты только для этого раздела -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./js/map.js"></script>
+    <script src="./libs/sticky/sticky.min.js"></script>
     <script src="./js/buildings.js"></script>
     <!-- /Подключить скрипты только для этого раздела -->
 

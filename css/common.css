@@ -3478,8 +3478,15 @@ body.mob-menu-show {
   border-radius: 20px 0 0 20px;
   transition: left 0.3s ease-in-out;
 }
+.buildings-map-block {
+  width: 100%;
+  height: 100vh;
+}
 .buildings-map_active {
   left: 0;
+}
+.buildings-map_active .buildings-map-block {
+  left: auto!important;
 }
 .buildings-map-switcher {
   position: absolute;

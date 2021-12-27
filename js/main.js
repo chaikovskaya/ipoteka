@@ -750,6 +750,9 @@ function reInitSliderUsefulLinks() {
     $(".js-slider-useful-links .js-slider-list").trigger('destroy.owl.carousel');
 }
 
+function initFixSticky() {
+    var sticky = new Sticky('.js-fix-sticky');
+}
 
 function initResizeWindow() {
     if (window.matchMedia('(max-width: ' + GLOBAL.mobile + 'px)').matches) {
@@ -800,4 +803,5 @@ $(document).ready(function () {
     initAccordion();
     initSelectIcons();
     initSliderBanksActual();
+    initFixSticky();
 });
