@@ -6,7 +6,9 @@ function initMap() {
         center: centerCoord,
         zoom: 10,
         controls: ['zoomControl', 'fullscreenControl'],
-    }),
+    }, {
+            autoFitToViewport: 'always'
+        }),
     objectManager = new ymaps.ObjectManager(),
     masObjects =[];
 
