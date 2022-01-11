@@ -7107,20 +7107,18 @@ body.mob-menu-show {
 .hypothecation-schedule-link:hover {
   background-color: #F2F2F2;
 }
-.hypothecation-schedule-table {
-  display: table;
-}
+.hypothecation-schedule-table {}
 .hypothecation-schedule-table-item {
-  display: table-row;
+  display: flex;
+  justify-content: space-between;
 }
 .hypothecation-schedule-table-item_hide {
   display: none;
 }
 .hypothecation-schedule-table-col {
-  display: table-cell;
-  min-width: 100px;
-  padding-bottom: 14px;
-  padding-right: 80px;
+  width: 16.6%;
+  margin-bottom: 14px;
+  padding-right: 35px;
 }
 .hypothecation-schedule-table-name {
   font-size: 16px;
@@ -7294,10 +7292,6 @@ body.mob-menu-show {
   .hypothecation-conditions-description {
     overflow: visible;
     padding-right: 0;
-  }
-  .hypothecation-schedule-table-col {
-    min-width: 150px;
-    padding-right: 40px;
   }
 }
 /* /hypothecation */
