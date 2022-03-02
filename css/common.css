@@ -1940,7 +1940,8 @@ label.form-error {
   transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateX(100%);
   overflow-x: hidden;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+}
 
 .mob-menu-decor {
   display: none;
@@ -1973,6 +1974,14 @@ label.form-error {
 
 .mob-list-item {
   border-bottom: 1px solid #E0E0E0; }
+
+.mob-is-levels .mob-list-item {
+  height: 0;
+  overflow: hidden; }
+
+.mob-child.mob-child-is-current .mob-list-item {
+  height: auto;
+  overflow: visible; }
 
 .mob-list-link {
   display: flex;
