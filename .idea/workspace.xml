@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91739654-634d-4a85-9aea-1c7046e3b60f" name="Default Changelist" comment="">
+    <list default="true" id="91739654-634d-4a85-9aea-1c7046e3b60f" name="Default Changelist" comment="fixed tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildings.html" beforeDir="false" afterPath="$PROJECT_DIR$/buildings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/JSC.Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/JSC.Dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/buildings.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/buildings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +29,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,8 +138,20 @@
       <workItem from="1633416220465" duration="2806000" />
       <workItem from="1639639114282" duration="3562000" />
       <workItem from="1640252582768" duration="20642000" />
-      <workItem from="1640587021918" duration="4662000" />
+      <workItem from="1640587021918" duration="6007000" />
+      <workItem from="1641906636953" duration="2786000" />
+      <workItem from="1646224903037" duration="3916000" />
+      <workItem from="1651758379285" duration="4564000" />
+      <workItem from="1651763059435" duration="312000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed tabs">
+      <created>1651762790109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651762790109</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,39 +169,43 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed tabs" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="872" y="178" key="#Deployment" timestamp="1640273526356">
+    <state x="872" y="178" key="#Deployment" timestamp="1646227974137">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="178" key="#Deployment/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1640273526356" />
-    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1639643127240">
+    <state x="872" y="178" key="#Deployment/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1646227974137" />
+    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1646228852175">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1060" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1639643127240" />
-    <state width="2517" height="53" key="GridCell.Tab.0.bottom" timestamp="1640588229200">
+    <state x="1060" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1646228852175" />
+    <state width="1258" height="157" key="GridCell.Tab.0.bottom" timestamp="1651762978891">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="53" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1640588229200" />
-    <state width="2517" height="53" key="GridCell.Tab.0.center" timestamp="1640588229200">
+    <state width="1258" height="157" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1651762978891" />
+    <state width="1258" height="157" key="GridCell.Tab.0.center" timestamp="1651762978890">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="53" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1640588229200" />
-    <state width="2517" height="53" key="GridCell.Tab.0.left" timestamp="1640588229200">
+    <state width="1258" height="157" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1651762978890" />
+    <state width="1258" height="157" key="GridCell.Tab.0.left" timestamp="1651762978890">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="53" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1640588229200" />
-    <state width="2517" height="53" key="GridCell.Tab.0.right" timestamp="1640588229200">
+    <state width="1258" height="157" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1651762978890" />
+    <state width="1258" height="157" key="GridCell.Tab.0.right" timestamp="1651762978891">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="53" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1640588229200" />
-    <state x="979" y="253" width="585" height="745" key="find.popup" timestamp="1640591080260">
+    <state width="1258" height="157" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1651762978891" />
+    <state x="904" y="292" width="973" height="534" key="Vcs.Push.Dialog.v2" timestamp="1651763208841">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="979" y="253" width="585" height="745" key="find.popup/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1640591080260" />
-    <state x="936" y="240" key="run.anything.popup" timestamp="1640267883990">
+    <state x="904" y="292" width="973" height="534" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1651763208841" />
+    <state x="979" y="253" width="585" height="745" key="find.popup" timestamp="1646225489443">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="936" y="240" key="run.anything.popup/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1640267883990" />
+    <state x="979" y="253" width="585" height="745" key="find.popup/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1646225489443" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
