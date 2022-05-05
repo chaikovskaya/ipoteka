@@ -102,6 +102,26 @@ function initTab() {
     });
 }
 
+function initTabSimple() {
+    if (typeof(Tab) === 'undefined' || !jQuery.isFunction(Tab)) {
+        return false;
+    }
+
+    var common = {
+        onToggle: function (elem) {
+            var X = elem.offsetLeft || 0,
+                sm = 15;
+
+            $('.JS-Tab-Simple-Nav').scrollLeft(X - sm);
+        }
+    };
+
+    jQuery('.JS-Tab-Simple').not('.JS-Tab-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('tab'));
+        new Tab(this, jQuery.extend({}, common, local));
+    });
+}
+
 function initSliderNew() {
     $(".js-slider-new").each(function(){
         var $element = $(this),
@@ -781,6 +801,7 @@ $(document).ready(function () {
     initDropdown();
     initSelect();
     initTab();
+    initTabSimple();
     initSelectMore();
     initScroll();
 
