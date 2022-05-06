@@ -88,7 +88,9 @@
         .addClass('JS-Tab-Item-active');
     }
 
-    this.onToggle(elem);
+    if ( jQuery.isFunction(this.onToggle) ) {
+      this.onToggle(elem);
+    }
   };
   /*--/Tab--*/
 

@@ -109,10 +109,10 @@ function initTabSimple() {
 
     var common = {
         onToggle: function (elem) {
-            var X = elem.offsetLeft || 0,
-                sm = 15;
+            var positionX = elem.offsetLeft || 0,
+                paddingLeft = 15;
 
-            $('.JS-Tab-Simple-Nav').scrollLeft(X - sm);
+            $(elem).parents('.JS-Tab-Simple-Nav').scrollLeft(positionX - paddingLeft);
         }
     };
 
